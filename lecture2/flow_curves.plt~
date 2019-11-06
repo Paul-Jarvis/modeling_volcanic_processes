@@ -1,0 +1,17 @@
+#Gnuplot script to plot a flow curve for a Newtonian fluid
+
+set terminal epslatex standalone
+
+set output 'flow_curves.tex'
+
+unset key
+
+unset xtics
+unset ytics
+
+set xlabel '\huge $\dot{\epsilon}$'
+set ylabel '\huge $\tau$'
+
+set title '\huge $\tau = \eta \dot{\epsilon}$'
+
+plot x w l lc 0, x**2 w l lc 1 
