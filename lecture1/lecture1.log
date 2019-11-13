@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  10 OCT 2019 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  13 NOV 2019 18:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -799,8 +799,7 @@ File: etna.jpg Graphic file (type jpg)
 <use etna.jpg>
 Package pdftex.def Info: etna.jpg  used on input line 138.
 (pdftex.def)             Requested size: 109.2597pt x 71.69975pt.
-
-No file lecture1.aux.
+ (./lecture1.aux)
 \openout1 = `lecture1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
@@ -817,6 +816,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 146.
 LaTeX Font Info:    ... okay on input line 146.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 146.
 LaTeX Font Info:    ... okay on input line 146.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -879,6 +879,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 146.
 LaTeX Info: Redefining \pageref on input line 146.
 LaTeX Info: Redefining \nameref on input line 146.
+
+(./lecture1.out) (./lecture1.out)
 \@outlinefile=\write5
 \openout5 = `lecture1.out'.
 
@@ -951,9 +953,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
-No file lecture1.nav.
-
+ (./lecture1.nav)
 Overfull \vbox (29.15997pt too high) has occurred while \output is active []
 
 
@@ -961,7 +961,7 @@ Overfull \vbox (29.15997pt too high) has occurred while \output is active []
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./UNIGE_logo.jpg> <./redou
 bt.jpg> <./etna.jpg>]
-<3_phase.png, id=59, 580.1675pt x 409.53pt>
+<3_phase.png, id=61, 580.1675pt x 409.53pt>
 File: 3_phase.png Graphic file (type png)
 <use 3_phase.png>
 Package pdftex.def Info: 3_phase.png  used on input line 211.
@@ -971,7 +971,7 @@ Package pdftex.def Info: 3_phase.png  used on input line 211.
  <./3_phase.png>] [3
 
 ]
-<TAS.JPG, id=118, 389.95688pt x 298.11375pt>
+<TAS.JPG, id=120, 389.95688pt x 298.11375pt>
 File: TAS.JPG Graphic file (type jpg)
 <use TAS.JPG>
 Package pdftex.def Info: TAS.JPG  used on input line 268.
@@ -979,7 +979,7 @@ Package pdftex.def Info: TAS.JPG  used on input line 268.
  [4
 
  <./TAS.JPG>]
-<arrow.png, id=147, 427.5975pt x 257.46187pt>
+<arrow.png, id=149, 427.5975pt x 257.46187pt>
 File: arrow.png Graphic file (type png)
 <use arrow.png>
 Package pdftex.def Info: arrow.png  used on input line 318.
@@ -987,12 +987,12 @@ Package pdftex.def Info: arrow.png  used on input line 318.
  [5
 
  <./arrow.png>]
-<geotherm.png, id=175, 389.20406pt x 405.76593pt>
+<geotherm.png, id=177, 389.20406pt x 405.76593pt>
 File: geotherm.png Graphic file (type png)
 <use geotherm.png>
 Package pdftex.def Info: geotherm.png  used on input line 335.
 (pdftex.def)             Requested size: 172.99222pt x 180.35785pt.
-<Earth_crop.png, id=176, 2501.345pt x 2451.1575pt>
+<Earth_crop.png, id=178, 2501.345pt x 2451.1575pt>
 File: Earth_crop.png Graphic file (type png)
 <use Earth_crop.png>
 Package pdftex.def Info: Earth_crop.png  used on input line 335.
@@ -1000,12 +1000,12 @@ Package pdftex.def Info: Earth_crop.png  used on input line 335.
  [6
 
  <./geotherm.png> <./Earth_crop.png (PNG copy)>]
-<heating.png, id=204, 389.20406pt x 405.76593pt>
+<heating.png, id=206, 389.20406pt x 405.76593pt>
 File: heating.png Graphic file (type png)
 <use heating.png>
 Package pdftex.def Info: heating.png  used on input line 365.
 (pdftex.def)             Requested size: 172.99222pt x 180.35785pt.
-<plume_melting.png, id=205, 401.24907pt x 413.29407pt>
+<plume_melting.png, id=207, 401.24907pt x 413.29407pt>
 File: plume_melting.png Graphic file (type png)
 <use plume_melting.png>
 Package pdftex.def Info: plume_melting.png  used on input line 365.
@@ -1013,12 +1013,12 @@ Package pdftex.def Info: plume_melting.png  used on input line 365.
  [7
 
  <./heating.png> <./plume_melting.png>]
-<depressure.png, id=235, 389.20406pt x 405.76593pt>
+<depressure.png, id=237, 389.20406pt x 405.76593pt>
 File: depressure.png Graphic file (type png)
 <use depressure.png>
 Package pdftex.def Info: depressure.png  used on input line 402.
 (pdftex.def)             Requested size: 172.99222pt x 180.35785pt.
-<decompression_melting.png, id=236, 573.64313pt x 229.60782pt>
+<decompression_melting.png, id=238, 573.64313pt x 229.60782pt>
 File: decompression_melting.png Graphic file (type png)
 <use decompression_melting.png>
 Package pdftex.def Info: decompression_melting.png  used on input line 402.
@@ -1026,12 +1026,12 @@ Package pdftex.def Info: decompression_melting.png  used on input line 402.
  [8
 
  <./depressure.png> <./decompression_melting.png>]
-<mixing.png, id=267, 389.20406pt x 405.76593pt>
+<mixing.png, id=269, 389.20406pt x 405.76593pt>
 File: mixing.png Graphic file (type png)
 <use mixing.png>
 Package pdftex.def Info: mixing.png  used on input line 430.
 (pdftex.def)             Requested size: 172.99222pt x 180.35785pt.
-<flux_melting.png, id=268, 779.16093pt x 381.67593pt>
+<flux_melting.png, id=270, 779.16093pt x 381.67593pt>
 File: flux_melting.png Graphic file (type png)
 <use flux_melting.png>
 Package pdftex.def Info: flux_melting.png  used on input line 430.
@@ -1039,12 +1039,12 @@ Package pdftex.def Info: flux_melting.png  used on input line 430.
  [9
 
  <./mixing.png> <./flux_melting.png>]
-<plag_phase.png, id=296, 730.73pt x 523.9575pt>
+<plag_phase.png, id=297, 730.73pt x 523.9575pt>
 File: plag_phase.png Graphic file (type png)
 <use plag_phase.png>
 Package pdftex.def Info: plag_phase.png  used on input line 465.
 (pdftex.def)             Requested size: 163.8868pt x 117.50958pt.
-<ternary.png, id=297, 901.3675pt x 751.80875pt>
+<ternary.png, id=298, 901.3675pt x 751.80875pt>
 File: ternary.png Graphic file (type png)
 <use ternary.png>
 Package pdftex.def Info: ternary.png  used on input line 465.
@@ -1067,21 +1067,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 469.
 (./lecture1.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 469.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 469.
-
-
-Package rerunfilecheck Warning: File `lecture1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lecture1.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `lecture1.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18504 strings out of 494923
- 353216 string characters out of 6180741
- 419637 words of memory out of 5000000
- 21355 multiletter control sequences out of 15000+600000
+ 18537 strings out of 494923
+ 353511 string characters out of 6180741
+ 419743 words of memory out of 5000000
+ 21380 multiletter control sequences out of 15000+600000
  17273 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,15n,57p,775b,842s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1095,7 +1088,7 @@ t/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts
 e1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb>
-Output written on lecture1.pdf (10 pages, 5021468 bytes).
+Output written on lecture1.pdf (10 pages, 5021635 bytes).
 PDF statistics:
  366 PDF objects out of 1000 (max. 8388607)
  301 compressed objects within 4 object streams

@@ -95,7 +95,6 @@ Paul A. Jarvis\\ %You should put your name here
       Unzen$^{1}$ & 1991-1995 & 64.27 & 16.13 & 0.71 & 0.00 & 5.10 & 0.10 & 2.47 & 4.69 & 2.54 & 3.81 & 0.17 \\
       Unzen$^{2}$ & 1991-1995 & 51.84 & 18.19 & 1.28 & 0.00 & 10.27 & 0.18 & 4.62 & 9.43 & 1.22 & 2.79 & 0.17 \\
       Kilauea & 1992 & 49.78 & 12.79 & 2.37 & 0.00 & 12.40 & 0.17 & 8.75 & 10.59 & 0.41 & 2.14 & 0.22 \\
-      MORB & N/A & 50.47 & 14.70 & 1.68 & 10.43 & 0.00 & 0.18 & 7.58 & 11.39 & 0.16 & 2.79 & 0.18 \\
       Novarupta & 1912 & 77.19 & 12.28 & 0.18 & 1.3 & 0.0 & 0.05 & 0.19 & 0.87 & 3.17 & 4.32 & 0.05 \\
       \hline
     \end{tabular}
@@ -103,7 +102,14 @@ Paul A. Jarvis\\ %You should put your name here
 
   \begin{enumerate}
   \item Use Figure~\ref{fig:TAS} to classify the composition of the rocks in Table~\ref{tab:comp}. 
-  \item Create a new table listing the compositions shown in Table~\ref{tab:comp}, but presenting the data in mol\%
+  \item Create a new table converting the Novarupta composition shown in Table~\ref{tab:comp} to mol\%. Make use of Fig.~\ref{fig:periodic} and
+    \begin{equation}
+      \label{equ:wt2mol}
+      X_{i}(\text{mol\%}) = \frac{100 X_{i}(\text{wt\%})}{M_{i}} \left(\sum_{i} \frac{X_{i}(\text{wt\%})}{M_{i}}\right)^{-1},
+    \end{equation}
+    
+
+    where $M_{i}$ is the molar mass of component $X_{i}$. 
   \end{enumerate}
 
   \begin{figure}
@@ -111,25 +117,35 @@ Paul A. Jarvis\\ %You should put your name here
     \caption{Total Alkali-Silica (TAS) diagram for characterisation of volcanic rocks. \label{fig:TAS}}
   \end{figure}
 
-  Table~\ref{tab:liq} shows the liquidus temperatures of the magmas in Table~\ref{tab:comp} for both dry composition and 4 wt\% water at 200 MPa.
+  \begin{figure}
+    $$\includegraphics[width=\paperwidth, angle=90]{periodic.pdf}$$
+    \caption{Periodic table of elements. \label{fig:periodic}}
+  \end{figure}
+  
+  Table~\ref{tab:liq} shows the liquidus temperatures of the magmas in Table~\ref{tab:comp} for both dry composition and 4 wt\% water at 2000 MPa.
 
   \begin{enumerate}\setcounter{enumii}{2}
-  \item For the Novarupta volcano, determine the wet melt composition at the wet liquidus temperature at 200 MPa. 
+  \item For the Novarupta volcano, determine the wet melt composition, with 4 wt\% H$_{2}$O, (in mol\%) at the wet liquidus temperature at 2000 MPa. 
 \end{enumerate}
 
-  Furthermore, the volume $V_{\text{m}}$ of 1 mol of melt of composition $\mathbf{X}$ as a function of pressure $P$ and temperature $T$ is given by
+  The volume $V_{\text{m}}$ of 1 mol of melt of composition $\mathbf{X}$ as a function of pressure $P$ and temperature $T$ is given by
 
   \begin{align}
     \label{equ:mol_vol}
-    V_{m}(T, P, \mathbf{X}) = \sum_{i} X_{i} \Bigg[ \textcolor{red}{\bar{V_{i}}(T = T_{\text{R}}, P = P_{\text{R}})} & + \left. \textcolor{blue}{\left. \frac{\partial \bar{V_{i}}(T, P = P_{\text{R}})}{\partial T}\right|_{T = T_{\text{R}}}} (T - T_{\text{R}}) \right. \nonumber \\
+    V_{m}(T, P, \mathbf{X}) = \sum_{i} X_{i}(\text{mol\%}) \Bigg[ \textcolor{red}{\bar{V_{i}}(T = T_{\text{R}}, P = P_{\text{R}})} & + \left. \textcolor{blue}{\left. \frac{\partial \bar{V_{i}}(T, P = P_{\text{R}})}{\partial T}\right|_{T = T_{\text{R}}}} (T - T_{\text{R}}) \right. \nonumber \\
       & + \left. \textcolor{green}{\left.\frac{\partial \bar{V_{i}}(T = T_{\text{R}}, P)}{\partial P}\right|_{P = P_{R}}} (P - P_{\text{R}})\right], 
   \end{align}
 
-  where $T_{\text{R}} = 1673$ K and $P_{\text{R}} = 10^{-4}$ GPa. Values for the red, blue and green quantities can be found in Table~\ref{tab:mol_vol}.
+  where $T_{\text{R}} = 1673$ K and $P_{\text{R}} = 10^{-4}$ GPa. Values for the red, blue and green quantities can be found in Table~\ref{tab:mol_vol}. The density can then be calculated from
+
+  \begin{equation}
+    \label{equ:dens}
+    \rho_{\text{m}} = \frac{1}{V_{\text{m}}} \sum_{i} X_{i}(\text{mol\%}) M_{i}.
+  \end{equation}
   
   \begin{table}
     \centering
-    \caption{Liquidus tempertaures for rocks show in Table~\ref{tab:comp} at 200 MPa for dry and wet (4 wt\% water) compositions. \label{tab:liq}}
+    \caption{Liquidus tempertaures for rocks show in Table~\ref{tab:comp} at 2000 MPa for dry and wet (4 wt\% water) compositions. \label{tab:liq}}
     \begin{tabular}{|c|c|c|c|}
       \hline
       Volcano & Eruption & Dry Liquidus $T$ /$^{\circ}$C & Wet Liquidus $T$ /$^{\circ}$C  \\
@@ -138,7 +154,7 @@ Paul A. Jarvis\\ %You should put your name here
       Unzen$^{2}$ & 1991-1995 & 1226 & 1079 \\
       Kilauea & 1992 & 1237 & 1172 \\
       MORB & N/A & 1215 & 1145 \\
-      Novarupta & 1912 & 1123 & 826.56 \\
+      Novarupta & 1912 & 1123 & 827 \\
       \hline
     \end{tabular}
   \end{table}
@@ -149,7 +165,7 @@ Paul A. Jarvis\\ %You should put your name here
     \begin{tabular}{|c|c|c|c|}
       \hline
       & $\textcolor{red}{\bar{V_{i}}(T = T_{\text{R}}, P = P_{\text{R}})}$ & $\textcolor{blue}{\left.\frac{\partial \bar{V_{i}}(T, P = P_{\text{R}})}{\partial T}\right|_{T = T_{\text{R}}}}$ & $\textcolor{green}{\left.\frac{\partial \bar{V_{i}}(T = T_{\text{R}}, P)}{\partial P}\right|_{P = P_{R}}}$ \\
-      & /10$^{-6}$ m$^{3}$ mol$^{-1}$ & /10$^{-9}$ m$^{3}$ mol$^{-1}$ K & /10$^{-6}$ m$^{3}$ mol$^{-1}$ GPa \\
+      & /10$^{-6}$ m$^{3}$ mol$^{-1}$ & /10$^{-9}$ m$^{3}$ mol$^{-1}$ K$^{-1}$ & /10$^{-6}$ m$^{3}$ mol$^{-1}$ GPa$^{-1}$ \\
       \hline
       SiO$_{2}$ & 26.86 & 0.0 & -1.89 \\
       TiO$_{2}$ & 23.16 & 7.24 & -2.31 \\
@@ -168,15 +184,15 @@ Paul A. Jarvis\\ %You should put your name here
   \end{table}
 
   \begin{enumerate}\setcounter{enumii}{3}
-  \item For the Novarupta volcano, determine the density of the \textbf{dry} melt composition at the \textbf{dry} liquidus temperature, at 200 MPa. Take care with units and show your method clearly (it may be helpful to draw a table). 
-  \item For the same volcano, determine the density of the \textbf{wet} melt composition at the \textbf{dry} liquidus temperature, at 200 MPa.
-  \item Again for Novarupta, determine the density of the \textbf{wet} melt composition at the \textbf{wet} liquidus temperature, at 200 MPa.
+  \item For the Novarupta volcano, determine the density of the \textbf{dry} melt composition at the \textbf{dry} liquidus temperature, at 2000 MPa. Take care with units and show your method clearly (it may be helpful to draw a table). 
+  \item For the same volcano, determine the density of the \textbf{wet} melt composition at the \textbf{dry} liquidus temperature, at 2000 MPa.
+  \item Again for Novarupta, determine the density of the \textbf{wet} melt composition at the \textbf{wet} liquidus temperature, at 2000 MPa.
   \item Describe the effect of both temperature and water content on the density of the magmatic melt at Novarupta. Be as quantitative as you can.
   \end{enumerate}
 
   %Question 2%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\item At a temperature of 767 $^{\circ}$C and pressure of 200 MPa, the equilibrium crystal assemblage of the wet Novarupta magma is feldspar ($\phi_{\text{fld}} = 0.5, \rho_{\text{fld}} = 2.5$ g cm$^{-3}$), quartz ($\phi_{\text{qz}} = 0.3, \rho_{\text{qz}} = 2.5$ g cm$^{-3}$), spinel ($\phi_{\text{sp}} = 0.007, \rho_{\text{sp}} = 4.9$ g cm$^{-3}$) and biotite ($\phi_{\text{bio}} = 0.5, \rho_{\text{bio}} = 2.75$ g cm$^{-3}$) whilst the melt density is 2.21 g cm$^{-3}$ and the melt viscosity is 147910.8 Pa s. Additionally, the gravitational settling velocity of a crystal of size $d$ and density $\rho_{\text{c}}$ in melt of density $\rho_{\text{m}}$ and viscosity $\eta_{\text{m}}$ is given by
+\item At a temperature of 767 $^{\circ}$C and pressure of 2000 MPa, the equilibrium crystal assemblage of the wet Novarupta magma is feldspar ($\phi_{\text{fld}} = 0.5, \rho_{\text{fld}} = 2.5$ g cm$^{-3}$), quartz ($\phi_{\text{qz}} = 0.3, \rho_{\text{qz}} = 2.5$ g cm$^{-3}$), spinel ($\phi_{\text{sp}} = 0.007, \rho_{\text{sp}} = 4.9$ g cm$^{-3}$) and biotite ($\phi_{\text{bio}} = 0.5, \rho_{\text{bio}} = 2.75$ g cm$^{-3}$) whilst the melt density is 2.21 g cm$^{-3}$ and the melt viscosity is 147910.8 Pa s. Additionally, the gravitational settling velocity of a crystal of size $d$ and density $\rho_{\text{c}}$ in melt of density $\rho_{\text{m}}$ and viscosity $\eta_{\text{m}}$ is given by
 
   \begin{equation}
     \label{equ:Stokes}
@@ -186,16 +202,16 @@ Paul A. Jarvis\\ %You should put your name here
   where $g = 9.81$ m s$^{-1}$ is the gravitational acceleration. 
 
   \begin{enumerate}
-    \setcounter{enumii}{1}
-  \item Calculate the settling velocities of each crystal phase in the Novarupta magma.
+    \setcounter{enumii}{0}
+  \item Assuming the crystals are 500 $\mu$m in size, calculate the settling velocities of each crystal phase in the Novarupta magma.
   \end{enumerate}
 
   For the wet Kilauea composition, the equilibrium assemblage at the same pressure is olivine ($\phi_{\text{ol}} = 0.03, \rho_{\text{ol}} = 3.37$ g cm$^{-3}$), orthopyroxene ($\phi_{\text{opx}} = 0.006, \rho_{\text{fld}} = 3.28$ g cm$^{-3}$), clinopyroxene ($\phi_{\text{cpx}} = 8.21, \rho_{\text{cpx}} = 3.29$ g cm$^{-3}$) and spinel ($\phi_{\text{sp}} = 0.02, \rho_{\text{sp}} = 4.9$ g cm$^{-3}$), with a melt density of 2.31 g cm$^{-3}$ and a melt viscosity of 28.1 Pa s. 
 
   \begin{enumerate}
-    \setcounter{enumii}{2}
+    \setcounter{enumii}{1}
   \item Calculate the settling velocities of each crystal phase in the Kilauea magma.
-  \item It has been suggested that crystal cumulates can form at the base of magma chambers of sills by gravitational settling of crystals. Consider 10 m thick sills of both the Novarupta and Kilauea compositions. If the sills were maintained at constant temperatures, how long would it take for such a cumulate to form in each case?
+  \item It has been suggested that crystal cumulates can form at the base of magma chambers of sills by gravitational settling of crystals. Consider 10 m thick sills of both the Novarupta and Kilauea compositions. If the sills were maintained at constant temperatures, how long would it take for such a cumulate to form in each case? What crystals would they contain?
   \item What are the most important parameters in determining whether such cumulates can form? Also consider processes which have been neglected here.
   \end{enumerate}
 
@@ -203,7 +219,7 @@ Paul A. Jarvis\\ %You should put your name here
 \item The 1991-1995 eruption of Mt. Unzen, Japan, produced a series of lava domes. A sample of this lava can be seen in Figure~\ref{fig:Unzen}. The white rock (Unzen$^{1}$ in Table~\ref{tab:comp}) forms most of the lava, whilst the dark rock (Unzen$^{2}$) is present as a many discrete enclaves exisiting within the white rock. These enclaves are interpreted to have formed prior to eruption, when a hotter magma was injected into a cooler magma storage region. 
 
   \begin{figure}
-    $$\includegraphics[width=\textwidth]{hand_spec.JPG}$$
+    $$\includegraphics[width=0.5\textwidth]{hand_spec.JPG}$$
     \caption{Sample of dome lava erupted from Unzen in the 1991-1995 eruption. The bulk of the lava is the white rock (Unzen$^{1}$ in Table~\ref{tab:comp}), whilst the dark rock (Unzen$^{2}$) exists as discrete enclaves. \label{fig:Unzen}}
   \end{figure}
   
@@ -214,7 +230,7 @@ Paul A. Jarvis\\ %You should put your name here
     \eta_{\text{m}} = 10 ^{A + B(\mathbf{X})/[T - C(\mathbf{X})]},
   \end{equation}
 
-  where $A = -4.55$ and $B$ and $C$ are given by
+  where $A = -4.55$, $T$ is in K, and $B$ and $C$ are given by
 
   \begin{equation}
     \label{equ:Giordano_B}
@@ -231,12 +247,12 @@ Paul A. Jarvis\\ %You should put your name here
   Values for the coefficients $b_{i}, b_{1j}, c_{i}$ and $c_{11}$, and the expressions for $M_{i}, M_{1j}, N_{i} and N_{11}$ are given in Table~\ref{tab:viscos}.
 
   \begin{table}
-    \caption{The coefficients $b_{i}, b_{1j}, c_{i}$ and $c_{11}$ and expressions for $M_{i}, M_{1j}, N_{i}$ and $N_{11}$ as used in the melt viscosity model of Giordano et al. (2008). \label{tab:viscos}}
+    \caption{The coefficients $b_{i}, b_{1j}, c_{i}$ and $c_{11}$ and expressions for $M_{i}, M_{1j}, N_{i}$ and $N_{11}$ as used in the melt viscosity model of Giordano et al. (2008). All $X_{i}$ are in mol\%.\label{tab:viscos}}
     \begin{tabular}{|c|c||c|c|}
       \hline
-      $b_{1} = 159.6$ & $M_{1} = X_{\text{SiO}_{2}} + X_{\text{TiO}_{2}}$ & $c_{1} = 2.75$ & $N_{1} = X_{SiO_{2}}$ \\
+      $b_{1} = 159.6$ & $M_{1} = X_{\text{SiO}_{2}} + X_{\text{TiO}_{2}}$ & $c_{1} = 2.75$ & $N_{1} = X_{\text{SiO}_{2}}$ \\
       $b_{2} = -173.3$ & $M_{2} = X_{\text{Al}_{2}\text{O}_{3}}$ & $c_{2} = 15.7$ & $N_{2} = X_{\text{TiO}_{2}} + X_{\text{Al}_{2}\text{O}_{3}}$ \\
-      $b_{3} = -72.1$ & $M_{3} = X_{\text{FeO}} + X_{\text{MnO}} + X_{\text{P}_{2}\text{O}_{5}}$ & $c_{3} = 8.3$ & $N_{3} = X_{\text{FeO}} + X_{\text{MnO}} + X_{\text{MgO}}$ \\
+      $b_{3} = -72.1$ & $M_{3} = X_{\text{Fe}} + X_{\text{MnO}} + X_{\text{P}_{2}\text{O}_{5}}$ & $c_{3} = 8.3$ & $N_{3} = X_{\text{Fe}} + X_{\text{MnO}} + X_{\text{MgO}}$ \\
       $b_{4} = -75.7$ & $M_{4} = X_{\text{MgO}}$ & $c_{4} = 10.2$ & $N_{4} = X_{\text{CaO}}$ \\
       $b_{5} = -39.9$ & $M_{5} = X_{\text{CaO}}$ & $c_{5} = -12.3$ & $N_{5} = X_{\text{Na}_{2}\text{O}} + X_{\text{K}_{2}\text{O}}$ \\
       $b_{6} = -84.1$ & $M_{6} = X_{\text{Na}_{2}\text{O}} + X_{\text{H}_{2}\text{O}} + X_{\text{F}_{2}\text{O}}$ & $c_{6} = -99.1$ & $N_{6} = \ln(1 + X_{\text{H}_{2}\text{O}} + X_{\text{F}_{2}\text{O}})$ \\
@@ -252,24 +268,26 @@ Paul A. Jarvis\\ %You should put your name here
   \begin{enumerate}
     \setcounter{enumii}{0}
   \item Assume that the enclave magma has 4 wt\% water and at the time of enclave formation was at the wet liquidus temperature. Calculate the viscosity of this magma. You may find it helpful to draw a table.
-  \item Assume that the host magma also has 4 wt\% water, but is at 775$ ^{\circ}$C. At this temperature, the equilibrium crystal assemblage is orthopyroxene ($\phi_{\text{opx}} = 0.07, \rho_{\text{opx}} = 3.52$ g cm$^{-3}$), clinopyroxene ($\phi_{\text{cpx}} = 0.02, \rho_{\text{cpx}} = 3.35$ g cm$^{-3}$) and feldspar ($\phi_{\text{fld}} = 0.31, \rho_{\text{fld}} = 2.62$ g cm$^{-3}$) with minor amounts of spinel and oxides. The composition of the melt is given in Table~\ref{tab:cold_comp}. Also present is an exsolved gas phase with a volume fraction of $\phi_{\text{b}} = 0.07$ and density of 0.44 g cm$^{-3}$. Calculate the melt viscosity of this magma. 
+  \item Assume that the host magma also has 4 wt\% water, but is at 775$ ^{\circ}$C. At this temperature, the equilibrium crystal assemblage is orthopyroxene ($\phi_{\text{opx}} = 0.07, \rho_{\text{opx}} = 3.52$ g cm$^{-3}$), clinopyroxene ($\phi_{\text{cpx}} = 0.02, \rho_{\text{cpx}} = 3.35$ g cm$^{-3}$) and feldspar ($\phi_{\text{fld}} = 0.30, \rho_{\text{fld}} = 2.62$ g cm$^{-3}$) with minor amounts of spinel and oxides. The composition of the melt is given in Table~\ref{tab:cold_comp}. Also present is an exsolved gas phase with a volume fraction of $\phi_{\text{b}} = 0.07$ and density of 0.44 g cm$^{-3}$. Calculate the melt viscosity of this magma. 
   \end{enumerate}
 
   \begin{table}
+    \small
     \centering
-    \caption{The melt composition of the Unzen$^{1}$ magma at 775$ ^{\circ}$C and 200 MPa. \label{tab:cold_comp}}
-    \begin{tabular}{|c c c c c c c c c c c|}
+    \caption{The melt compositions (mol\%) of the Unzen magmas at their mixing temperatures and 2000 MPa. \label{tab:cold_comp}}
+    \begin{tabular}{|c c|c c c c c c c c c c c c|}
       \hline
-      SiO$_{2}$ & Al$_{2}$O$_{3}$ & TiO$_{2}$ & FeO & Fe$_{2}$O$_{3}$ & MnO & MgO & CaO & K$_{2}$O & Na$_{2}$O & P$_{2}$O$_{5}$ \\
+      Magma  & Temperature /$^{\circ}$C & SiO$_{2}$ & Al$_{2}$O$_{3}$ & TiO$_{2}$ & FeO & Fe$_{2}$O$_{3}$ & MnO & MgO & CaO & K$_{2}$O & Na$_{2}$O & P$_{2}$O$_{5}$ & H$_{2}$O \\
       \hline
-      70.80 & 12.74 & 0.23 & 0.69 & 0.28 & 0.18 & 0.24 & 2.15 & 4.60 & 2.55 & 0.33 \\
+      Unzen$^{1}$ & 775 & 67.43 & 6.86 & 0.16 & 0.54 & 0.1 & 0.15 & 0.34 & 2.29 & 2.86 & 2.29 & 0.13 & 16.57 \\
+      Unzen$^{2}$ & 1079 & 51.23 & 10.49 & 1.23 & 0.0 & 3.70 & 0.15 & 6.79 & 9.88 & 0.62 & 2.47 & 0.07 & 13.59 \\
       \hline
     \end{tabular}
   \end{table}
 
   \begin{enumerate}
     \setcounter{enumii}{2}
-  \item Neglecting the gas phase and using the Krieger \& Dougherty (1959) relation, estimate the total viscosity of the host magma? \\
+  \item Neglecting the gas phase and using the Krieger \& Dougherty (1959) relation, estimate the total viscosity of the host magma, taking 0.4 as the maximum crystal volume fraction. \\
   \item Does the host magma have a yield stress? If so, calculate an estimate for it? \\
   \item Given the temperature difference between the magmas, discuss what you expect to happen once they come into contact in terms of processes such as heat transport, crystallisation and melting. How do you expect the rheological properties of the two magmas to change?
   \end{enumerate}
@@ -280,8 +298,9 @@ Paul A. Jarvis\\ %You should put your name here
   \begin{enumerate}
   \item Calculate velocity as a function of radial position in the conduit \\
   \item Evaluate the strain rate at the conduit waills. Are the strain rates large enough that the melt might be shear-thinning or undergo structural failure?
-  \item Calculate the capillary number for a 1 cm radius bubble. Will the bubbles become deformed by the ascending magma?
-  \item Calculate the rise speed of a 1 cm bubble relative to the surrounding melt. Given this speed, what flow regime is likely to characterise the magma?
+  \item Calculate the capillary number for a 1 cm radius bubble. Assume the surface tension of melt is $10^{-3}$ N m$^{-1}$. Will the bubbles become deformed by the ascending magma?
+  \item What effect do you think the bubbles will have on magma rheology?
+  \item Calculate the rise speed of a 1 cm bubble relative to the surrounding melt. Given this speed, what flow regime is likely to characterise the magma? \\
   \end{enumerate}
 \end{enumerate}
 

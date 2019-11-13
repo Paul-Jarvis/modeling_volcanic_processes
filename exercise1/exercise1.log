@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  7 NOV 2019 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  13 NOV 2019 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -265,48 +265,62 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 91.
 (/usr/share/texlive/texmf-dist/tex/latex/jknappen/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Overfull \hbox (34.35988pt too wide) in paragraph at lines 91--102
+Overfull \hbox (29.49873pt too wide) in paragraph at lines 91--101
  [][] 
  []
 
 <TAS.JPG, id=1, 389.95688pt x 298.11375pt>
 File: TAS.JPG Graphic file (type jpg)
 <use TAS.JPG>
-Package pdftex.def Info: TAS.JPG  used on input line 110.
+Package pdftex.def Info: TAS.JPG  used on input line 116.
 (pdftex.def)             Requested size: 469.75499pt x 359.13121pt.
+
+
+pdfTeX warning: pdflatex (file ./periodic.pdf): PDF inclusion: found PDF versio
+n <1.6>, but at most version <1.5> allowed
+<periodic.pdf, id=2, 1927.2pt x 1084.05pt>
+File: periodic.pdf Graphic file (type pdf)
+<use periodic.pdf>
+Package pdftex.def Info: periodic.pdf  used on input line 121.
+(pdftex.def)             Requested size: 614.295pt x 345.53017pt.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./TAS.JPG>]
-<hand_spec.JPG, id=20, 2201.22375pt x 2038.61626pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./TAS.JPG>] [3 <./peri
+odic.pdf>]
+<hand_spec.JPG, id=1253, 2201.22375pt x 2038.61626pt>
 File: hand_spec.JPG Graphic file (type jpg)
 <use hand_spec.JPG>
-Package pdftex.def Info: hand_spec.JPG  used on input line 206.
-(pdftex.def)             Requested size: 469.75499pt x 435.05885pt.
- [3]
-[4 <./hand_spec.JPG>]
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Package pdftex.def Info: hand_spec.JPG  used on input line 222.
+(pdftex.def)             Requested size: 234.87749pt x 217.49832pt.
+ [4] [5 <./hand_spec.JPG>]
+Overfull \hbox (52.35542pt too wide) in paragraph at lines 278--286
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
 
-[5] (./exercise1.aux) ) 
+[6] (./exercise1.aux) ) 
 Here is how much of TeX's memory you used:
- 2658 strings out of 494923
- 34560 string characters out of 6180741
- 100138 words of memory out of 5000000
- 5925 multiletter control sequences out of 15000+600000
- 6761 words of font info for 28 fonts, out of 8000000 for 9000
+ 2691 strings out of 494923
+ 34948 string characters out of 6180741
+ 102162 words of memory out of 5000000
+ 5948 multiletter control sequences out of 15000+600000
+ 10812 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,16n,25p,729b,312s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,16n,25p,730b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.
@@ -315,14 +329,16 @@ usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy7.pfb>
-Output written on exercise1.pdf (5 pages, 1900157 bytes).
+fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on exercise1.pdf (6 pages, 2236533 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 1315 PDF objects out of 1440 (max. 8388607)
+ 799 compressed objects within 8 object streams
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
