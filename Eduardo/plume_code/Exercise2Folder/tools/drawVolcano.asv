@@ -1,0 +1,25 @@
+function drawVolcano
+
+   r_vent1 = 20;
+   height_vent = 2500;
+   alfa = deg2rad(89);
+   a = tan(alfa);
+   r_vent2 = r_vent1+a;
+   
+   vertexes = [r_vent1*sqrt(2)/2 r_vent1*sqrt(2)/2 height_vent            % Vertex 1: vent, x positive, y positive
+               -r_vent1*sqrt(2)/2 r_vent1*sqrt(2)/2 height_vent            % Vertex 2: vent, x positive, y negative
+               -r_vent1*sqrt(2)/2 -r_vent1*sqrt(2)/2 height_vent           % Vertex 3: vent, x negative, y positive
+               r_vent1*sqrt(2)/2 -r_vent1*sqrt(2)/2 height_vent            % Vertex 4: vent, x negative, y negative
+               r_vent2*sqrt(2)/2 r_vent2*sqrt(2)/2 0                       % Vertex 5: ground, x positive, y positive
+               -r_vent2*sqrt(2)/2 r_vent2*sqrt(2)/2 0                      % Vertex 6: ground, x positive, y negatve
+               -r_vent2*sqrt(2)/2 -r_vent2*sqrt(2)/2 0                     % Vertex 7: ground, x negative, y positive
+               r_vent2*sqrt(2)/2 -r_vent2*sqrt(2)/2 0];                    % Vertex 8: ground, x negative, y negative
+              
+   fill_vertexes = [1 5 6 2
+                    2 6 7 3
+                    3 4 8 7
+                    1 4 8 5];        
+   view(3)
+   patch('vertices', vertexes,'faces',fill_vertexes,'facecolor',[0.8 0.5 0]) 
+   
+end

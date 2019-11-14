@@ -1,0 +1,71 @@
+% Atmospheric conditions
+    11000	% Tropopause height [m]
+    20000	% Stratopause height [m]
+    288		% Atmospheric temperature at the vent [K]
+    -6.5	% Temperature gradient troposphere per 1000 m [K]
+    2		% Temperature gradient stratosphere per 1000 m [K]
+    0.1		% Radial entrainment
+    0.5		% Wind entrainment 
+    0.9		% Relative humidity [%]
+    90		% Azimuth wind angle
+    101325	% Atmospheric pressure at sea level [Pa]
+    0		% Atmosphere division profile starting (=0): [m]
+    80000	% Maximum cautelative height atmosphere (= higher than plume): [m]
+    2000	% Number of points to divide the entire vertical atmosphere: 
+    18.32e-6    % Air dyn. visc. [Pa s]->[kg/(m s)] {Also used by aggregation}
+    5.43e-4	% Water dyn. visc.: [Pa s]-> [kg/(m s)] {Also used by aggregation}
+    1.22	% Air density at sea-level: [kg/m^3]
+    0.01	% Brunt vaisala frequency of the troposphere: [1/s]
+    0.02	% Brunt vaisala frequency of the stratosphere: [1/s]
+% Eruption initial conditions
+    3200	% Vent height a.s.l [m]
+    250		% Plume velocity [m/s]
+    1400	% Plume temperature [K]
+    0.97	% Mass fraction solid phase
+    0		% Mass fraction liquid phase
+    0.03	% Mass fraction dry air phase (water vapor is the complementary to 1 of the sum of all the phases)
+    46.20	% Vent latitude
+    -122.18	% Vent longitude
+    700		% Diffusivity in the plume (for sedimentation)
+    1000	% Density of liquid water in the plume [kg/m^3]
+    2350	% Density of solid particles in the plume [kg/m^3]
+    1e8		% Mass Eruption Rate at the vent [Kg/s]
+    50		% Plume radius: 0 = dir. MER; otherwise indir. MER 
+    0.0098	% 0 no condensation., 1/(2.8*3600)=9.9206e-005 moderate, 1/(1.7*60)=0.0098
+    1E+8	% Total mass erupted [kg]
+% Working folder and meteo profiles
+    Exercise2p1	% Name of the folder for the single run
+    windprofile		% Name of the wind profile: IT MUST BE IN THE FORMAT [km , m/s]!!!
+    temperatureprofile		% Name of the temp profile: IT MUST BE IN THE FORMAT [km , C]!!!
+    txt		% Extention of files in the "runs" folder
+% Sedimentation variables and single run folder
+    0		% Model: strong [0]; weak [1]
+    1		% Evaluation: base [0]; ground [1]; both [2]
+    0.5		% Eccentricity of the elipse for sedimentation
+    0.8		% Shape factor for a gravitationally spreading plume (LAMBDA in the paper)
+    100		% N points to divide the atmosphere within the basecurrent
+    0		% Sedimentation map: no [0]; yes [1]
+% Thermodynamic parameters and physical constanst
+    998		% Specific heat capacity: dry air
+    1952	% Specific heat capacity: water vapour
+    4190	% Specific heat capacity: liquid water
+    1250	% Specific heat capacity: solid fraction
+    2.26e6	% Latent heat vaporization
+    287		% Specific gas constant: dry air
+    461		% Specific gas constant: water vapour
+    9.81	% Gravitational acceleration [m/s^2]
+    1.38e-023	% Boltzmann constant: [J/K]
+% Aggregation variables
+	grainsize		% Filename for the initial grain-size distribution: [wt%]		
+    51		% Number of bins: [#]
+	10		% Minimum phi size: [#] 
+	-3		% Maximum phi size: [#]
+    1000	% Density of the interstitial fluid: [kg/m^3]
+    1		% Fractal prefactor: [#]
+    5E+7	% Mass contained in Smoluchowski box: [kg]	
+    0.0045	% Fluid laminar shear: [1/s]
+    3		% Fractal dimension: [#]
+    1e-4	% Dissipation kinetic energy: [m^2/s^3]
+    0.09	% Sticking efficiency for ice: [#]
+	50	% Number of time_steps in aggregation plot	
+

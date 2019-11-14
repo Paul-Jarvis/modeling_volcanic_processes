@@ -1,0 +1,50 @@
+function [value,isterminal,direction] = stopHybrid(y, ...
+                         C_d, ...
+                         C_v, ...
+                         C_l, ...
+                         C_s, ...
+                         R_d, ...
+                         R_v, ...
+                         H1,    ...
+                         H2,    ...
+                         theta_a0, ...
+                         tempGrad_t, ...
+                         tempGrad_s, ...
+                         m_s0,       ...
+                         r_h)
+
+global table_temperature
+                     
+z         = y(2);
+m_d       = y(3);
+m_v       = y(4);
+m_l       = y(5);
+m_s       = m_s0;
+psi       = y(6);
+angle     = y(7);
+Q         = y(8);
+P         = y(9);
+
+% get the temperature at the height z [K]
+theta_a = interp1(table_temperature(:,1),table_temperature(:,2),z); 
+
+% humidity
+cd ../tools
+[w_s, w_a, eps] = humidityManager(R_d, R_v, theta_a, P, r_h);
+cd ../plume
+
+% set up ODE's
+rho_aB    = P/(R_v*theta_a)*(1+w_a)/(w_a+eps);
+%rhophi_av = P/(R_v*theta_a)*w_a/(w_a+eps);
+%rhophi_ad = P/(R_v*theta_a)*1/(w_a+eps);
+%C_aB      = (C_d + w_a*C_v)/(1+w_a);
+m         = m_d + m_v + m_l + m_s;
+u         = psi/m;
+C_B       = (m_d*C_d + m_v*C_v + m_l*C_l + m_s*C_s)/m;
+theta     = (1/C_B)*(Q/m);
+rho_B     = (P/R_v/theta)*m/(m_v+eps*m_d);
+
+% Locate the height when velocity passes through zero
+value = [u*sin(angle)-0.01 ;rho_B-rho_aB];     % Detect velocity = 0 , the 0.001 helps for stability; detecting neutral buoyancy level
+isterminal = [1; 0];   % Stop the integration
+direction = [0; 0];   % detect all zeros (default)

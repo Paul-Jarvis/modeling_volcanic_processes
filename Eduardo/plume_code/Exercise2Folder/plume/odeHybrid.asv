@@ -1,0 +1,92 @@
+function dy_ds = odeHybrid(y, ...
+                         g, ...
+                         C_d, ...
+                         C_v, ...
+                         C_l, ...
+                         C_s, ...
+                         R_d, ...
+                         R_v, ...
+                         L,   ...
+                         H1,    ...
+                         H2,    ...
+                         theta_a0, ...
+                         tempGrad_t, ...
+                         tempGrad_s, ...
+                         alpha,      ...
+                         beta,       ...
+                         omega,      ...
+                         m_s0,       ...
+                         r_h)
+
+global table_wind table_temperature;
+
+z         = y(2);
+m_d       = y(3);
+m_v       = y(4);
+m_l       = y(5);
+m_s       = m_s0;
+psi       = y(6);
+angle     = y(7);
+Q         = y(8);
+P         = y(9);
+
+% atmosphere properties varying with height
+
+% Get the wind value at a given point z
+Va = interp1(table_wind(:,1),table_wind(:,2),z);
+table_wind(:,2)
+
+% Get the atmosphere temperature at a given point z
+theta_a = interp1(table_temperature(:,1),table_temperature(:,2),z); 
+
+% Get the humidity value at a given temperature value
+cd ..
+[w_s, w_a, eps] = humidityManager(R_d, R_v, theta_a, P, r_h);
+cd plume
+
+% set up ODE's
+
+rho_aB    = P/(R_v*theta_a)*(1+w_a)/(w_a+eps);
+rhophi_av = P/(R_v*theta_a)*w_a/(w_a+eps); % Atmosphere: volume fraction of water vapor * rho_atmosphere
+rhophi_ad = P/(R_v*theta_a)*1/(w_a+eps); % Atmosphere: volume fraction of dry air * rho_atmosphere
+C_aB      = (C_d + w_a*C_v)/(1+w_a);
+m         = m_d + m_v + m_l + m_s;
+u         = psi/m;
+C_B       = (m_d*C_d + m_v*C_v + m_l*C_l + m_s*C_s)/m;
+theta     = (1/C_B)*(Q/m);
+rho_B     = (P/R_v/theta)*m/(m_v+eps*m_d);
+r         = (m/(rho_B*u))^(1/2);
+rhophi_v  = (P/R_v/theta)*m_v/(m_v+eps*m_d);
+
+
+% ENTRAINMENT ASSUMPTION
+% - alpha = radial entrainment
+% - beta = wind entrainment
+% - u = plume velocity
+% - Va = wind velocity
+% - angle = angle between horizontal axis and s
+    u_eps    = alpha*abs(u-Va*cos(angle)) + beta*abs(Va*sin(angle));
+
+% EQUATIONS
+dx_ds     = cos(angle); % equation S26
+dz_ds     = sin(angle); % equation S27
+
+dm_d_ds   = 2*u_eps*r*rhophi_ad; % equation S1
+dm_v_ds   = 2*u_eps*r*rhophi_av - omega*rhophi_v*r^2; % equation S2
+dm_l_ds   = omega*rhophi_v*r^2; % equation S3
+dm_ds     = dm_d_ds + dm_v_ds + dm_l_ds;
+dpsi_ds   = g*(rho_aB - rho_B)*r^2*sin(angle) + Va*cos(angle)*dm_ds; % equation S5
+dangle_ds = (1/psi)*(g*(rho_aB - rho_B)*r^2*cos(angle) - Va*sin(angle)*dm_ds); % equation S6
+dQ_ds     = C_aB*theta_a*dm_ds -rho_B*u*r^2*g*sin(angle) + L*dm_l_ds; % equation S7
+dP_ds     = -rho_aB*g*sin(angle); % equation S15
+
+dy_ds    = zeros(9,1);
+dy_ds(1) = dx_ds; % Y(1) --> x coordinate of the plume
+dy_ds(2) = dz_ds; % Y(2) --> z coordinate of the plume
+dy_ds(3) = dm_d_ds; % Y(3) --> Variation of the mass flow rate: dry air
+dy_ds(4) = dm_v_ds; % Y(4) --> Variation of the mass flow rate: water vapor
+dy_ds(5) = dm_l_ds; % Y(5) --> Variation of the mass flow rate: liquid water
+dy_ds(6) = dpsi_ds; % Y(6) --> Variation of the momentum
+dy_ds(7) = dangle_ds; % Y(7) --> Variation of the angle of the plume
+dy_ds(8) = dQ_ds; % Y(8) --> Variation of the heat flow rate
+dy_ds(9) = dP_ds; % Y(9) --> Variation of the atmospheric pressure with altitude

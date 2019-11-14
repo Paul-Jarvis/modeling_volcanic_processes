@@ -1,0 +1,225 @@
+function [out] = plumeModelMain()
+    
+    inp_var                         
+    
+    g = inp_var.
+    C_d = inp_var.
+    C_v = inp_var.
+    C_l = inp_var.
+    C_s = inp_var.
+    R_d = inp_var.
+    R_v = inp_var.
+    L = inp_var.
+    rho_l = inp_var.
+    rho_s = inp_var.
+    vent_Height = inp_var.
+    H1 = inp_var.
+    H2 = inp_var.
+    theta_a0 = inp_var.
+    P_0 = inp_var.
+    tempGrad_t = inp_var.
+    tempGrad_s = inp_var.
+    alpha = inp_var.
+    beta = inp_var.
+    u_0 = inp_var.
+    theta_0 = inp_var.
+    n_0 = inp_var.
+    mm_0 = inp_var.
+    r_h = inp_var.
+    z_max = inp_var.
+    radius_vent = inp_var.
+    omega = inp_var.
+    atmo_var =              
+                             
+    table_wind = atmo_var.table_wind;                                      % Local variable
+    table_temperature = atmo_var.table_temperature;
+    
+    % Derived parameters
+    rho_v0   = P_0/R_v/theta_0;
+    phi_s0   = (1 - n_0)*rho_v0/(n_0*rho_s+(1-n_0)*rho_v0);    
+    rho_B0   = (n_0/rho_v0 + (1-n_0)/rho_s)^(-1); % Bulk density?
+    phi_v0   = n_0*rho_s/(n_0*rho_s+(1-n_0)*rho_v0);
+    
+    % Evaluation of the mass flow rate: if radius_vent = 0, direct evaluation of the MFR
+    if (radius_vent == 0)
+        m_0 = mm_0;
+    else
+        m_0 = rho_B0*u_0*radius_vent^2;
+    end
+        
+    x_0 = 0;                            m_d0 = 0;
+    m_v0 = n_0*m_0;                     m_l0 = 0;
+    m_s0 = rho_s*phi_s0*m_0/rho_B0;     psi_0 = m_0*u_0;
+    angle_0 = 0.5*pi;                   C_B0 = (m_d0*C_d + m_v0*C_v + m_l0*C_l + m_s0*C_s)/m_0;
+    Q_0 = m_0*C_B0*theta_0;
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %                   solve system of ODE's
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Here we set the error tolerances for the ODE and the stop point for
+    % velocity = 0 m/s (see stopPlume.m file)
+    options = odeset('RelTol',1e-7,'AbsTol',1e-6,'Events',@(z,y) stopHybrid(y, ...
+                             C_d, ...
+                             C_v, ...
+                             C_l, ...
+                             C_s, ...
+                             R_d, ...
+                             R_v, ...
+                             H1,    ...
+                             H2,    ...
+                             theta_a0, ...
+                             tempGrad_t, ...
+                             tempGrad_s, ...
+                             m_s0,       ...
+                             r_h, ...
+                             atmo_var));
+        
+    Sspan = [vent_Height z_max];     IC = [x_0 vent_Height m_d0 m_v0 m_l0 psi_0 angle_0 Q_0 P_0]; % initial conditions
+
+    % Here we solve the ODE
+    odeSolution = ode45(@(s,y) odeHybrid(y, ...
+                             g, ...
+                             C_d, ...
+                             C_v, ...
+                             C_l, ...
+                             C_s, ...
+                             R_d, ...
+                             R_v, ...
+                             L,   ...
+                             H1,    ...
+                             H2,    ...
+                             theta_a0, ...
+                             tempGrad_t, ...
+                             tempGrad_s, ...
+                             alpha,      ...
+                             beta,       ...
+                             omega,      ...
+                             m_s0,       ...
+                             r_h, ...
+                             atmo_var),Sspan,IC,options);
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % End ODE solution
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Definition of other derived parameters
+    S         = odeSolution.x';
+    Y         = odeSolution.y';
+    x         = Y(:,1); % Y(1) --> x coordinate of the plume
+    z         = Y(:,2); % Y(2) --> z coordinate of the plume
+    height_t  = z(end);
+    m_d       = Y(:,3); % Y(3) --> Variation of the mass flow rate: dry air
+    m_v       = Y(:,4); % Y(4) --> Variation of the mass flow rate: water vapor
+    m_l       = Y(:,5); % Y(5) --> Variation of the mass flow rate: liquid water
+    m_s       = m_s0;
+    psi       = Y(:,6); % Y(6) --> Variation of the momentum
+    angle     = Y(:,7); % Y(7) --> Variation of the angle of the plume
+    Q         = Y(:,8); % Y(8) --> Variation of the heat flow rate
+    P         = Y(:,9); % Y(9) --> Variation of the atmospheric pressure with altitude
+    eps       = R_d/R_v;
+    m         = m_d + m_v + m_l + m_s; % mass flow rate (kg/s)
+    u         = psi./m;
+    C_B       = (m_d.*C_d + m_v.*C_v + m_l.*C_l + m_s.*C_s)./m; % Heat capacity of the plume
+    theta     = (1./C_B).*(Q./m);
+    rho_B     = (P./R_v./theta).*m./(m_v+eps.*m_d);
+    r         = (m./(rho_B.*u)).^(1/2);
+    Q_V       = pi*m./rho_B; % volume flow rate (m^3/s)
+    
+    % _____________________________________________________________________
+    
+    % Here we evaluate the ambient temperature and the wind velocity at
+    % each coordinate of the plume z
+    ambT = zeros(size(S));  Va = zeros(size(S));
+    for i=1:length(ambT)
+        ambT(i) = interp1(table_temperature(:,1),table_temperature(:,2),z(i)); % Atmosphere temperature evaluation 
+                                                                               % at the heights values provided byt the ODE solution: [m], [K]
+        Va(i) = interp1(table_wind(:,1),table_wind(:,2),z(i));                 % Wind evaluation at the heights values provided byt the ODE solution: [m], [m/s]
+    end
+    
+    % _____________________________________________________________________
+    
+    % Here we evaluate the humidity profiles of the amosphere at the z
+    % positions provided by the ODE solution
+    cd ../tools
+    [w_s, w_a, eps] = humidityManager(R_d, R_v, ambT, P, r_h);
+    cd ../plume
+    rho_aB    = P./(R_v.*ambT).*(1+w_a)./(w_a+eps);% Environmental density
+    
+    % _____________________________________________________________________
+    
+    % Here we evaluate the timescales for the rising of the plume
+    u_verti = u.*sin(angle);    z_verti = z;
+    idx_cont = 1;               idx_start = 10; % This parameter describes the first ending time for the evaluation of the timescale. 
+                                                % It is not in seconds, it is in elements of vector "z"
+    for i=idx_start:length(z_verti)
+        time(idx_cont) = getTimeScales(z_verti(1:i), u_verti(1:i));
+        z_verti_plot(idx_cont) = z_verti(i);
+        time_seconds(idx_cont) = time(idx_cont);
+        time_minutes(idx_cont) = time(idx_cont)/60;
+        idx_cont = idx_cont+1;
+    end
+    % _____________________________________________________________________
+    
+    % Evaluation of the plume information at the neutral buoyancy level.
+    % The event "neutral buoyancy level" is reached when:
+    % "density of the plume = density of the atmosphere"
+        
+    h_nbl         = odeSolution.xe(2);
+    x_nbl         = odeSolution.ye(1,2);
+    z_nbl         = odeSolution.ye(2,2);
+    m_d_nbl       = odeSolution.ye(3,2);                                   % mass flow rate dry air/pi - @ NBL
+    m_v_nbl       = odeSolution.ye(4,2);                                   % mass flow rate of water vapor/pi - @ NBL
+    m_l_nbl       = odeSolution.ye(5,2);                                   % mass flow rate liquid water/pi - @ NBL
+    m_s_nbl       = m_s0;                                                  % mass flow rate solids/pi - @ NBL
+    m_nbl         = m_d_nbl + m_v_nbl + m_l_nbl + m_s_nbl;                 % mass flow rate (kg/s) / pi - @ NBL
+    psi_nbl       = odeSolution.ye(6,2);
+    angle_nbl     = odeSolution.ye(7,2);
+    Q_nbl         = odeSolution.ye(8,2);
+    P_nbl         = odeSolution.ye(9,2);
+    eps_nbl       = R_d/R_v;
+    u_nbl         = psi_nbl./m_nbl;
+    C_B_nbl       = (m_d_nbl.*C_d + m_v_nbl.*C_v + m_l_nbl.*C_l + m_s_nbl.*C_s)./m_nbl;
+    theta_nbl     = (1./C_B_nbl).*(Q_nbl./m_nbl);
+    rho_B_nbl     = (P_nbl./R_v./theta_nbl).*m_nbl./(m_v_nbl+eps_nbl.*m_d_nbl);
+    r_nbl         = (m_nbl./(rho_B_nbl.*u_nbl)).^(1/2);
+    Q_V_nbl = pi.*m_nbl./rho_B_nbl; % volume flow rate (m^3/s)
+    
+%     disp('volume flow rate (m^3/s)')
+%     disp(Q_V_nbl)
+%     disp('mass flow rate at the nbl (kg/s)')
+%     disp(pi*m_nbl)
+%     disp('nbl height (m)')
+%     disp(h_nbl)   
+    
+    % Preparing the output
+    
+    out.col_Height = z(end);                                                % Maximum height of the plume (beyond NBL): [m]
+    out.nbl_Height = pi*m_nbl;                                              % Height of the NBL: [m]
+    out.volFlowRate = Q_V_nbl;                                             % Volume flow rate at the NBL: [m^3/s]
+    out.u = u;                                                             % Velocity of the plume at different heights: [m/s]
+    out.angle = angle;                                                     % Angle of the plume(?)
+    out.z = z;                                                             % Total heights reached by the plume in the ODE: [m]
+    out.z_partial = z_verti_plot;                                          % Partial heights starting from idx_start: [m]
+    out.rho_B = rho_B;                                                     % Density of the plume: [kg/m^3]
+    out.rho_aB = rho_aB;                                                   % Density of the atmosphere: [kg/m^3]
+    out.time_seconds = time_seconds;                                       % Different times at which the plume reaches different heights: [s]
+    out.height = z(idx_start:end);                                         % Different heights reached by the plume in the ODE at the specific times: [m]
+    out.mass_dry = pi.*m_d(idx_start:end);                                 % Mass of dry air contained in the plume: [kg]
+    out.mass_vapor = pi.*m_v(idx_start:end);                               % Mass of the vapor contained in the plume: [kg]
+    out.mass_liquid = pi.*m_l(idx_start:end);                              % Mass of the liquid fraction contained in the plume: [kg]
+    out.mass_solid = pi.*m_s(idx_start:end);                               % Mass of the solid fraction contained in the plume: [kg]
+    out.vertical_veloxity = u(idx_start:end).*sin(angle(idx_start:end));   % Vertical component of the plume velocity starting from z = idx_start: [m/s]
+    out.temperature = theta(idx_start:end);                                % Temperature of the plume starting from z = idx_start: [K] 
+    out.radius = r(idx_start:end);                                         % Radius of the plume starting from z = idx_start: [K]
+    out.density = rho_B(idx_start:end);                                    % Density of the plume starting from z = idx_start: [kg/m^3]
+    out.ambientdensity = rho_aB(idx_start:end);                            % Density of the plume starting from z = idx_start: [kg/m^3]
+    out.ambientwind = Va(idx_start:end);                                   % Wind velocity starting from z = idx_start: [m/s]
+    out.ambientT = ambT(idx_start:end);                                    % Ambient temperature starting from z = idx_start: [K]
+    out.m_d = m_d;                                                         % Mass of dry air inside the plume at different z-heights: [Kg/s]
+    out.m_v = m_v;                                                         % Mass of water vapor inside the plume at ALL different z-heights: [Kg/s]
+    out.m_l = m_l;                                                         % Mass of liquid water inside the plume at ALL different z-heights: [Kg/s]
+    out.m_s = m_s;                                                         % Mass of soli fraction inside the plume at ALL different z-heights: [Kg/s]
+    out.theta = theta;                                                     % Plume temperature at ALL different z-heights: [K]
+    out.r = r;                                                             % Radius of the plume at ALL different z-heights: [m]
+    
+end

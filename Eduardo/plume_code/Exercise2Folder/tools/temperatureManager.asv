@@ -1,0 +1,39 @@
+function table_temperature = temperatureManager(inp_var)
+
+
+    % This function provides the shape of the temperature profile
+    % H1 = tropopause height
+    % H2 = stratopause height
+    % z = total height from 0 to 100 km (meters)
+    % theta_a0 = temperature at the vent (K)
+    % temp_Grad_Tropo = temperature gradient in the troposphere (K)
+    % temp_Grad_Strato = temperature gradient in the troposphere (K)
+    
+    theta_a0 = inp_var.theta_a0;                                           % Local variables
+    temp_Grad_Tropo = inp_var.temp_Grad_Tropo;
+    temp_Grad_Strato = inp_var.temp_Grad_Strato;
+    z_0 = inp_var.z_0;
+    z_max = inp_var.z_max;
+    N_points = inp_var.N_points;
+    H1 = inp_var.H1;
+    H2 = inp_var.H2;
+    z = linspace(z_0,z_max,N_points);
+    table_temperature = Woods1988(theta_a0, temp_Grad_Tropo, temp_Grad_Strato, z, H1, H2);
+
+end
+
+% Temperature profile defined by (Woods, 1988)
+function table_temperature = Woods1988(theta_a0, temp_Grad_Tropo, temp_Grad_Strato, z, H1, H2)
+
+    for i=1:length(z)
+        table_temperature(i,1) = z(i);
+        if (z(i) <= H1)
+            table_temperature(i,2) = theta_a0 + temp_Grad_Tropo*z(i);
+        elseif (z(i)>H1) && (z(i)<=H2)
+            table_temperature(i,2) = theta_a0 + temp_Grad_Tropo*H1;
+        else
+            table_temperature(i,2) = theta_a0 + temp_Grad_Tropo*H1 + temp_Grad_Strato*(z(i)-H2);
+        end
+    end
+
+end
