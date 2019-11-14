@@ -1,0 +1,10 @@
+#Gnuplot script to plot two hydrostatic pressure profiles
+
+set terminal pdf
+
+set output 'hydrostat.pdf'
+
+set yrange[1:0]
+set xrange[0:1]
+
+plot x 

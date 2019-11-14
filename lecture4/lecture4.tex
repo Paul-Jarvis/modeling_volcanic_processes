@@ -1,0 +1,424 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+
+\setbeamertemplate{frametitle}[default][center]
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{multimedia}
+%\usepackage{movie15}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsfonts}
+\usepackage{epstopdf}
+\usepackage{bigints}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{mathrsfs}
+\usepackage{color}
+\usepackage[outline]{contour}
+\usepackage{multirow}
+
+\contourlength{1pt}
+
+\newcommand\Bo{\mbox{\textit{Bo}}}  % Bond number
+\newcommand\Rey{\mbox{\textit{Re}}}  % Reynolds number
+\newcommand\Ri{\mbox{\textit{Ri}}}  % Richardson number
+
+\def\Xint#1{\mathchoice
+{\XXint\displaystyle\textstyle{#1}}%
+{\XXint\textstyle\scriptstyle{#1}}%
+{\XXint\scriptstyle\scriptscriptstyle{#1}}%
+{\XXint\scriptscriptstyle\scriptscriptstyle{#1}}%
+\!\int}
+\def\XXint#1#2#3{{\setbox0=\hbox{$#1{#2#3}{\int}$}
+\vcenter{\hbox{$#2#3$}}\kern-.5\wd0}}
+\def\ddashint{\Xint=}
+\def\dashint{\Xint-}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Modeling volcanic processes]{Gravity currents in volcanology} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author[Paul Jarvis]{Paul A. Jarvis} % Your name
+\institute[UNIGE] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+\textit{paul.jarvis@unige.ch} % Your email address
+}
+\date{22nd November 2019} % Date, can be changed to a custom date
+\begin{columns}
+
+  \begin{column}{0.33\paperwidth}
+    $$\includegraphics[width=0.3\paperwidth]{UNIGE_logo.jpg}$$
+  \end{column}
+
+  \begin{column}{0.33\paperwidth}
+    $$\includegraphics[width=0.3\paperwidth]{redoubt.jpg}$$
+  \end{column}
+
+  \begin{column}{0.33\paperwidth}
+    $$\includegraphics[width=0.3\paperwidth]{etna.jpg}$$
+  \end{column}
+  
+\end{columns}
+\vspace{-2cm}
+
+\DeclareMathOperator\erf{erf}
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%\begin{frame}
+%\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+%\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+%\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+%\section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+%\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+\begin{frame}
+  \frametitle{Volcanic flows}
+
+  \vspace{-0.6cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \centering \textbf{Lava flows}
+
+      \vspace{-0.6cm}
+      
+      $$\includegraphics[width=0.8\textwidth]{flow.jpg}$$
+
+      \vspace{-0.5cm}
+
+      \textbf{Pyroclastic density currents (PDCs)}
+
+      \vspace{-0.6cm}
+
+      $$\includegraphics[width=0.8\textwidth]{pdc.jpg}$$      
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \centering \textbf{Cloud spreading}
+
+      \vspace{-0.6cm}
+
+      $$\includegraphics[width=0.8\textwidth]{redoubt.jpg}$$
+
+      \vspace{-0.5cm}
+
+      \textbf{Lahars}
+
+      \vspace{-0.6cm}
+
+      $$\includegraphics[width=0.8\textwidth]{lahar.jpg}$$
+      
+    \end{column}
+    
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Hydrostatic gradients}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \vspace{-1cm}
+      
+      $$\includegraphics[width=0.8\textwidth]{column.png}$$
+
+      Consider horizontal plane at depth $z$ \\
+
+      What are the forces acting on this plane? \\
+
+      \begin{itemize}
+      \item \textbf{Weight} of overlying fluid \\
+        \vspace{-0.5cm}
+        $$ W = \rho A z g$$
+      \item Balanced by \textbf{hydrostatic pressure} \\
+        \vspace{-0.5cm}
+        $$ F_{\text{p}} = P A $$
+      \end{itemize}
+    \end{column}
+
+    \begin{column}{0.49\paperwidth}
+
+      \vspace{-0.5cm}
+      
+      Consider a volume of fluid of :
+
+      \begin{itemize}
+      \item Density $\rho$ \\
+      \item Height $H$ \\
+      \item Horizontal cross section $A$ \\
+      \end{itemize}
+
+      $z$ = Negative vertical coordinate (depth below top surface) \\
+
+      $$\includegraphics[width=0.8\textwidth]{column_xsec.png}$$
+      
+    \end{column}
+
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Hydrostatic gradients}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      Nothing is moving $\implies$ \textbf{Mechanical equilibrium} \\
+
+      $$ W = F_{\text{p}} $$
+
+      $$ P = \rho g z $$
+
+      $$\includegraphics[width=0.8\textwidth]{hydrostat_1fluid.pdf}$$
+      
+    \end{column}
+
+    \begin{column}{0.49\paperwidth}
+
+      $$\includegraphics[width=0.8\textwidth]{column_xsec.png}$$
+
+      $P$ increases linearly with $z$ \\
+
+      \vspace{0.5cm}
+      
+      \textbf{Hydrostatic gradient}:
+
+      $$ \frac{\mathrm{d} P}{\mathrm{d} z} = \rho g $$
+    \end{column}
+
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Hydrostatic gradients}
+
+  \textbf{Gravity current} - A horizontal flow in a gravitational field that is driven by a density difference \\
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \vspace{-1cm}
+      
+      $$\includegraphics[width=0.8\textwidth]{isostatic.png}$$
+
+      \vspace{-1cm}
+      
+      $$\includegraphics[width=0.8\textwidth]{hydrostat.pdf}$$
+      
+    \end{column}
+
+    \begin{column}{0.49\paperwidth}
+
+      \vspace{-0.5cm}
+      
+      Consider two fluids (densities $\rho_{1}$ and $\rho_{2}$, $\rho_{1} > \rho_{2}$) initially side-by-side and separated by a vertical barrier \\
+
+      Vertical pressure gradient:
+
+      $$ \frac{\mathrm{d} P}{\mathrm{d} z} = \rho g$$
+
+      $$ \mathrm{d} P = \rho g \mathrm{d}z $$
+
+      $$ \int_{0}^{P} \mathrm{d} P = \rho g \int_{0}^{z} \mathrm{d} z $$
+
+      $$ P = \rho g z$$
+    \end{column}
+
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Horizontal force balance}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \vspace{-1cm}
+      
+      $$\includegraphics[width=0.8\textwidth]{isostatic.png}$$
+
+      \vspace{-1cm}
+      
+      $$\includegraphics[width=0.8\textwidth]{hydrostat_diff.pdf}$$
+      
+    \end{column}
+
+    \begin{column}{0.49\paperwidth}
+
+      \vspace{-0.5cm}
+
+      Remove barrier, and consider pressure difference $\Delta P$ across line \\
+
+      \vspace{0.1cm}
+
+      $\Delta P$ increases with depth \\
+
+      \vspace{0.1cm}
+
+      Flow follows a pressure gradient - but horizontal pressure gradient is greatest at the depth \\
+
+      \vspace{0.1cm}
+
+      This initiates from from high to low pressure at the base, which is compensated by return flow at the top \\
+
+      \vspace{-0.5cm}
+      
+      $$\includegraphics[width=0.8\textwidth]{grav_curr.png}$$
+      
+    \end{column}
+
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Energy minimisation}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$\includegraphics[width=0.8\textwidth]{isostatic.png}$$
+      
+    \end{column}
+
+    \begin{column}{0.49\paperwidth}
+
+      $$\includegraphics[width=0.8\textwidth]{stratified.png}$$
+      
+    \end{column}
+
+  \end{columns}
+
+  Gravitational potential energy = $U = g \int_{0}^{H} \rho \mathrm{d} z$
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ U = \frac{g (\rho_{1} + \rho_{2}) H}{2} $$
+      
+    \end{column}
+
+    \begin{column}{0.49\paperwidth}
+
+      $$ U = \frac{g (\rho_{1} + \rho_{2}) H}{2} $$
+      
+      
+    \end{column}
+
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+
+
+
+\end{document}
