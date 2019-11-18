@@ -116,7 +116,7 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Modeling volcanic processes]{Gravity currents in volcanology} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[Modeling volcanic processes]{Gravity currents} % The short title appears at the bottom of every slide, the full title is only on the title page
 
 \author[Paul Jarvis]{Paul A. Jarvis} % Your name
 \institute[UNIGE] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
@@ -379,43 +379,561 @@
 \end{frame}
 %-----------------------------------------------
 \begin{frame}
-  \frametitle{Gravity currents - Energy minimisation}
+  \frametitle{Gravitational potential energy (GPE)}
 
   \begin{columns}[t]
 
     \begin{column}{0.5\paperwidth}
 
-      $$\includegraphics[width=0.8\textwidth]{isostatic.png}$$
+      $$\includegraphics[width=0.8\textwidth]{column_energy.png}$$
       
     \end{column}
 
     \begin{column}{0.49\paperwidth}
 
-      $$\includegraphics[width=0.8\textwidth]{stratified.png}$$
+      GPE of thin layer:
+
+      $$\mathrm{d} U = \rho A \mathrm{d}z  g z = \rho g A z \mathrm{d} z$$ \\
+
+      GPE of total column:
+
+      $$U = \int_{z = 0}^{H} \mathrm{d}U  $$
+
+      $$ U = \rho g A \int_{z = 0}^{H} z \mathrm{d} z $$
+
+      $$ U = \rho g A \left[ \frac{z}{2} \right]_{z = 0}^{H} $$
+
+      $$ U = \frac{\rho g A H^{2}}{2} $$
+    \end{column}
+
+  \end{columns}
+
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Energy minimisation}
+
+  Initial state:
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.45\paperwidth}
+
+      $$\includegraphics[width=0.9\textwidth]{isostatic.png}$$
+      
+    \end{column}
+
+    \begin{column}{0.55\paperwidth}
+
+      \vspace{-1cm}
+
+      GPE of thin layer:
+
+      $$\mathrm{d} U = \frac{(\rho_{1} + \rho_{2}) A \mathrm{d}z  g z}{2} = \frac{(\rho_{1} + \rho_{2}) g A z \mathrm{d} z}{2}$$ \\
+
+      GPE of total column:
+
+      $$U_{i} = \int_{z = 0}^{H} \mathrm{d}U  $$
+
+      $$ U_{i} = \frac{(\rho_{1} + \rho_{2}) g A}{2} \int_{z = 0}^{H} z \mathrm{d} z $$
+
+      $$ U_{i} = \frac{(\rho_{1} + \rho_{2}) g A}{2} \left[ \frac{z}{2} \right]_{z = 0}^{H} $$
+
+      $$ U_{i} = \frac{(\rho_{1} + \rho_{2}) g A H^{2}}{4} $$
       
     \end{column}
 
   \end{columns}
 
-  Gravitational potential energy = $U = g \int_{0}^{H} \rho \mathrm{d} z$
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Energy minimisation}
+
+  Final state:
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.4\paperwidth}
+
+      $$\includegraphics[width=\textwidth]{stratified.png}$$
+      
+    \end{column}
+
+    \begin{column}{0.6\paperwidth}
+
+      \vspace{-1cm}
+
+      $$ U_{f} = g A \left( \rho_{1} \int_{z = 0}^{H / 2} z \mathrm{d} z + \rho_{2} \int_{z = H / 2}^{H} z \mathrm{d} z \right)$$
+
+      $$ U_{f} = g A \left(\rho_{1} \left[ \frac{z^{2}}{2} \right]_{z = 0}^{H / 2} + \rho_{2} \left[ \frac{z^{2}}{2} \right]_{z = H / 2}^{H} \right) $$
+
+      $$ U_{f} = \frac{g A}{2} \left[ \frac{\rho_{1} H^{2}}{4} + \rho_{2} \left(H^{2} - \frac{H^{2}}{4} \right) \right] $$
+
+      $$ U_{f} = \frac{g A H^{2}}{2} \left( \frac{\rho_{1}}{4} + \frac{3 \rho_{2}}{4} \right) = \frac{g A H^{2} (\rho_{1} + 3 \rho_{2})}{8} $$ 
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Energy minimisation}
+
+  \vspace{-0.5cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \centering Initial state
+
+      \vspace{-0.5cm}
+
+      $$\includegraphics[width=0.9\textwidth]{isostatic.png}$$
+      
+      \vspace{-0.5cm}
+
+      $$ U_{i} = \frac{(\rho_{1} + \rho_{2}) g A H^{2}}{4} $$
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \centering Final state
+
+      \vspace{-0.5cm}
+
+      $$\includegraphics[width=0.9\textwidth]{stratified.png}$$
+      
+      \vspace{-0.5cm}
+
+      $$ U_{f} = \frac{g A H^{2} (\rho_{1} + 3 \rho_{2})}{8} $$ 
+    \end{column}
+
+  \end{columns}
+
+  \vspace{0.5cm}
+
+  $$ U_{f} - U_{i} = \frac{g A H^{2}}{4} \left(\frac{\rho_{1}}{2} + \frac{3 \rho_{2}}{2} - \rho_{1} - \rho_{2} \right) $$
+
+  $$ U_{f} - U_{i} = \frac{g A H^{2}}{4} \left( \frac{\rho_{2} - \rho_{1}}{2} \right) = \frac{g A H^{2} (\rho_{2} - \rho_{1})}{8} $$
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Energy minimisation}
+
+  \vspace{-0.5cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \centering Initial state
+
+      \vspace{-0.5cm}
+
+      $$\includegraphics[width=0.9\textwidth]{isostatic.png}$$
+      
+      \vspace{-0.5cm}
+
+      $$ U_{i} = \frac{(\rho_{1} + \rho_{2}) g A H^{2}}{4} $$
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \centering Final state
+
+      \vspace{-0.5cm}
+
+      $$\includegraphics[width=0.9\textwidth]{stratified.png}$$
+      
+      \vspace{-0.5cm}
+
+      $$ U_{f} = \frac{g A H^{2} (\rho_{1} + 3 \rho_{2})}{8} $$ 
+    \end{column}
+
+  \end{columns}
+
+  \vspace{0.5cm}
+
+  $$ U_{f} - U_{i} = \frac{g A H^{2}}{4} \left(\frac{\rho_{1}}{2} + \frac{3 \rho_{2}}{2} - \rho_{1} - \rho_{2} \right) $$
+
+  $$ U_{f} - U_{i} = \frac{g A H^{2}}{4} \left( \frac{\rho_{2} - \rho_{1}}{2} \right) = \frac{g A H^{2} (\rho_{2} - \rho_{1})}{8} $$
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Box models}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.4\paperwidth}
+
+      \vspace{-0.5cm}
+      
+      $$\includegraphics[width=0.7\textwidth]{box_model.png}$$
+      
+    \end{column}
+
+    \begin{column}{0.59\paperwidth}
+
+      Assume:
+
+      \begin{itemize}
+      \item Volume of current is conserved \\
+      \item Current is always rectangular \\
+      \item Energy is always conserved$^{*}$ \\
+      \end{itemize}
+
+      Energy balance between kinetic energy and change in GPE shows
+
+      $$ V = \left(\frac{(\rho_{\text{c}} - \rho_{\text{e}}) g H}{2 \rho_{\text{c}}} \right)^{1/2}$$
+
+      \vspace{0.5cm}
+      
+      $^{*}$ Means assume energy only exists as kinetic of GPE. What other types of energy are there?
+      
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Reduced gravity}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.4\paperwidth}
+
+      \vspace{-0.5cm}
+      
+      $$\includegraphics[width=0.7\textwidth]{box_model.png}$$
+      
+    \end{column}
+
+    \begin{column}{0.59\paperwidth}
+
+      If envrionment is air, then often $\rho_{\text{e}} \ll \rho_{\text{c}}$ \\
+      
+      $$ V = \left(\frac{(\rho_{\text{c}} - \rho_{\text{e}}) g H}{2 \rho_{\text{c}}} \right)^{1/2} \approx \frac{(g H)^{1/2}}{2} $$
+
+      Therefore, we see that $(\rho_{\text{c}} - \rho_{\text{e}}) / \rho_{\text{c}}$ is factor by which envrionmental fluid reduced gravitational acceleration \\
+
+      Define \textbf{reduced gravity}:
+
+      $$ g' = \frac{\rho_{\text{c}} - \rho_{\text{e}}}{\rho_{\text{c}}}$$
+
+      So generally:
+
+      $$ V = \frac{(g'H)^{1/2}}{2} $$
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Froude number}
+
+  \textbf{Froude number}:
+
+  $$ \text{Fr} = \frac{V}{(g'H)^{1/2}} $$
+
+  Represents ratio of inertial ($U$) to buoyancy ($(g'H)^{1/2}$) forces \\
+
+  \vspace{1cm}
+  
+  For an ideal gravity current $V = (g' H)^{1/2} / 2$ so:
+
+  $$ \text{Fr} = \frac{1}{2} $$
+
+  Measuring $\text{Fr}$ gives a means of testing model assumptions \\
+
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Dimensionless numbers}
+
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Froude & $\text{Fr}$ & $\frac{V}{(g'H)^{1/2}}$ & Inertia and buoyancy forces\\
+    Capillary & $\text{Ca}$ & $\frac{\eta V r}{\sigma}$ & Viscous and surface tension forces \\
+    \hline
+  \end{tabular}
+
+  Can use values of these quantities to define different fluid dynamical regimes \\
+
+  \textbf{Reynolds number} - Ratio of inertial and viscous forces within a fluid \\
+
+  $$ \text{Re} = \frac{\rho V L}{\eta}$$
 
   \begin{columns}[t]
 
     \begin{column}{0.5\paperwidth}
 
-      $$ U = \frac{g (\rho_{1} + \rho_{2}) H}{2} $$
+      \centering
+      
+      $\rho$ = Fluid density \\
+
+      $V$ = Fluid velocity
       
     \end{column}
 
-    \begin{column}{0.49\paperwidth}
+    \begin{column}{0.5\paperwidth}
 
-      $$ U = \frac{g (\rho_{1} + \rho_{2}) H}{2} $$
+      \centering
       
+      $L$ = Lengthscale \\
+
+      $\eta$ = Viscosity 
+    \end{column}
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Reynolds number}
+
+  $$ \text{Re} = \frac{\rho V L}{\eta}$$
+
+  \vspace{-1cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \centering
+      
+      $$ \text{Re} \ll \text{Re}_{\text{c}}$$
+
+      \textbf{Laminar flow}
+
+      Fluid particles follow smooth paths in layers, with little or no mixing between different layers \\
+
+      $$\includegraphics[width=0.45\textwidth, angle=90]{laminar.png}$$
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \centering
+      
+      $$ \text{Re} \gg \text{Re}_{\text{c}}$$
+
+      \textbf{Turbulent flow}
+
+      Chaotic changes in pressure and flow velocity, generating unsteady vortices \\
+
+      \vspace{0.5cm}
+      
+      $$\includegraphics[width=0.4\textwidth, angle=90]{turbulent.png}$$
+      
+    \end{column}
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Reynolds number}
+
+  What are the Reynolds numbers for these scenarios?
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.33\paperwidth}
+
+      $$\includegraphics[width=0.9\textwidth]{settling_sphere.png}$$
+      
+    \end{column}
+
+    \begin{column}{0.33\paperwidth}
+
+      $$\includegraphics[width=0.9\textwidth]{visible.png}$$
+      
+    \end{column}
+
+    \begin{column}{0.33\paperwidth}
+
+      $$\includegraphics[width=0.9\textwidth]{lava.jpg}$$
+      
+    \end{column}
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Low-Reynolds number gravity currents}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.66\paperwidth}
+
+      \vspace{-1cm}
+      
+      $$\includegraphics[width=0.9\textwidth]{lava_morph.jpg}$$
+      
+    \end{column}
+
+    \begin{column}{0.33\paperwidth}
+
+      For fixed release volume, viscous dissipation continuosly reduces $V$ \\
+
+      \vspace{0.5cm}
+      
+      Varying slope angle and flow rate produces different flow morphologies \\
+    \end{column}
+  \end{columns}
+
+  For a 2D current:
+
+  \begin{columns}[t]
+
+    \begin{column}{0.66\paperwidth}
+
+      \vspace{-1cm}
+      
+      $$\includegraphics[width=0.9\textwidth]{viscous_grav_curr}$$
+      
+    \end{column}
+
+    \begin{column}{0.33\paperwidth}
+
+      $$ x \sim t^{4/5} $$
+    \end{column}
+  \end{columns}
+  
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{High-Reynolds number gravity currents}
+
+  For $\text{Re} > 1000$, $\text{Re}$ has no effect on flow \\
+  
+  Can neglect viscous dissipation $\implies V = (g'H)^{1/2}/2$
+
+  $$ g' = 0.06 $$
+  \movie{\includegraphics[width=\textwidth]{GC3.png}}{GC3.mp4}
+
+  $$ g' = 0.16 $$  
+  \movie{\includegraphics[width=\textwidth]{GC9.png}}{GC9.mp4}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{High-Reynolds number gravity currents - mixing}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.66\paperwidth}
+
+      \vspace{-1cm}
+      
+      $$\includegraphics[width=0.6\textwidth]{mixing.png}$$
+      
+    \end{column}
+
+    \begin{column}{0.33\paperwidth}
+
+      Two types of mixing:
+
+      \begin{itemize}
+      \item \textbf{Billowing} - Formed by shear between current and environment \\
+      \item \textbf{Lobes and clefts} - Formed by interaction with ground at contact line \\
+      \end{itemize}
+    \end{column}
+
+  \end{columns}
+
+  Mixing in fluid reduced density contrast 
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Constant volume release - Constant speed phase}
+
+  \movie{\includegraphics[width=\textwidth]{GC3.png}}{GC3.mp4}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$\includegraphics[width=0.9\textwidth]{front_pos.pdf}$$
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      $$\includegraphics[width=0.9\textwidth]{Froude.pdf}$$
       
     \end{column}
 
   \end{columns}
   
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Constant volume release - Self-similar phase}
+
+  $$\includegraphics[width=0.9\textwidth]{self_similar_bore.png}$$
+
+  \vspace{-0.5cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.33\paperwidth}
+
+      \centering Constant speed
+
+      \vspace{-0.5cm}
+      
+      $$ x \sim t $$
+    \end{column}
+
+    \begin{column}{0.33\paperwidth}
+
+      \centering Self-similar
+
+      \vspace{-0.5cm}
+      
+      $$ x \sim t^{2/3} $$
+    \end{column}
+
+    \begin{column}{0.33\paperwidth}
+
+      \centering Viscous
+
+      \vspace{-0.5cm}
+      
+      $$ x \sim t^{1/5} $$
+    \end{column}
+    
+  \end{columns}
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Constant volume release - Radial collapse}
+
+  $$ r \sim t^{1/2} $$
+  
+  $$\includegraphics[width=0.7\textwidth]{radial_curr.png}$$
+
+\end{frame}
+%-----------------------------------------------
+
+\begin{frame}
+  \frametitle{Constant radial volume flow}
+
+  $$ r \sim Q^{1/3} t^{1/2} $$
+  
+  $$\includegraphics[width=0.7\textwidth]{radial_flux.png}$$
+
 \end{frame}
 %-----------------------------------------------
 

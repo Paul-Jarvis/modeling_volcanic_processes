@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  14 NOV 2019 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  18 NOV 2019 17:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1046,18 +1046,182 @@ Package pdftex.def Info: grav_curr.png  used on input line 379.
  [6
 
  <./hydrostat_diff.pdf> <./grav_curr.png>]
-File: isostatic.png Graphic file (type png)
-<use isostatic.png>
-Package pdftex.def Info: isostatic.png  used on input line 419.
-(pdftex.def)             Requested size: 145.67868pt x 64.98259pt.
-<stratified.png, id=241, 650.1891pt x 290.0436pt>
-File: stratified.png Graphic file (type png)
-<use stratified.png>
-Package pdftex.def Info: stratified.png  used on input line 419.
-(pdftex.def)             Requested size: 142.76671pt x 63.68587pt.
+<column_energy.png, id=242, 642.7212pt x 397.0032pt>
+File: column_energy.png Graphic file (type png)
+<use column_energy.png>
+Package pdftex.def Info: column_energy.png  used on input line 412.
+(pdftex.def)             Requested size: 145.67868pt x 89.98216pt.
  [7
 
+ <./column_energy.png>]
+File: isostatic.png Graphic file (type png)
+<use isostatic.png>
+Package pdftex.def Info: isostatic.png  used on input line 450.
+(pdftex.def)             Requested size: 147.4971pt x 65.79692pt.
+
+Overfull \vbox (2.8614pt too high) detected at line 450
+ []
+
+[8
+
+]
+<stratified.png, id=298, 650.1891pt x 290.0436pt>
+File: stratified.png Graphic file (type png)
+<use stratified.png>
+Package pdftex.def Info: stratified.png  used on input line 480.
+(pdftex.def)             Requested size: 145.67592pt x 64.98259pt.
+ [9
+
  <./stratified.png>]
+File: isostatic.png Graphic file (type png)
+<use isostatic.png>
+Package pdftex.def Info: isostatic.png  used on input line 523.
+(pdftex.def)             Requested size: 163.88678pt x 73.10818pt.
+File: stratified.png Graphic file (type png)
+<use stratified.png>
+Package pdftex.def Info: stratified.png  used on input line 523.
+(pdftex.def)             Requested size: 163.88678pt x 73.10818pt.
+ [10
+
+]
+File: isostatic.png Graphic file (type png)
+<use isostatic.png>
+Package pdftex.def Info: isostatic.png  used on input line 566.
+(pdftex.def)             Requested size: 163.88678pt x 73.10818pt.
+File: stratified.png Graphic file (type png)
+<use stratified.png>
+Package pdftex.def Info: stratified.png  used on input line 566.
+(pdftex.def)             Requested size: 163.88678pt x 73.10818pt.
+ [11
+
+]
+<box_model.png, id=380, 856.3995pt x 1358.4351pt>
+File: box_model.png Graphic file (type png)
+<use box_model.png>
+Package pdftex.def Info: box_model.png  used on input line 603.
+(pdftex.def)             Requested size: 101.97269pt x 161.74077pt.
+ [12
+
+ <./box_model.png>]
+File: box_model.png Graphic file (type png)
+<use box_model.png>
+Package pdftex.def Info: box_model.png  used on input line 637.
+(pdftex.def)             Requested size: 101.97269pt x 161.74077pt.
+ [13
+
+] [14
+
+] [15
+
+]
+<laminar.png, id=491, 371.9496pt x 768.9528pt>
+File: laminar.png Graphic file (type png)
+<use laminar.png>
+Package pdftex.def Info: laminar.png  used on input line 740.
+(pdftex.def)             Requested size: 81.94339pt x 169.4048pt.
+<turbulent.png, id=492, 343.7643pt x 858.3267pt>
+File: turbulent.png Graphic file (type png)
+<use turbulent.png>
+Package pdftex.def Info: turbulent.png  used on input line 740.
+(pdftex.def)             Requested size: 72.83795pt x 181.86485pt.
+
+[16
+
+ <./laminar.png> <./turbulent.png>]
+<settling_sphere.png, id=521, 371.4678pt x 514.3215pt>
+File: settling_sphere.png Graphic file (type png)
+<use settling_sphere.png>
+Package pdftex.def Info: settling_sphere.png  used on input line 768.
+(pdftex.def)             Requested size: 108.16588pt x 149.76155pt.
+<visible.png, id=522, 724.7075pt x 738.76pt>
+File: visible.png Graphic file (type png)
+<use visible.png>
+Package pdftex.def Info: visible.png  used on input line 768.
+(pdftex.def)             Requested size: 108.16588pt x 110.25685pt.
+<lava.jpg, id=523, 308.352pt x 209.1012pt>
+File: lava.jpg Graphic file (type jpg)
+<use lava.jpg>
+Package pdftex.def Info: lava.jpg  used on input line 768.
+(pdftex.def)             Requested size: 108.16588pt x 73.34923pt.
+ [17
+
+ <./settling_sphere.png> <./visible.png (PNG copy)> <./lava.jpg>]
+<lava_morph.jpg, id=551, 697.6464pt x 350.2686pt>
+File: lava_morph.jpg Graphic file (type jpg)
+<use lava_morph.jpg>
+Package pdftex.def Info: lava_morph.jpg  used on input line 812.
+(pdftex.def)             Requested size: 216.33177pt x 108.61421pt.
+<viscous_grav_curr.png, id=552, 862.6629pt x 330.9966pt>
+File: viscous_grav_curr.png Graphic file (type png)
+<use viscous_grav_curr.png>
+Package pdftex.def Info: viscous_grav_curr.png  used on input line 812.
+(pdftex.def)             Requested size: 216.33177pt x 83.00146pt.
+ [18
+
+ <./lava_morph.jpg> <./viscous_grav_curr.png>]
+<GC3.png, id=580, 1860.9525pt x 317.185pt>
+File: GC3.png Graphic file (type png)
+<use GC3.png>
+Package pdftex.def Info: GC3.png  used on input line 827.
+(pdftex.def)             Requested size: 342.2953pt x 58.33951pt.
+<GC9.png, id=582, 1842.885pt x 311.1625pt>
+File: GC9.png Graphic file (type png)
+<use GC9.png>
+Package pdftex.def Info: GC9.png  used on input line 827.
+(pdftex.def)             Requested size: 342.2953pt x 57.79205pt.
+
+[19
+
+ <./GC3.png (PNG copy)> <./GC9.png (PNG copy)>]
+<mixing.png, id=612, 732.7375pt x 898.35625pt>
+File: mixing.png Graphic file (type png)
+<use mixing.png>
+Package pdftex.def Info: mixing.png  used on input line 856.
+(pdftex.def)             Requested size: 144.22362pt x 176.81683pt.
+ [20
+
+ <./mixing.png>]
+File: GC3.png Graphic file (type png)
+<use GC3.png>
+Package pdftex.def Info: GC3.png  used on input line 879.
+(pdftex.def)             Requested size: 342.2953pt x 58.33951pt.
+<front_pos.pdf, id=641, 361.35pt x 252.945pt>
+File: front_pos.pdf Graphic file (type pdf)
+<use front_pos.pdf>
+Package pdftex.def Info: front_pos.pdf  used on input line 879.
+(pdftex.def)             Requested size: 163.88678pt x 114.71962pt.
+<Froude.pdf, id=642, 361.35pt x 252.945pt>
+File: Froude.pdf Graphic file (type pdf)
+<use Froude.pdf>
+Package pdftex.def Info: Froude.pdf  used on input line 879.
+(pdftex.def)             Requested size: 163.88678pt x 114.71962pt.
+ [21
+
+ <./front_pos.pdf> <./Froude.pdf>]
+<self_similar_bore.png, id=748, 1243.64626pt x 546.04pt>
+File: self_similar_bore.png Graphic file (type png)
+<use self_similar_bore.png>
+Package pdftex.def Info: self_similar_bore.png  used on input line 918.
+(pdftex.def)             Requested size: 308.06367pt x 135.25987pt.
+ [22
+
+ <./self_similar_bore.png>]
+<radial_curr.png, id=776, 2795.1627pt x 1700.9949pt>
+File: radial_curr.png Graphic file (type png)
+<use radial_curr.png>
+Package pdftex.def Info: radial_curr.png  used on input line 927.
+(pdftex.def)             Requested size: 239.60567pt x 145.78957pt.
+ [23
+
+ <./radial_curr.png>]
+<radial_flux.png, id=803, 1283.2743pt x 503.481pt>
+File: radial_flux.png Graphic file (type png)
+<use radial_flux.png>
+Package pdftex.def Info: radial_flux.png  used on input line 937.
+(pdftex.def)             Requested size: 239.60567pt x 94.00296pt.
+ [24
+
+ <./radial_flux.png>]
 \tf@nav=\write6
 \openout6 = `lecture4.nav'.
 
@@ -1067,38 +1231,46 @@ Package pdftex.def Info: stratified.png  used on input line 419.
 \tf@snm=\write8
 \openout8 = `lecture4.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 424.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 424.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 942.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 942.
  (./lecture4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 424.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 424.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 942.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 942.
 Package rerunfilecheck Info: File `lecture4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18455 strings out of 494923
- 351939 string characters out of 6180741
- 418743 words of memory out of 5000000
- 21311 multiletter control sequences out of 15000+600000
+ 18608 strings out of 494923
+ 354023 string characters out of 6180741
+ 419713 words of memory out of 5000000
+ 21413 multiletter control sequences out of 15000+600000
  11646 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,15n,57p,775b,705s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb>
-Output written on lecture4.pdf (7 pages, 1069385 bytes).
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb>
+Output written on lecture4.pdf (24 pages, 7856325 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 252 compressed objects within 3 object streams
- 15 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 890 PDF objects out of 1000 (max. 8388607)
+ 772 compressed objects within 8 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
