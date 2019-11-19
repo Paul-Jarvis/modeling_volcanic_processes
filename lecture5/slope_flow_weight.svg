@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="slope_flow_weight.svg"
+   inkscape:export-filename="/home/paul/Documents/Geneva/teaching/modeling_volcanic_processes/lecture5/slope_flow_vol.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker2996"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path2994"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1;fill:#ff0000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker2992"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path2990"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1;fill:#ff0000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker2988"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path2986"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1;fill:#ff0000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path846"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1;fill:#ff0000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1327"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1325"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path843"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.2707111"
+     inkscape:cx="240.80579"
+     inkscape:cy="101.60002"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1853"
+     inkscape:window-height="1025"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="0,393.8512"
+       orientation="1,0"
+       id="guide815"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="100,274.41072"
+       orientation="1,0"
+       id="guide817"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="-177.64881,0"
+       orientation="0,1"
+       id="guide819"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="45,61.542756"
+       orientation="0,1"
+       id="guide821"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="-223.7619,87"
+       orientation="0,1"
+       id="guide825"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="33.863239,15.753768"
+       orientation="0,1"
+       id="guide827"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="151.9,185.96429"
+       orientation="1,0"
+       id="guide831"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="10,65.484169"
+       orientation="1,0"
+       id="guide839"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="40,49.764239"
+       orientation="1,0"
+       id="guide1205"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="45,38.280184"
+       orientation="1,0"
+       id="guide1207"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="42.5,76.413136"
+       orientation="1,0"
+       id="guide2952"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="53.511702,26.651744"
+       orientation="0,1"
+       id="guide2956"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3079"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/paul/Documents/Geneva/teaching/modeling_volcanic_processes/lecture5/slope_flow.png"
+         inkscape:connector-curvature="0"
+         id="path823"
+         d="M 99.999997,297 0,239.3"
+         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/paul/Documents/Geneva/teaching/modeling_volcanic_processes/lecture5/slope_flow.png"
+         inkscape:connector-curvature="0"
+         id="path835"
+         d="m 0,210 99.999997,57.00001"
+         style="fill:none;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/paul/Documents/Geneva/teaching/modeling_volcanic_processes/lecture5/slope_flow.png"
+         inkscape:connector-curvature="0"
+         id="path837"
+         d="m 0,210 99.999997,57.00001"
+         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/paul/Documents/Geneva/teaching/modeling_volcanic_processes/lecture5/slope_flow.png"
+         inkscape:connector-curvature="0"
+         id="path841"
+         d="M 42.499999,289.61914 53.511702,270.34826"
+         style="fill:none;stroke:#ff0000;stroke-width:0.4469444;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.4469444, 1.34083318999999990;stroke-opacity:1;stroke-dashoffset:0;marker-start:url(#marker2996)" />
+      <flowRoot
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/paul/Documents/Geneva/teaching/modeling_volcanic_processes/lecture5/slope_flow.png"
+         transform="matrix(0.26458333,0,0,0.26458333,25.61066,7.3916945)"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         id="flowRoot1169"
+         xml:space="preserve"><flowRegion
+           id="flowRegion1171"><rect
+             y="836.06592"
+             x="-31.084957"
+             height="47.611137"
+             width="51.54594"
+             id="rect1173" /></flowRegion><flowPara
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666794px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic'"
+           id="flowPara1175">h</flowPara></flowRoot>      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/paul/Documents/Geneva/teaching/modeling_volcanic_processes/lecture5/slope_flow.png"
+         inkscape:connector-curvature="0"
+         id="path1177"
+         d="M 99.999997,297 H 9.9999997"
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/paul/Documents/Geneva/teaching/modeling_volcanic_processes/lecture5/slope_flow.png"
+         inkscape:connector-curvature="0"
+         id="path1179"
+         d="m 86.930491,297 c 0.06941,-0.20823 0.138811,-0.41643 0.208216,-0.62465 0.0347,0 0.07957,0.0246 0.104109,0 0.04908,-0.0491 -0.03104,-0.14613 0,-0.20823 0.02193,-0.0439 0.08216,-0.0602 0.104108,-0.10409 0.03104,-0.0621 -0.03104,-0.14615 0,-0.20823 0.02193,-0.0439 0.08216,-0.0602 0.104108,-0.10411 0.03104,-0.0621 -0.03104,-0.14613 0,-0.2082 0.02193,-0.0439 0.08216,-0.0602 0.104108,-0.10411 0.01553,-0.031 -0.01553,-0.0731 0,-0.10412 0.02193,-0.0439 0.08216,-0.0602 0.104109,-0.10411 0.03104,-0.0621 -0.04908,-0.15915 0,-0.2082 0.02455,-0.0246 0.07957,0.0246 0.104108,0 0.02455,-0.0246 -0.02453,-0.0796 0,-0.10411 0.04908,-0.0491 0.159139,0.0491 0.208216,0 0.02453,-0.0246 -0.01553,-0.0731 0,-0.10412 0.216639,-0.43328 -0.0072,0.11129 0.208217,-0.10411 0.02455,-0.0246 -0.02453,-0.0796 0,-0.10412 0.02455,-0.0246 0.07957,0.0246 0.104108,0 0.02455,-0.0246 -0.02453,-0.0796 0,-0.10408 0.04908,-0.0491 0.14614,0.031 0.208219,0 0.433274,-0.21664 -0.111297,0.007 0.104108,-0.20823 0.02453,-0.0246 0.07307,0.0156 0.104109,0 0.08779,-0.0439 0.120425,-0.16433 0.208216,-0.20823 0.03104,-0.0156 0.07957,0.0246 0.104108,0 0.02453,-0.0246 -0.02453,-0.0796 0,-0.10408 0.02453,-0.0246 0.07957,0.0246 0.104109,0 0.02453,-0.0246 -0.02453,-0.0796 0,-0.10412 0.02453,-0.0246 0.07307,0.0156 0.104108,0 0.04389,-0.022 0.06021,-0.0822 0.104108,-0.10411 0.03104,-0.0156 0.07957,0.0246 0.104108,0 0.02453,-0.0246 -0.02453,-0.0796 0,-0.10411 0.02453,-0.0246 0.07957,0.0246 0.104109,0 0.02453,-0.0246 -0.02453,-0.0796 0,-0.10412 0.0694,-0.0694 0.138819,0.0694 0.208216,0 0.02455,-0.0246 -0.02453,-0.0796 0,-0.10411 0.04908,-0.0491 0.14614,0.0311 0.208217,0 0.08779,-0.0439 0.120425,-0.16431 0.208216,-0.2082 0.03104,-0.0156 0.07957,0.0246 0.104108,0 0.02455,-0.0246 -0.02453,-0.0796 0,-0.10412 0.04908,-0.0491 0.14614,0.031 0.208217,0 0.0439,-0.022 0.06021,-0.0822 0.104111,-0.10411 0.143602,-0.0718 0.09312,0.1261 0.208216,-0.10411 0.01553,-0.031 -0.02455,-0.0796 0,-0.10409 0.04908,-0.0491 0.159139,0.0491 0.208217,0 0.02453,-0.0246 -0.02453,-0.0796 0,-0.10411 0.02453,-0.0246 0.07307,0.0156 0.104108,0 0.04389,-0.022 0.06021,-0.0822 0.104108,-0.10412 0.03104,-0.0156 0.06941,0 0.104109,0 0.0347,0 0.06941,0 0.104108,0"
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <flowRoot
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/paul/Documents/Geneva/teaching/modeling_volcanic_processes/lecture5/slope_flow.png"
+         transform="matrix(0.26458333,0,0,0.26458333,89.16728,68.67758)"
+         style="font-style:normal;font-weight:normal;font-size:26.66666794px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         id="flowRoot1169-0"
+         xml:space="preserve"><flowRegion
+           style="font-size:26.66666794px"
+           id="flowRegion1171-9"><rect
+             style="font-size:26.66666794px"
+             y="836.06592"
+             x="-31.084957"
+             height="47.611137"
+             width="51.54594"
+             id="rect1173-2" /></flowRegion><flowPara
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666794px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic'"
+           id="flowPara1175-5">θ</flowPara></flowRoot>      <path
+         inkscape:connector-curvature="0"
+         id="path1251"
+         d="m 39.999999,232.51261 v 29.29906 l 5,3.38634 v -29.74077 z"
+         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         transform="scale(0.26458333)"
+         inkscape:connector-curvature="0"
+         id="path1845"
+         d="m 163.35599,996.19305 c -3.22622,-1.87962 -7.17017,-4.25743 -8.76433,-5.28402 l -2.89847,-1.86652 V 935.9117 c 0,-29.22194 0.20438,-53.04734 0.45418,-52.94532 2.00266,0.81789 16.948,9.67262 17.12929,10.14866 0.1277,0.33532 0.16761,24.43399 0.0887,53.55259 l -0.14349,52.94292 z"
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:1.05158818;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2954"
+         d="m 42.499999,263.61526 v 26.00388"
+         style="fill:none;stroke:#000000;stroke-width:0.60722691;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1327)" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2958"
+         d="m 42.499999,263.61526 11.011702,6.733"
+         style="fill:none;stroke:#ff0000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:0.5, 1.50000000000000000;stroke-dashoffset:0;marker-mid:url(#Arrow1Lend);marker-end:url(#marker2988)" />
+      <flowRoot
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/paul/Documents/Geneva/teaching/modeling_volcanic_processes/lecture5/slope_flow.png"
+         transform="matrix(0.26458333,0,0,0.26458333,40.980153,45.682898)"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         id="flowRoot1169-05"
+         xml:space="preserve"><flowRegion
+           id="flowRegion1171-1"><rect
+             y="836.06592"
+             x="-31.084957"
+             height="47.611137"
+             width="51.54594"
+             id="rect1173-1" /></flowRegion><flowPara
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666794px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic'"
+           id="flowPara1175-0">W</flowPara></flowRoot>      <flowRoot
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/paul/Documents/Geneva/teaching/modeling_volcanic_processes/lecture5/slope_flow.png"
+         transform="matrix(0.26458333,0,0,0.26458333,57.069505,34.538889)"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;"
+         id="flowRoot1169-05-8"
+         xml:space="preserve"><flowRegion
+           style="fill:#ff0000;fill-opacity:1;"
+           id="flowRegion1171-1-5"><rect
+             style="fill:#ff0000;fill-opacity:1;"
+             y="836.06592"
+             x="-31.084957"
+             height="47.611137"
+             width="51.54594"
+             id="rect1173-1-0" /></flowRegion><flowPara
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666794px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#ff0000;fill-opacity:1;"
+           id="flowPara1175-0-6">W'</flowPara></flowRoot>      <path
+         inkscape:connector-curvature="0"
+         id="path3022"
+         d="m 42.499999,277.42763 c -0.0079,0 -0.02379,0.008 -0.02379,0 0,-0.008 0.01595,0 0.02379,0 0.200507,-0.0334 0.399775,-0.0744 0.600866,-0.10411 0.09816,-0.0145 0.212974,0 0.312325,0 0.208216,0 0.416433,0 0.624652,0 0.0347,0 0.06941,0 0.104108,0 0.0347,0 0.06941,0 0.104109,0 0.0347,0 0.0694,0 0.104108,0 0.03823,0 0.412242,-0.004 0.416433,0 0.02453,0.0246 -0.02453,0.0796 0,0.10411 0.02127,0.0212 0.271047,-0.0206 0.312325,0 0.0439,0.022 0.06021,0.0822 0.104108,0.10409 0.03104,0.0156 0.07957,-0.0246 0.104108,0 0.02455,0.0246 -0.02453,0.0796 0,0.10411 0.02455,0.0246 0.07307,-0.0156 0.104108,0 0.0439,0.022 0.06021,0.0822 0.104109,0.10412 0.06208,0.031 0.14614,-0.031 0.208216,0 0.110435,0.0552 0.09778,0.15301 0.208217,0.20822 0.03104,0.0156 0.07307,-0.0156 0.104108,0 0.0439,0.022 0.06021,0.0822 0.104111,0.10409 0.03104,0.0156 0.07957,-0.0246 0.104108,0 0.02453,0.0246 -0.02453,0.0796 0,0.10412 0.04908,0.0491 0.146137,-0.031 0.208216,0 0.04389,0.022 0.06941,0.0694 0.104109,0.10411 0.06123,0.0612 0.368223,0.39232 0.416433,0.41643 0.03104,0.0156 0.07957,-0.0246 0.104108,0 0.02453,0.0246 -0.01553,0.0731 0,0.10411 0.0439,0.0878 0.164319,0.12044 0.208216,0.20823 0.01553,0.031 -0.01553,0.0731 0,0.10408 0.0439,0.0878 0.164323,0.12044 0.208217,0.20823 0.03104,0.0621 -0.03104,0.14613 0,0.20823 0.02196,0.0439 0.08216,0.0602 0.104108,0.10409 0.03104,0.0621 -0.03104,0.14615 0,0.20822 0.02193,0.0439 0.08216,0.0602 0.104108,0.10412 0.01553,0.031 -0.02453,0.0796 0,0.10411 0.02455,0.0246 0.101148,-0.0346 0.104109,0 0.03458,0.40381 0,0.81058 0,1.21589"
+         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <flowRoot
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/paul/Documents/Geneva/teaching/modeling_volcanic_processes/lecture5/slope_flow.png"
+         transform="matrix(0.26458333,0,0,0.26458333,51.871068,49.000312)"
+         style="font-style:normal;font-weight:normal;font-size:26.66666794px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         id="flowRoot1169-0-4"
+         xml:space="preserve"><flowRegion
+           style="font-size:26.66666794px"
+           id="flowRegion1171-9-6"><rect
+             style="font-size:26.66666794px"
+             y="836.06592"
+             x="-31.084957"
+             height="47.611137"
+             width="51.54594"
+             id="rect1173-2-2" /></flowRegion><flowPara
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666794px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic'"
+           id="flowPara1175-5-5">θ</flowPara></flowRoot>    </g>
+  </g>
+</svg>
