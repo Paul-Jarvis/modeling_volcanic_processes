@@ -325,7 +325,7 @@
 \begin{frame}
   \frametitle{Controls on lava flow}
 
-  Lava flow rates depend on:
+  Lava flow rates and morphology depend on:
 
   \begin{columns}[t]
 
@@ -385,61 +385,339 @@
 \end{frame}
 %-----------------------------------------------
 \begin{frame}
-  \frametitle{Heat transport}
-
-  Lava flow rates depend on:
+  \frametitle{Heat loss from the flow}
 
   \begin{columns}[t]
 
     \begin{column}{0.5\paperwidth}
 
+      \vspace{-1.5cm}
+      
+      $$\includegraphics[width=\textwidth]{lava_flow_struct.png}$$
+
+      \vspace{-1cm}
+
       \begin{itemize}
-      \item Topography \\
+      \item \textbf{Radiation}
         \begin{itemize}
-        \item Slope angle \\
-        \item Channel geometry (if it exists) \\
+        \item Emission of heat through EM radiation
+        \item Flux determined from Stefan-Boltzman law
+          $$ q_{\text{rad}} = \epsilon \sigma(T_{\text{surf}}^{4} - T_{\text{a}}^{4})$$
+        \item $\epsilon$ = Emissivity \\
+        \item $\sigma$ = Stefan-Boltzmann constant = $5.67 \times 10^{-8}$ W m$^{-2}$ K$^{-4}$  \\
         \end{itemize}
       \end{itemize}
-
     \end{column}
 
     \begin{column}{0.5\paperwidth}
 
-    \begin{itemize}
-    \item Rheology \\
+      \vspace{-0.5cm}
+      
       \begin{itemize}
-      \item Viscosity \\
-      \item Yield stress \\ 
+      \item \textbf{Conduction}
+        \begin{itemize}
+        \item Direct molecular contact \\
+        \item Heat flux (W m$^{-2}$) given by a diffusive term
+          $$ q_{\text{cond}} = -k \frac{\mathrm{d} T}{\mathrm{d} x}$$
+        \item $k$ = Thermal diffusivity \\
+        \end{itemize}
+        \vspace{0.9cm}
+      \item \textbf{Convection}
+        \begin{itemize}
+        \item Heat transported through fluid movement
+        \item Heat flux given by
+          $$ q_{\text{conv}} = h (T_{\text{surf}} - T_{\text{a}}) $$
+        \item $h$ = Constant \\
+        \end{itemize}
       \end{itemize}
-    \end{itemize}
+    \end{column}
 
-  \end{column}
-
-\end{columns}
-
-  \vspace{0.5cm}
+  \end{columns}
   
-  Rheology is most difficult to assess - it depends on:
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{`A`$\overline{\text{a}}$}
 
   \begin{columns}[t]
 
-    \begin{column}{0.5\paperwidth}
+    \begin{column}{0.48\paperwidth}
 
-      \begin{itemize}
-      \item Composition \\
-      \item \textbf{Temperature} \\
-      \item Crystallinity \\
-      \item Vesivularity \\
-      \end{itemize}
+      Brecciated surface and basal \textbf{crusts} \\
+
+      \vspace{1cm}
+
+      Coherant \textbf{core} which remains fluid during activity \\
+
+      \vspace{1cm}
+
+      Typically 0.5 - 20 m thick \\
+
+      \vspace{1cm}
+
+      \textbf{Clinkers} - Broken blocks within the crust \\
+
+      \vspace{1cm}
+
+      Forms in lavas of higher viscosity \\
+
 
     \end{column}
+
+    \begin{column}{0.48\paperwidth}
+
+      $$\includegraphics[width=\textwidth]{aa.jpg}$$
+
+    \end{column}
+
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{P$\overline{\text{a}}$hoehoe}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.48\paperwidth}
+
+      Smooth, glassy, coherent surfaces \\
+
+      \vspace{0.3cm}
+
+      Surface folds called \textbf{ropes} \\
+
+      \vspace{0.3cm}
+
+      Individual units have a \textbf{lobate} shape \\
+
+      \vspace{0.3cm}
+
+      Individual flow can consist of 100s-1000s of lobes \\
+
+      \vspace{0.3cm}
+
+      Normally low effusion rates and low viscosity \\
+
+      \vspace{0.3cm}
+
+      Crust is thin but thickens with time \\
+
+      \vspace{0.3cm}
+
+      New lobes \textbf{breakout} through fractures in crust \\
+
+      \vspace{0.3cm}
+
+      Typical thicknesses from 3 - 40 cm \\
+      
+    \end{column}
+
+    \begin{column}{0.48\paperwidth}
+
+      $$\includegraphics[width=\textwidth]{pahoehoe.jpg}$$
+
+    \end{column}
+
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Block lavas}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.48\paperwidth}
+
+      Typical of intermediate to rhyolitic lavas \\
+
+      \vspace{0.5cm}
+      
+      Crust has large blocky surface \\
+
+      \vspace{0.5cm}
+      
+      Blocks are relatively smooth compared to `a`$\overline{\text{a}}$ \\
+
+      \vspace{0.5cm}
+      
+      Coherent core \\
+
+      \vspace{0.5cm}
+      
+      10s-100s m thick \\
+
+      \vspace{0.5cm}
+      
+      Crystal rich \\
+    \end{column}
+
+    \begin{column}{0.48\paperwidth}
+
+      $$\includegraphics[width=\textwidth]{block_lava.jpg}$$
+
+    \end{column}
+
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Lava domes}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.48\paperwidth}
+
+      Mound of viscous lava and rock around the vent \\
+
+      \vspace{0.1cm}
+
+      Can be crystal-poor or crystal-rich \\
+
+      \vspace{0.1cm}
+
+      Crystal-poor domes are rhyolitic \\
+
+      \vspace{0.1cm}
+
+      Crystal-rich domes span compositional spectrum \\
+
+      \vspace{0.1cm}
+
+      Common at convergent margins \\
+
+      \vspace{0.1cm}
+
+      Unstable collapse is a considerable hazard \\
+
+      \vspace{0.1cm}
+
+      Can grow \textbf{endogeneously} or \textbf{exogeneously} \\
+
+      \vspace{0.1cm}
+
+      Often associated with \textbf{vulcanian} explosions \\
+    \end{column}
+
+    \begin{column}{0.48\paperwidth}
+
+      $$\includegraphics[width=\textwidth]{dome.jpg}$$
+
+    \end{column}
+
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Spreading umbrella clouds}
+
+  $$\includegraphics[width=0.7\textwidth]{plume.png}$$
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Spreading umbrella clouds}
+
+  \begin{columns}[t]
 
     \begin{column}{0.5\paperwidth}
 
       \vspace{-1cm}
       
-      $$\includegraphics[width=\textwidth]{lava_flow_struct.png}$$
+      $$\includegraphics[width=0.95\textwidth]{calbuco.jpg}$$
       
+      \vspace{-1cm}
+
+      $$\includegraphics[width=0.95\textwidth]{interfacial_current.png}$$
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      Radially spreading gravity current \\
+
+      \vspace{-0.5cm}
+      
+      $$\includegraphics[width=0.95\textwidth]{dens_prof.pdf}$$
+
+      Velocity depends on:
+
+      \begin{itemize}
+      \item Flux \\
+      \item Density of mixture \\
+      \end{itemize}
+    \end{column}
+    
+  \end{columns}
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Spreading umbrella clouds: Experimental modelling}
+
+  \movie{\includegraphics[width=\textwidth]{slow_x2.png}}{slow_x2.mp4}
+
+  \movie{\includegraphics[width=\textwidth]{fast.png}}{fast.mp4}
+
+  \vspace{0.5cm}
+  
+  Shear at the base of the cloud can inhibit fallout \\
+
+  \vspace{0.5cm}
+  
+  Fallout can change density difference \\
+
+  \vspace{0.5cm}
+  
+  Models of deposition from spreading clouds used to infer eruption parameters from deposit characteristics \\
+  
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Collapsing plume}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \vspace{-0.5cm}
+      
+      $$\includegraphics[width=0.8\textwidth]{dome_collapse.png}$$
+
+      \vspace{-0.5cm}
+      
+      $$\includegraphics[width=0.8\textwidth]{column_collapse.png}$$
+
+      \vspace{-0.7cm}
+      
+      $$\includegraphics[width=0.8\textwidth]{lateral_blast.png}$$
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      Dome collapse
+
+      \begin{itemize}
+      \item Front slope of dome becomes oversteep \\
+      \item Material avalanches down slope \\
+      \end{itemize}
+
+      Column collapse
+
+      \begin{itemize}
+      \item Erupted jet doesn't become buoyant \\
+      \item Material falls back to the ground  \\
+      \end{itemize}
+
+      Lateral blast
+
+      \begin{itemize}
+      \item Ground motion depressurises shallow magma \\
+      \item Rapid expansion of volatiles mobilises more material  \\
+      \end{itemize}
     \end{column}
 
   \end{columns}

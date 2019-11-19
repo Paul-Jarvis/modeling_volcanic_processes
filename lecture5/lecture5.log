@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  19 NOV 2019 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  19 NOV 2019 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1015,7 +1015,7 @@ Package pdftex.def Info: slope_vel.png  used on input line 323.
  [6
 
  <./slope_vel.png>]
-<lava_flow_struct.png, id=241, 1124.2pt x 679.53876pt>
+<lava_flow_struct.png, id=242, 1124.2pt x 679.53876pt>
 File: lava_flow_struct.png Graphic file (type png)
 <use lava_flow_struct.png>
 Package pdftex.def Info: lava_flow_struct.png  used on input line 385.
@@ -1023,6 +1023,110 @@ Package pdftex.def Info: lava_flow_struct.png  used on input line 385.
  [7
 
  <./lava_flow_struct.png>]
+File: lava_flow_struct.png Graphic file (type png)
+<use lava_flow_struct.png>
+Package pdftex.def Info: lava_flow_struct.png  used on input line 437.
+(pdftex.def)             Requested size: 182.09767pt x 110.06601pt.
+ [8
+
+]
+<aa.jpg, id=301, 28.908pt x 19.06122pt>
+File: aa.jpg Graphic file (type jpg)
+<use aa.jpg>
+Package pdftex.def Info: aa.jpg  used on input line 475.
+(pdftex.def)             Requested size: 174.81221pt x 115.27322pt.
+ [9
+
+ <./aa.jpg>]
+<pahoehoe.jpg, id=328, 28.908pt x 19.10638pt>
+File: pahoehoe.jpg Graphic file (type jpg)
+<use pahoehoe.jpg>
+Package pdftex.def Info: pahoehoe.jpg  used on input line 524.
+(pdftex.def)             Requested size: 174.81221pt x 115.54637pt.
+ [10
+
+ <./pahoehoe.jpg>]
+<block_lava.jpg, id=355, 225.84375pt x 150.5625pt>
+File: block_lava.jpg Graphic file (type jpg)
+<use block_lava.jpg>
+Package pdftex.def Info: block_lava.jpg  used on input line 564.
+(pdftex.def)             Requested size: 174.81221pt x 116.54916pt.
+ [11
+
+ <./block_lava.jpg>]
+<dome.jpg, id=382, 3276.24pt x 1846.9pt>
+File: dome.jpg Graphic file (type jpg)
+<use dome.jpg>
+Package pdftex.def Info: dome.jpg  used on input line 612.
+(pdftex.def)             Requested size: 174.81221pt x 98.52213pt.
+ [12
+
+ <./dome.jpg>]
+<plume.png, id=410, 807.015pt x 740.7675pt>
+File: plume.png Graphic file (type png)
+<use plume.png>
+Package pdftex.def Info: plume.png  used on input line 619.
+(pdftex.def)             Requested size: 239.60567pt x 219.93741pt.
+
+Overfull \vbox (7.96683pt too high) detected at line 619
+ []
+
+[13
+
+ <./plume.png>]
+<calbuco.jpg, id=439, 803.0pt x 602.25pt>
+File: calbuco.jpg Graphic file (type jpg)
+<use calbuco.jpg>
+Package pdftex.def Info: calbuco.jpg  used on input line 656.
+(pdftex.def)             Requested size: 172.99222pt x 129.73853pt.
+<interfacial_current.png, id=440, 1771.61874pt x 720.6925pt>
+File: interfacial_current.png Graphic file (type png)
+<use interfacial_current.png>
+Package pdftex.def Info: interfacial_current.png  used on input line 656.
+(pdftex.def)             Requested size: 172.99222pt x 70.36896pt.
+<dens_prof.pdf, id=441, 361.35pt x 252.945pt>
+File: dens_prof.pdf Graphic file (type pdf)
+<use dens_prof.pdf>
+Package pdftex.def Info: dens_prof.pdf  used on input line 656.
+(pdftex.def)             Requested size: 172.99222pt x 121.09572pt.
+ [14
+
+ <./calbuco.jpg> <./interfacial_current.png> <./dens_prof.pdf>]
+<slow_x2.png, id=509, 1899.095pt x 313.17pt>
+File: slow_x2.png Graphic file (type png)
+<use slow_x2.png>
+Package pdftex.def Info: slow_x2.png  used on input line 677.
+(pdftex.def)             Requested size: 342.2953pt x 56.44461pt.
+<fast.png, id=511, 1903.11pt x 321.2pt>
+File: fast.png Graphic file (type png)
+<use fast.png>
+Package pdftex.def Info: fast.png  used on input line 677.
+(pdftex.def)             Requested size: 342.2953pt x 57.7694pt.
+ [15
+
+ <./slow_x2.png (PNG copy)> <./fast.png (PNG copy)>]
+<dome_collapse.png, id=539, 878.28125pt x 269.005pt>
+File: dome_collapse.png Graphic file (type png)
+<use dome_collapse.png>
+Package pdftex.def Info: dome_collapse.png  used on input line 725.
+(pdftex.def)             Requested size: 145.67868pt x 44.61787pt.
+<column_collapse.png, id=540, 878.28125pt x 459.7175pt>
+File: column_collapse.png Graphic file (type png)
+<use column_collapse.png>
+Package pdftex.def Info: column_collapse.png  used on input line 725.
+(pdftex.def)             Requested size: 145.67868pt x 76.24994pt.
+<lateral_blast.png, id=541, 880.28876pt x 296.10625pt>
+File: lateral_blast.png Graphic file (type png)
+<use lateral_blast.png>
+Package pdftex.def Info: lateral_blast.png  used on input line 725.
+(pdftex.def)             Requested size: 145.67868pt x 49.0pt.
+
+Overfull \vbox (3.82768pt too high) detected at line 725
+ []
+
+[16
+
+ <./dome_collapse.png> <./column_collapse.png> <./lateral_blast.png>]
 \tf@nav=\write6
 \openout6 = `lecture5.nav'.
 
@@ -1032,38 +1136,41 @@ Package pdftex.def Info: lava_flow_struct.png  used on input line 385.
 \tf@snm=\write8
 \openout8 = `lecture5.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
- (./lecture5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 730.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 730.
+
+(./lecture5.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 730.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 730.
 Package rerunfilecheck Info: File `lecture5.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18471 strings out of 494923
- 352697 string characters out of 6180741
- 419743 words of memory out of 5000000
- 21329 multiletter control sequences out of 15000+600000
- 11951 words of font info for 45 fonts, out of 8000000 for 9000
+ 18606 strings out of 494923
+ 354644 string characters out of 6180741
+ 421743 words of memory out of 5000000
+ 21427 multiletter control sequences out of 15000+600000
+ 17872 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,15n,57p,775b,826s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y8.pfb>
-Output written on lecture5.pdf (7 pages, 491944 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on lecture5.pdf (16 pages, 5394538 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
- 15 named destinations out of 1000 (max. 500000)
- 132 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 620 PDF objects out of 1000 (max. 8388607)
+ 497 compressed objects within 5 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 197 words of extra memory for PDF output out of 10000 (max. 10000000)
 
