@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  21 NOV 2019 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  5 FEB 2020 08:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**exercise2.tex
-(./exercise2.tex
+**exercise2_alt.tex
+(./exercise2_alt.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -164,8 +164,8 @@ Package color Info: Driver file: pdftex.def on input line 147.
 \c@ex=\count103
 \c@prop=\count104
 
-(./exercise2.aux)
-\openout1 = `exercise2.aux'.
+(./exercise2_alt.aux)
+\openout1 = `exercise2_alt.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
@@ -249,17 +249,17 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 103.
+LaTeX Font Info:    Try loading font information for U+msa on input line 85.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 103.
+LaTeX Font Info:    Try loading font information for U+msb on input line 85.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 103.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 85.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknappen/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -267,46 +267,36 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 <flume_setup.png, id=1, 1099.10625pt x 813.0375pt>
 File: flume_setup.png Graphic file (type png)
 <use flume_setup.png>
-Package pdftex.def Info: flume_setup.png  used on input line 103.
+Package pdftex.def Info: flume_setup.png  used on input line 88.
 (pdftex.def)             Requested size: 352.31624pt x 260.61153pt.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 133.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 133.
- [2 <./flume_setup.png>]
-<grav_curr.png, id=16, 978.054pt x 332.6829pt>
+<grav_curr.png, id=3, 978.054pt x 332.6829pt>
 File: grav_curr.png Graphic file (type png)
 <use grav_curr.png>
-Package pdftex.def Info: grav_curr.png  used on input line 185.
+Package pdftex.def Info: grav_curr.png  used on input line 93.
 (pdftex.def)             Requested size: 352.31624pt x 119.84189pt.
- [3] [4 <./grav_curr.png>] (./exercise2.aux) ) 
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+ <./flume_setup.png> <./grav_curr.png>]
+[2] (./exercise2_alt.aux) ) 
 Here is how much of TeX's memory you used:
- 2652 strings out of 494923
- 34663 string characters out of 6180741
- 91696 words of memory out of 5000000
- 5916 multiletter control sequences out of 15000+600000
- 6747 words of font info for 28 fonts, out of 8000000 for 9000
+ 2624 strings out of 494923
+ 34285 string characters out of 6180741
+ 90648 words of memory out of 5000000
+ 5893 multiletter control sequences out of 15000+600000
+ 6142 words of font info for 26 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,7n,25p,686b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on exercise2.pdf (4 pages, 1693562 bytes).
+ 41i,7n,25p,696b,310s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on exercise2_alt.pdf (2 pages, 1675794 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 44 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
