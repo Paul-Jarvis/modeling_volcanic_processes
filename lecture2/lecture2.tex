@@ -448,6 +448,42 @@
 \end{frame}
 %------------------------------------------------
 \begin{frame}
+  \frametitle{Measuring rheological properties}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.33\paperwidth}
+
+      \centering Parallel plate
+      
+      $$\includegraphics[width=\textwidth]{parallelPlate.png}$$
+
+    \end{column}
+
+    \begin{column}{0.33\paperwidth}
+
+      \centering Cone and plate
+      
+      $$\includegraphics[width=\textwidth]{conePlate.png}$$
+
+    \end{column}
+
+    \begin{column}{0.33\paperwidth}
+
+      \centering Concentric cylinder
+      
+      $$\includegraphics[width=0.5\textwidth]{concentricCylinder.png}$$
+
+    \end{column}
+    
+  \end{columns}
+
+  Apply torque $M \implies$ stress $\tau$ \\
+  Measure angular velocity $\Omega \implies$ strain rate $\dot{\gamma}$ \\
+  Determine flow curve $\tau = \eta(\dot{\gamma}) \dot{\gamma}$
+\end{frame}
+%------------------------------------------------
+\begin{frame}
   \frametitle{Magma viscosity - Melt as a Newtonian fluid}
 
   Silica melt is almost perfectly Newtonian. \\
@@ -473,7 +509,7 @@
   \frametitle{Magma viscosity - Melt viscosity}
 
 
-  Melt is modelled according to the VFT equation (EDIT TO INCLUDE MEANING OF VFT) (Giordano et al., 2008)\\
+  Melt is modelled according to the Vogel-Fulchner-Tammann (VFT) equation (Giordano et al., 2008)\\
 
   \begin{columns}[t]
 
@@ -505,18 +541,36 @@
 \begin{frame}
   \frametitle{Magma viscosity - Fitted parameters}
 
-  $A$ = constant = -4.55
+  \begin{columns}[t]
 
-  \vspace{0.5cm}
+    \begin{column}{0.5\paperwidth}
 
-  $B = \sum_{i = 1}^{7} b_{i} M_{i} + \sum_{j = 1}^{3} b_{1j} M_{1j}$ 
+      \centering
+      
+      $A$ = constant = -4.55
+      
+      \vspace{0.5cm}
 
-  \vspace{0.5cm}
+      $B = \sum_{i = 1}^{7} b_{i} M_{i} + \sum_{j = 1}^{3} b_{1j} M_{1j}$ 
 
-  $C = \sum_{i = 1}^{6} c_{i} N_{i} + c_{11} N_{11}$
+      \vspace{0.5cm}
 
-  \vspace{1cm}
+      $C = \sum_{i = 1}^{6} c_{i} N_{i} + c_{11} N_{11}$
 
+      \vspace{1cm}
+
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ \log \eta_{\text{m}} = A + \frac{B(\mathbf{X})}{T - C(\mathbf{X})}$$
+
+      $$\eta_{\text{m}} = 10 ^{A + B(\mathbf{X})/[T - C(\mathbf{X})]}$$
+
+    \end{column}
+
+  \end{columns}
+  
   \tiny
   \begin{tabular}{|c|c||c|c|}
     \hline
@@ -534,7 +588,7 @@
     \hline
   \end{tabular}
 
-  \vspace{1cm}
+  \vspace{0.5cm}
 
   \normalsize For a given melt composition, can evaluate $\eta$ \\
   
@@ -592,7 +646,7 @@
 
       \vspace{0.5cm}
       
-      $\phi_{\text{c}} \gtrsim 0.25$ - Concentrated \\
+      $\phi_{\text{c}} \gtrsim 0.25$ - \textbf{Concentrated} \\
 
     \end{column}
 
@@ -806,6 +860,47 @@
     \end{column}
 
   \end{columns}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Magma rheology - Suspension or granular media}
+
+  Classically, model mixtures of particles and fluid as \textbf{suspensions}:
+  \begin{itemize}
+  \item No relative motion between fluid and particles \\
+  \item $\phi$ is control variable \\
+  \item System described by equations of \textbf{fluid dynamics} with \textbf{effective viscosity} \\
+  \end{itemize}
+
+  In reality, particularly for dense suspensions:
+  \begin{itemize}
+  \item \textbf{Phase segregation} can be important \\
+  \item $\phi$ can depend on particle pressure $P_{\text{p}}$ \\
+  \item System is described by \textbf{Granular mechanics} with \textbf{interstitial fluid} \\
+  \end{itemize}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$\includegraphics[width=0.65\textwidth]{Guazzelli18.png}$$
+
+      \vspace{-0.2cm}
+
+      \tiny \centering Guazzelli and Pouliquen (2018)
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      How to describe these systems remains highly contentious \\
+
+      Extremely difficult to model theoretically, numerically or experimentally \\
+
+    \end{column}
+
+  \end{columns}
+  
 \end{frame}
 %------------------------------------------------
 \begin{frame}
