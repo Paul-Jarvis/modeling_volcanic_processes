@@ -116,14 +116,14 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Modeling volcanic processes]{Magma generation and properties} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[Modeling volcanic processes]{Introduction to modeling \\ Magma generation and properties} % The short title appears at the bottom of every slide, the full title is only on the title page
 
 \author[Paul Jarvis]{Paul A. Jarvis} % Your name
 \institute[UNIGE] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
 \textit{paul.jarvis@unige.ch} % Your email address
 }
-\date{15th November 2019} % Date, can be changed to a custom date
+\date{26th November 2020} % Date, can be changed to a custom date
 \begin{columns}
 
   \begin{column}{0.33\paperwidth}
@@ -165,6 +165,343 @@
 
 %\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
+\begin{frame}
+  \frametitle{Modelling Volcanic Processes}
+
+  Course structure:
+  \begin{itemize}
+  \item {\color{gray} 12/11/2020 - Eruption characterisation \\
+  \item 13/11/2020 - Plume and ballistic modelling} \\
+  \item 26/11/2020 - Magma properties and transport processes \\
+  \item 27/11/2020 - Gravity currents in volcanology \\
+  \end{itemize}
+
+  \vspace{1cm}
+  
+  Magma properties and transport processes:
+  \begin{itemize}
+  \item Introduction to modelling, magma generation and properties \\
+  \item Magma density and viscosity \\
+  \item Magma transport processes \\
+  \item Exercises
+  \end{itemize}
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Modelling Volcanic Processes}
+
+  Course structure:
+  \begin{itemize}
+  \item {\color{gray} 12/11/2020 - Eruption characterisation \\
+  \item 13/11/2020 - Plume and ballistic modelling} \\
+  \item 26/11/2020 - Magma properties and transport processes \\
+  \item 27/11/2020 - Gravity currents in volcanology \\
+  \end{itemize}
+
+  \vspace{1cm}
+  
+  Gravity currents in volcanology:
+  \begin{itemize}
+  \item Fluid dynamics of gravity currents \\
+  \item Lava flows, ash clouds, PDCs and Lahars \\
+  \item Exercises
+  \end{itemize}
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{What is a model?}
+
+  \vspace{-0.5cm}
+  
+  Model - \textbf{Informative representation of an object or system} \\
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{minipage}[t][.6\textheight][t]{\linewidth}
+
+            Types of model:
+            
+            \begin{itemize}
+            \item Conceptual model - Composition of ideas to aid knowledge and understanding \\
+            \end{itemize}
+
+      \end{minipage}
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{minipage}[t][.6\textheight][t]{\linewidth}
+
+        \vspace{-0.9cm}
+        
+        $$\includegraphics[width=0.6\textwidth]{Cashman17.png}$$
+
+        \vspace{-0.2cm}
+      
+        \centering \tiny Cashman et al. (2017)
+
+      \end{minipage}
+      
+    \end{column}
+
+  \end{columns}
+\end{frame}
+
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{What is a model?}
+
+  \vspace{-0.45cm}
+  
+  Model - \textbf{Informative representation of an object or system} \\
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+      
+      \begin{minipage}[t][.6\textheight][t]{\linewidth}
+
+        Types of model:
+
+        \begin{itemize}
+        \item {\color{gray}{Conceptual model}}\\
+        \item Experimental model
+        \end{itemize}
+
+      \end{minipage}
+    
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{minipage}[t][.6\textheight][t]{\linewidth}
+
+
+      \end{minipage}
+      
+    \end{column}
+
+  \end{columns}
+
+  \vspace{-2cm}
+  
+  \movie{\includegraphics[width=\textwidth]{fast.png}}{fast.mp4}
+ 
+\end{frame}
+
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{What is a model?}
+
+  \vspace{-0.45cm}
+  
+  Model - \textbf{Informative representation of an object or system} \\
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{minipage}[t][.6\textheight][t]{\linewidth}
+
+            Types of model:
+            
+            \begin{itemize}
+            \item {\color{gray}{Conceptual model}\\
+            \item Experimental model}
+            \item Mathematical model \\
+              \begin{itemize}
+              \item Analytical model \\
+              \end{itemize}
+            \end{itemize}
+
+      \end{minipage}
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{minipage}[t][.6\textheight][t]{\linewidth}
+
+        $$ V = \left(\frac{(\rho_{\text{c}} - \rho_{\text{e}}) g H}{2 \rho_{\text{c}}} \right)^{1/2} $$
+        
+      \end{minipage}
+      
+    \end{column}
+
+  \end{columns}
+
+  \vspace{-2.2cm}
+  
+  $$\includegraphics[width=\textwidth]{annotatedCurrent.png}$$
+  
+\end{frame}
+
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{What is a model?}
+
+  \vspace{-0.45cm}
+  
+  Model - \textbf{Informative representation of an object or system} \\
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{minipage}[t][.6\textheight][t]{\linewidth}
+
+            Types of model:
+            
+            \begin{itemize}
+            \item {\color{gray}{Conceptual model}\\
+            \item Experimental model}
+            \item Mathematical model \\
+              \begin{itemize}
+              \item {\color{gray}{Analytical model}} \\
+              \item Numerical model
+              \end{itemize}
+            \end{itemize}
+
+      \end{minipage}
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{minipage}[t][.6\textheight][t]{\linewidth}
+
+        $$\includegraphics[width=\textwidth]{Suzuki16.png}$$
+
+        \vspace{-0.2cm}
+      
+        \centering \tiny Suzuki et al. (2016)
+        
+      \end{minipage}
+      
+    \end{column}
+
+  \end{columns}
+
+  
+\end{frame}
+
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{What is a model?}
+
+  \vspace{-0.45cm}
+  
+  Model - \textbf{Informative representation of an object or system} \\
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{minipage}[t][.6\textheight][t]{\linewidth}
+
+            Types of model:
+            
+            \begin{itemize}
+            \item {\color{gray}{Conceptual model}\\
+            \item Experimental model}
+            \item Mathematical model \\
+              \begin{itemize}
+              \item {\color{gray}{Analytical model} \\
+              \item Numerical model}
+              \item Empirical model
+              \end{itemize}
+            \end{itemize}
+
+      \end{minipage}
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{minipage}[t][.6\textheight][t]{\linewidth}
+
+        \vspace{-1cm}
+        
+        $$\includegraphics[width=\textwidth]{Mastin09.png}$$
+
+        \vspace{-0.2cm}
+      
+        \centering \tiny Mastin et al. (2009)
+        
+      \end{minipage}
+      
+    \end{column}
+
+  \end{columns}
+
+  
+\end{frame}
+
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{What is a model?}
+
+  \vspace{-0.45cm}
+  
+  Model - \textbf{Informative representation of an object or system} \\
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{minipage}[t][.6\textheight][t]{\linewidth}
+
+            Types of model:
+            
+            \begin{itemize}
+            \item {\color{gray}{Conceptual model}\\
+            \item Experimental model}
+            \item Mathematical model \\
+              \begin{itemize}
+              \item {\color{gray}{Analytical model} \\
+              \item Numerical model}
+              \item Empirical model
+              \end{itemize}
+            \end{itemize}
+
+            \centering
+            
+            \textbf{Model $\neq$ Reality }\\
+
+            All models contain \textbf{simplifying assumptions} \\
+
+            $\implies$ \textbf{Validity conditions} must always be considered \\
+
+            
+      \end{minipage}
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{minipage}[t][.6\textheight][t]{\linewidth}
+
+        \vspace{-1cm}
+        
+        $$\includegraphics[width=\textwidth]{Mastin09.png}$$
+
+        \vspace{-0.2cm}
+      
+        \centering \tiny Mastin et al. (2009)
+        
+      \end{minipage}
+      
+    \end{column}
+
+  \end{columns}
+
+  
+\end{frame}
+
+%-----------------------------------------------
 \begin{frame}
   \frametitle{What is magma?}
 
@@ -224,7 +561,9 @@
 
   $$ \sum_{i} X_{i} = X_{\text{SiO}_{2}} + X_{\text{K}_{2}\text{O}} + X_{\text{Na}_{2}\text{O}} + X_{\text{H}_{2}\text{O}} + ... = 1 $$
   
-  $X_{i} =$ Fraction of the i$^{\text{th}}$ component ($i = $ SiO$_{2}$, K$_{2}$O, Na$_{2}$O, H$_{2}$O, ...)
+  $X_{i} =$ Fraction of the i$^{\text{th}}$ component ($i = $ SiO$_{2}$, K$_{2}$O, Na$_{2}$O, H$_{2}$O, ...) \\
+
+  $X_{i}$ can be expressed in mol\% or wt\% \\
   
 \end{frame}
 %-----------------------------------------------
@@ -258,7 +597,7 @@
 
       \vspace{0.5cm}
 
-      Not suitable for all volcanic rocks e.g. High MgO \\
+      Not suitable for all volcanic rocks, e.g., High MgO \\
     \end{column}
   \end{columns}
 
@@ -318,6 +657,22 @@
   \end{frame}
 %-----------------------------------------------
 
+%\begin{frame}
+%  \frametitle{Magma generation - How to melt rocks?}
+
+%  \begin{columns}[t]
+%    \begin{column}{0.5\paperwidth}
+%      $$\includegraphics[width=0.95\textwidth]{geotherm.png}$$
+%    \end{column}
+
+%    \begin{column}{0.5\paperwidth}
+%      $$\includegraphics[width=0.95\textwidth]{Earth_crop.png}$$
+%    \end{column}
+
+%  \end{columns}
+  
+%  \end{frame}
+%-----------------------------------------------
 \begin{frame}
   \frametitle{Magma generation - How to melt rocks?}
 
@@ -327,7 +682,23 @@
     \end{column}
 
     \begin{column}{0.5\paperwidth}
-      $$\includegraphics[width=0.95\textwidth]{Earth_crop.png}$$
+      Thermodynamics $\implies$ 3 ways to melt rocks:
+
+      \begin{itemize}
+      \item Increase temperature \\
+      \item Decrease pressure \\
+      \item Change composition \\
+      \end{itemize}
+
+      \vspace{0.5cm}
+      
+      Can \textbf{model} these assuming \textbf{Chemical equilibrium} - System has sufficient time to respond to changes in:
+
+      \begin{itemize}
+      \item $P$ \\
+      \item $T$ \\
+      \item $\mathbf{X}$ \\
+      \end{itemize}
     \end{column}
 
   \end{columns}
@@ -365,6 +736,42 @@
   \end{frame}
 %-----------------------------------------------
 
+\begin{frame}
+  \frametitle{Magma generation - How to melt rocks?}
+
+  \vspace{-0.5 cm}
+  
+  \begin{columns}[t]
+    \begin{column}{0.5\paperwidth}
+      $$\includegraphics[width=0.95\textwidth]{depressure.png}$$
+
+      \vspace{-0.6cm}
+
+      $$ \left.\frac{\mathrm{d} T}{\mathrm{d} P}\right|_{\Delta S = 0} = \frac{\alpha T}{\rho C_{p}}$$
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{itemize}
+      \item \textbf{Depressurisation}: Reduce $P$ \\
+        \begin{itemize}
+        \item \textbf{Adiabatic} process - No transfer of heat $Q$ or mass between system and surroundings \\
+        \item \textbf{Adiabatic decompression} - Magma rises faster than it can transfer heat to its surroundings \\
+        \end{itemize}
+      \end{itemize}
+
+      For reversible processes, can define entropy $S$ as:
+
+      $$ \mathrm{d}S = \frac{\mathrm{d}Q}{T} $$
+
+      Thus, adiabatic process is also \textbf{isentropic} ($\mathrm{d}S = 0$) \\
+    \end{column}
+
+  \end{columns}
+  
+  \end{frame}
+%-----------------------------------------------
 \begin{frame}
   \frametitle{Magma generation - How to melt rocks?}
 
@@ -457,6 +864,56 @@
       \vspace{-0.8cm}
 
       $$\includegraphics[width=0.95\textwidth]{ternary.png}$$
+      
+    \end{column}
+
+  \end{columns}
+  
+  \end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Summary}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      
+      \begin{itemize}
+      \item Magma properties controlled by $P$, $T$ and $\mathbf{X}$ \\
+      \item \textbf{Models} - Representations of reality \\
+      \item Models can describe:
+        \begin{itemize}
+        \item Processes, e.g., magma generation by:
+          \begin{itemize}
+          \item Heating \\
+          \item Decompression \\
+          \item Mixing \\
+          \end{itemize}
+          \vspace{0.5cm}
+        \item Characteristics
+          \begin{itemize}
+          \item State of matter \\
+          \item Mineralogy \\
+          \end{itemize}
+        \end{itemize}
+      \end{itemize}
+
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \vspace{-1.5cm}
+      
+      $$\includegraphics[width=0.95\textwidth]{flux_melting.png}$$
+
+      \vspace{-1.2cm}
+      
+      $$\includegraphics[width=0.8\textwidth]{Holtz05.png}$$
+
+      \vspace{-0.3cm}
+
+      \centering \tiny Holtz et al. (2005) \\
       
     \end{column}
 
