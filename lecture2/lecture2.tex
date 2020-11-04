@@ -945,7 +945,8 @@
       
       If $\text{Ca} \gtrsim 1$, deforming stress dominates and bubbles can have irregular shapes \\
       \hspace*{0.5cm} Bubbles streamline with shear \\
-      \hspace*{1cm} $\implies$ shear thinning behaviour \\
+      \hspace*{1cm} $\implies$ Decrease in viscosity and
+      \hspace*{1.85cm} shear thinning \\
 
     \end{column}
     
@@ -953,6 +954,79 @@
 
 \end{frame}
 %------------------------------------------------
+\begin{frame}
+  \frametitle{Magma viscosity - Modeling the effect of bubbles}
+
+  Bubble deformation makes it difficult to model effect of bubbles on rheology \\
+
+  \vspace{0.5cm}
+  
+  \textbf{Relaxation time} - Characteristic time for a deformed bubble to return to equilibrium state \\
+
+  $$ \lambda = \frac{\eta_{\text{m}} r_{\text{b}}}{\sigma} $$
+
+  Compare with timescale for changing shear conditions $\dot{\gamma}/\ddot{\gamma}$
+
+  \vspace{0.5cm}
+  
+  Define \textbf{Dynamic capillary number:}
+
+  $$ \text{Cd} = \frac{\lambda \ddot{\gamma}}{\dot{\gamma}} $$
+
+  $\text{Cd} < 1 \implies$ Steady flow \hspace{0.25cm} $\implies$ Rheology controlled by $\text{Ca}$ \\
+
+  $\text{Cd} > 1 \implies$ Unsteady flow $\implies$ Bubbles never in equilibrium \\
+
+  \hspace{5.5cm} Viscosity is less than bubble-free fluid \\
+  
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Magma viscosity - Modeling the effect of bubbles}
+
+  Whether bubbles increase or decrease viscosity depends on $\dot{\gamma}$ and $\ddot{\gamma}$ \\
+
+  Semi-empirical model of Mader et al. (2013):
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ \eta_{\text{r}} = \eta_{\text{r}, \infty} + \frac{\eta_{\text{r}, 0} - \eta_{\text{r}, \infty}}{1 + \text{Cx}^{m}} $$
+
+      where
+
+      $$ \eta_{\text{r}, \infty} = 1 - \frac{5 \phi_{\text{b}}}{3} $$
+
+      $$ \eta_{\text{r}, 0} = 1 + \phi_{\text{b}} $$
+      
+      $$ \text{Cx} = \sqrt{\text{Ca}^{2} + \text{Cd}^{2}} $$
+
+      $m$ depends on size distribution \\
+
+      \hspace{0.3cm} = 2 for mono-disperse bubbles \\
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      $$\includegraphics[width=0.9\textwidth]{Mader13.png}$$
+
+      \vspace{-0.2cm}
+
+      \centering \tiny Mader et al. (2013)
+
+      \normalsize Experimentally tested for $\phi_{\text{b}} < 0.46$ \\
+
+      \vspace{0.5cm}
+      
+      For $\phi_{\text{b}} \geq 0.74$ a foam forms \\
+    \end{column}
+
+  \end{columns}
+\end{frame}
+%------------------------------------------------
+
 \begin{frame}
   \frametitle{Magma density and viscosity - conclusions}
 

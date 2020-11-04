@@ -123,7 +123,7 @@
 {
 \textit{paul.jarvis@unige.ch} % Your email address
 }
-\date{15th November 2019} % Date, can be changed to a custom date
+\date{26th November 2020} % Date, can be changed to a custom date
 \begin{columns}
 
   \begin{column}{0.33\paperwidth}
@@ -170,7 +170,7 @@
 
   \small Viscosity and density control how magma is transported within the Earth's crust \\
 
-  Can consider transport of bulk magma, or fracionation of individual phases  \\
+  Can consider transport of bulk magma, or \textbf{fractionation} of individual phases  \\
 
   \begin{columns}[t]
 
@@ -194,7 +194,7 @@
 \begin{frame}
   \frametitle{Crystal settling}
 
-  Sills can contain cumulates - dense regions of crystals which have settled to the base of a chamber
+  Sills can contain \textbf{cumulates} - dense regions of crystals which have settled to the base of a chamber
   \begin{columns}[t]
 
     \begin{column}{0.5\textwidth}
@@ -208,9 +208,9 @@
       In viscous fluid, three forces act on sphere:
 
       \begin{itemize}
-      \item Gravity $F_{\text{g}} = 4 \pi \rho_{\text{c}} r^{3} g / 3$ \\
-      \item Buoyancy $F_{\text{b}} = 4 \pi \rho_{\text{m}} r^{3} g / 3$ \\
-      \item Viscous drag $F_{\text{v}} = 6 \pi \eta_{\text{m}} r v_{\text{s}}$ \\
+      \item \textbf{Gravity} $F_{\text{g}} = 4 \pi \rho_{\text{c}} r^{3} g / 3$ \\
+      \item \textbf{Buoyancy} $F_{\text{b}} = 4 \pi \rho_{\text{m}} r^{3} g / 3$ \\
+      \item \textbf{Viscous drag} $F_{\text{v}} = 6 \pi \eta_{\text{m}} r v_{\text{s}}$ \\
       \end{itemize}
 
       where $r$ = radius, $v_{\text{s}}$ = settling speed \\
@@ -223,6 +223,109 @@
     \end{column}
   \end{columns}
   
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Simple models of cumulate formation: \\ Convecting or static magma}
+
+  Partially-molten sill, 2 populations of crystals size $d_{1}$ and $d_{2}$ where $d_{1} > d_{2}$ \\
+
+  $\implies v_{\text{s}, 1} > v_{\text{s}, 2}$
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \centering Static magma
+      
+      $$\includegraphics[width=0.95\textwidth]{staticSill.png}$$
+
+      $\phi_{1}, \phi_{2} = \phi_{1}(\mathbf{x}, t), \phi_{2}(\mathbf{x}, t)$
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \centering Convecting magma
+      
+      $$\includegraphics[width=0.95\textwidth]{convectingSill.png}$$
+
+      $\phi_{1}, \phi_{2} = \phi_{1}(t), \phi_{2}(t)$
+      
+    \end{column}    
+    
+  \end{columns}
+  
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Cumulate crystal size distribution: Static magma}
+
+  \centering $t = 0$
+  
+  $$\includegraphics[width=0.95\textwidth]{staticSillConc.png}$$
+
+  Both populations are homogeneously dispersed throughout the sill
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Cumulate crystal size distribution: Static magma}
+
+  \centering $t = \mathrm{d} t$
+  
+  $$\includegraphics[width=0.95\textwidth]{staticSillConc_dt.png}$$
+
+  Populations settle at different speeds 
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Cumulate crystal size distribution: Static magma}
+
+  \centering $t = \mathrm{d} t$
+  
+  $$\includegraphics[width=0.95\textwidth]{staticSillConc_dt.png}$$
+
+  Volume of settling particles per unit area:
+
+  \vspace{-0.5cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ \phi_{1} v_{\text{s}, 1} \mathrm{d}t $$
+
+    \end{column}
+    
+    \begin{column}{0.5\paperwidth}
+
+      $$ \phi_{2} v_{\text{s}, 2} \mathrm{d}t $$
+
+    \end{column}
+    
+  \end{columns}
+
+  \vspace{0.5cm}
+  
+  Ratio of population volumes = $\frac{\phi_{1} v_{\text{s}, 1}}{\phi_{2} v_{\text{s}, 2}}$ 
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Cumulate crystal size distribution: Static magma}
+
+  \centering $t > H / v_{\text{s}, 1}$
+  
+  $$\includegraphics[width=0.95\textwidth]{staticSillConc_longTime.png}$$
+
+  All of the coarse population has settled.  
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Cumulate crystal size distribution: Static magma}
+
+  What does the cumulate look like?
+  
+  $$\includegraphics[width=0.95\textwidth]{staticCumulate.png}$$
+
 \end{frame}
 %------------------------------------------------
 \begin{frame}
