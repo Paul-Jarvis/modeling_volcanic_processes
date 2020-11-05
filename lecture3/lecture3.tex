@@ -192,7 +192,7 @@
 \end{frame}
 %------------------------------------------------
 \begin{frame}
-  \frametitle{Crystal settling}
+  \frametitle{Fractionation by crystal settling}
 
   Sills can contain \textbf{cumulates} - dense regions of crystals which have settled to the base of a chamber
   \begin{columns}[t]
@@ -326,6 +326,205 @@
   
   $$\includegraphics[width=0.95\textwidth]{staticCumulate.png}$$
 
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Cumulate crystal size distribution: Convecting magma}
+
+  \centering $t = 0$
+  
+  $$\includegraphics[width=0.95\textwidth]{convectingSillConc.png}$$
+
+  Both populations are homogeneously dispersed throughout the sill
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Cumulate crystal size distribution: Convecting magma}
+
+  \centering $t = \mathrm{d}t$
+  
+  $$\includegraphics[width=0.95\textwidth]{convectingSillConc_dt.png}$$
+
+  Convection keeps both populations homogeneously dispersed \\
+
+  Viscous boundary layer at base of sill from which crystals cannot escape \\
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Cumulate crystal size distribution: Convecting magma}
+
+  $$\includegraphics[width=0.95\textwidth]{convectingSillConc_dA.png}$$
+
+  Depth-integrated volume of suspended particles:
+
+  \vspace{-1cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ H \phi_{1} \mathrm{d}A$$
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ H \phi_{2} \mathrm{d}A $$
+      
+    \end{column}
+    
+  \end{columns}
+
+  \vspace{0.5cm}
+
+  Volume of particles settling into viscous boundary layer, and therefore sedimenting, in interval $\mathrm{d}t$
+
+  \vspace{-1cm}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ v_{\text{s}, 1} \phi_{1} \mathrm{d}t \mathrm{d}A$$
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ v_{\text{s}, 2} \phi_{2} \mathrm{d}t \mathrm{d}A$$
+      
+    \end{column}
+    
+  \end{columns}
+  
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Cumulate crystal size distribution: Convecting magma}
+
+  \vspace{-1cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ \mathrm{d}(H \phi_{1} \mathrm{d}A) = -v_{\text{s}, 1} \phi_{1} \mathrm{d}t \mathrm{d}A $$
+
+      $$ H \mathrm{d}A \mathrm{d}\phi_{1} = -v_{\text{s}, 1} \phi_{1} \mathrm{d}t \mathrm{d}A $$
+
+      $$ \frac{\mathrm{d} \phi_{1}}{\mathrm{d} t} = -\frac{v_{\text{s}, 1} \phi_{1}}{H}$$
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ \mathrm{d}(H \phi_{2} \mathrm{d}A) = -v_{\text{s}, 2} \phi_{2} \mathrm{d}t \mathrm{d}A $$
+
+      $$ H \mathrm{d}A \mathrm{d}\phi_{2} = -v_{\text{s}, 2} \phi_{2} \mathrm{d}t \mathrm{d}A $$
+      
+      $$ \frac{\mathrm{d} \phi_{2}}{\mathrm{d} t} = -\frac{v_{\text{s}, 2} \phi_{2}}{H}$$
+    \end{column}
+    
+  \end{columns}
+
+  \vspace{0.5cm}
+  
+  Linear, first-order, ordinary differential equation $\implies$ exponential solution \\
+
+  \vspace{-0.5cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ \phi_{1} = \alpha_{1} \exp\left(-\frac{v_{\text{s}, 1} t}{H}\right) + \beta_{1} $$
+
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ \phi_{2} = \alpha_{2} \exp\left(-\frac{v_{\text{s}, 2} t}{H}\right) + \beta_{2} $$
+
+    \end{column}
+
+  \end{columns}
+
+  \vspace{0.5cm}
+  
+  Boundary conditions:
+
+  \vspace{-0.75cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ \phi_{1}(t \to \infty) \to 0 \implies \beta_{1} = 0$$
+      
+      \vspace{-0.75cm}
+      
+      $$ \phi_{1}(t = 0) = \phi_{1, 0} \implies \alpha_{1} = \phi_{1, 0}$$
+
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ \phi_{2}(t \to \infty) \to 0 \implies \beta_{2} = 0 $$
+      
+      \vspace{-0.75cm}
+      
+      $$ \phi_{2}(t = 0) = \phi_{2, 0} \implies \alpha_{2} = \phi_{2, 0} $$
+      
+    \end{column}
+    
+  \end{columns}
+  
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Cumulate crystal size distribution: Convecting magma}
+
+  Ratio of population volumes:
+
+  $$ \frac{\phi_{1} v_{\text{s}, 1}}{\phi_{2} v_{\text{s}, 2}} = \frac{\phi_{1, 0} v_{\text{s}, 1}}{\phi_{2, 0} v_{\text{s}, 2}} \exp\left( -\frac{(v_{\text{s}, 1} - v_{\text{s}, 2}) t}{H}\right)$$
+
+  What does the cumulate look like?
+
+  $$\includegraphics[width=0.8\textwidth]{convectingCumulate.png}$$
+  
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Cumulate formation}
+
+  Can use crystal size distributions to distinguish if cumulates formed from static or convecting magmas
+
+  \vspace{-0.5cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$\includegraphics[width=\textwidth]{staticCumulate.png}$$
+  
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      $$\includegraphics[width=\textwidth]{convectingCumulate.png}$$
+  
+    \end{column}
+    
+  \end{columns}
+
+  \vspace{0.5cm}
+  
+  Model has many simplifying assumptions, e.g.:
+
+  \begin{itemize}
+  \item Two crystal populations \\
+  \item No crystallisation during settling \\
+  \item No cooling of the sill \\
+  \end{itemize}
 \end{frame}
 %------------------------------------------------
 \begin{frame}
@@ -480,6 +679,79 @@
       \vspace{1cm}
 
       $\implies$ in presence of crystals, nucleation will almost always be heterogeneous \\
+    \end{column}
+    
+  \end{columns}
+  
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Bubble growth - Mass and momentum conservation}
+
+  As pressure decreases, bubbles grow due to:
+
+  \begin{itemize}
+  \item Direct decompression\\
+  \item Increasing supersaturation \\
+  \end{itemize}
+
+  Model bubble growth according using conservation of momentum and mass:
+
+  $$ \frac{4 \eta_{\text{m}}}{r_{\text{b}}} \frac{\mathrm{d} r_{\text{b}}}{\mathrm{d} t} = P_{\text{m}} - P_{\text{b}} - \frac{2 \sigma}{r_{\text{b}}} $$
+
+  $$ \frac{\mathrm{d} (\rho_{\text{b}} r_{\text{b}}^{3})}{\mathrm{d} t} = 4 r_{\text{b}}^{2} \rho_{\text{m}} \sum_{i} D_{i} \left. \frac{\partial C_{i}}{\partial r}\right|_{r = r_{\text{b}}}$$
+
+  $P_{\text{m(b)}}$ = Pressure in the melt (bubble) \\
+
+  $\sigma$ = Interfacial tension \\
+
+  $C_{i}$ = Concentration of volatile species in melt, e.g., $X_{\text{H}_{2}\text{O}}$, $X_{\text{CO}_{2}}$
+
+  $D_{i}$ = Diffusion coefficient of each species 
+
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Bubble growth - Diffusion in the melt}
+
+  Also need to model transport of volatiles to the bubbles \\
+
+  $$\includegraphics[width=0.95\textwidth]{Gonnermann13.png}$$
+
+  \vspace{-0.2cm}
+
+  \begin{center}
+    
+  \tiny \centering Gonnermann \& Gardner (2013)
+
+  \end{center}
+  
+  \normalsize
+
+  \vspace{-0.5cm}
+  
+  $$ \frac{\partial C_{i}}{\partial t} + \mathbf{u} \cdot \nabla C_{i} = D_{i} \nabla^{2} C_{i} $$
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      Exploit spherical symmetry:
+
+      \vspace{-0.5cm}
+  
+      $$ \frac{\partial C_{i}}{\partial t} + u_{r} \frac{\partial C}{\partial r} = \frac{D_{i}}{r^{2}} \frac{\partial}{\partial r} \left( r^{2} \frac{\partial C_{i}}{\partial r}\right)$$
+
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      Boundary conditions:
+
+      \vspace{-0.5cm}
+  
+      $$ C_{i}(r = r_{\text{b}}) = C_{\text{s}, i}, \quad  \left. \frac{\partial C_{i}}{\partial r}\right|_{r = S} = 0$$
+      
     \end{column}
     
   \end{columns}
