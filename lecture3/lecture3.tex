@@ -697,7 +697,7 @@
 
   Model bubble growth according using conservation of momentum and mass:
 
-  $$ \frac{4 \eta_{\text{m}}}{r_{\text{b}}} \frac{\mathrm{d} r_{\text{b}}}{\mathrm{d} t} = P_{\text{m}} - P_{\text{b}} - \frac{2 \sigma}{r_{\text{b}}} $$
+  $$ \frac{4 \eta_{\text{m}}}{r_{\text{b}}} \frac{\mathrm{d} r_{\text{b}}}{\mathrm{d} t} = P_{\text{b}} - P_{\text{m}} - \frac{2 \sigma}{r_{\text{b}}} $$
 
   $$ \frac{\mathrm{d} (\rho_{\text{b}} r_{\text{b}}^{3})}{\mathrm{d} t} = 4 r_{\text{b}}^{2} \rho_{\text{m}} \sum_{i} D_{i} \left. \frac{\partial C_{i}}{\partial r}\right|_{r = r_{\text{b}}}$$
 
@@ -740,7 +740,7 @@
 
       \vspace{-0.5cm}
   
-      $$ \frac{\partial C_{i}}{\partial t} + u_{r} \frac{\partial C}{\partial r} = \frac{D_{i}}{r^{2}} \frac{\partial}{\partial r} \left( r^{2} \frac{\partial C_{i}}{\partial r}\right)$$
+      $$ \frac{\partial C_{i}}{\partial t} + u_{r} \frac{\partial C_{i}}{\partial r} = \frac{D_{i}}{r^{2}} \frac{\partial}{\partial r} \left( r^{2} \frac{\partial C_{i}}{\partial r}\right)$$
 
     \end{column}
 
@@ -759,37 +759,61 @@
 \end{frame}
 %------------------------------------------------
 \begin{frame}
-  \frametitle{Bubble growth}
+  \frametitle{Bubble growth: Viscosity-limited growth}
 
-  \footnotesize As pressure decreases, bubbles grow due to expansion and increasing amount of exsolved gas \\
+  Assumption: Only consider H$_{2}$O \\
+  
+  $$ \frac{4 \textcolor{red}{\eta_{\text{m}}}}{r_{\text{b}}} \frac{\mathrm{d} r_{\text{b}}}{\mathrm{d} t} = P_{\text{b}} - P_{\text{m}} - \frac{2 \sigma}{r_{\text{b}}} $$
 
-  3 regimes of bubble growth:
+  $$ \frac{\mathrm{d} (\rho_{\text{b}} r_{\text{b}}^{3})}{\mathrm{d} t} = 4 r_{\text{b}}^{2} \rho_{\text{m}} D_{\text{H}_{2}\text{O}} \left. \frac{\partial C_{\text{H}_{2}\text{O}}}{\partial r}\right|_{r = r_{\text{b}}}$$
 
-  \begin{itemize}
-  \item Viscosity-limited growth
+  $$ \frac{\partial C_{\text{H}_{2}\text{O}}}{\partial t} + u_{r} \frac{\partial C_{\text{H}_{2}\text{O}}}{\partial r} = \frac{D_{\text{H}_{2}\text{O}}}{r^{2}} \frac{\partial}{\partial r} \left( r^{2} \frac{\partial C_{\text{H}_{2}\text{O}}}{\partial r}\right)$$
+
     \begin{itemize}
-      \footnotesize 
+      %\footnotesize 
       \item Melt viscosity is sufficiently high to slow down bubble expansion \\
       \item Leads to large supersaturation and build up of over-pressure in bubbles (mechanical disequilibrium) \\
       \item Significant for $\eta_{\text{m}} \geq 10^{9}$ Pa s (silicic melts at shallow depths and low $X_{\text{H}_{2}\text{O}}$ \\
     \end{itemize}
+    
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Bubble growth: Diffusion-limited growth}
 
-  \item Diffusion-limited growth
-    \begin{itemize}
-    \footnotesize
-    \item Melt diffusivity is too low for oversaturated volatiles to diffuse to pre-existing bubbles (chemical disequilibrium) \\
-    \item Leads to nucleation at the expense of growth \\
-    \item Results in many small bubbles \\
-    \end{itemize}
+  Assumption: Only consider H$_{2}$O \\
+  
+  $$ \frac{4 \eta_{\text{m}}}{r_{\text{b}}} \frac{\mathrm{d} r_{\text{b}}}{\mathrm{d} t} = P_{\text{b}} - P_{\text{m}} - \frac{2 \sigma}{r_{\text{b}}} $$
 
-  \item Solubility-limited growth
-    \begin{itemize}
-    \footnotesize
-    \item Diffusivity high, and viscosity low, enough to allow mechanical and chemical equilibrium \\
-    \item Bubbles can grow unhindered \\
-    \item Favoured for low melt viscosity (hot, mafic) and low ascent rates \\
-    \end{itemize}
+  $$ \frac{\mathrm{d} (\rho_{\text{b}} r_{\text{b}}^{3})}{\mathrm{d} t} = 4 r_{\text{b}}^{2} \rho_{\text{m}} \textcolor{blue}{D_{\text{H}_{2}\text{O}}} \left. \frac{\partial C_{\text{H}_{2}\text{O}}}{\partial r}\right|_{r = r_{\text{b}}}$$
+
+  $$ \frac{\partial C_{\text{H}_{2}\text{O}}}{\partial t} + u_{r} \frac{\partial C_{\text{H}_{2}\text{O}}}{\partial r} = \frac{\textcolor{blue}{D_{\text{H}_{2}\text{O}}}}{r^{2}} \frac{\partial}{\partial r} \left( r^{2} \frac{\partial C_{\text{H}_{2}\text{O}}}{\partial r}\right)$$
+
+  \begin{itemize}
+  \item Melt diffusivity is too low for oversaturated volatiles to diffuse to pre-existing bubbles (chemical disequilibrium) \\
+  \item Leads to nucleation at the expense of growth \\
+  \item Results in many small bubbles \\
   \end{itemize}
+    
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+  \frametitle{Bubble growth: Solubility-limited growth}
+
+  Assumption: Only consider H$_{2}$O \\
+  
+  $$ \frac{4 \textcolor{blue}{\eta_{\text{m}}}}{r_{\text{b}}} \frac{\mathrm{d} r_{\text{b}}}{\mathrm{d} t} = P_{\text{b}} - P_{\text{m}} - \frac{2 \sigma}{r_{\text{b}}} $$
+
+  $$ \frac{\mathrm{d} (\rho_{\text{b}} r_{\text{b}}^{3})}{\mathrm{d} t} = 4 r_{\text{b}}^{2} \rho_{\text{m}} \textcolor{red}{D_{\text{H}_{2}\text{O}}} \left. \frac{\partial C_{\text{H}_{2}\text{O}}}{\partial r}\right|_{r = r_{\text{b}}}$$
+
+  $$ \frac{\partial C_{\text{H}_{2}\text{O}}}{\partial t} + u_{r} \frac{\partial C_{\text{H}_{2}\text{O}}}{\partial r} = \frac{\textcolor{red}{D_{\text{H}_{2}\text{O}}}}{r^{2}} \frac{\partial}{\partial r} \left( r^{2} \frac{\partial C_{\text{H}_{2}\text{O}}}{\partial r}\right)$$
+
+  \begin{itemize}
+  \item Diffusivity high, and viscosity low, enough to allow mechanical and chemical equilibrium \\
+  \item Bubbles can grow unhindered \\
+  \item Favoured for low melt viscosity (hot, mafic) and low ascent rates \\
+  \end{itemize}
+    
 \end{frame}
 %------------------------------------------------
 \begin{frame}
@@ -797,7 +821,7 @@
 
   Bubble rise speed can be estimated by assuming spherical shape and using Stokes law
 
-  $$ v_{\text{b}} = \frac{(\rho_{\text{m}} - \rho_{\text{b}}) g d^{2}}{18 \eta_{\text{m}}}$$
+  $$ v_{\text{b}} = \frac{(\rho_{\text{m}} - \rho_{\text{b}}) g r_{\text{b}}^{2}}{3 \eta_{\text{m}}}$$
 
   \begin{columns}[t]
 
@@ -807,7 +831,7 @@
       \begin{itemize}
       \item $\rho_{\text{m}}$ = Melt density \\
       \item $\rho_{\text{b}}$ = Bubble density \\
-      \item $d$ = Bubble diameter \\
+      \item $r_{\text{b}}$ = Bubble radius \\
       \item $\eta_{\text{m}}$ = Melt viscosity \\
       \end{itemize}
 
@@ -956,6 +980,52 @@
   
 \end{frame}
 %------------------------------------------------
+\begin{frame}
+  \frametitle{Summary}
+
+  Magma transport processes can describe movement of bulk magma or individual phases \\
+
+  Various physical processes can be modeled, e.g.:
+
+  \begin{itemize}
+  \item Crystal fractionation \\
+  \item Bubble formation, growth, rise \\
+  \item Conduit flow \\
+  \item Magma fragmentation \\
+  \item Magma mixing and mingling \\
+  \end{itemize}
+
+  \vspace{0.5cm}
+    
+  Models depend on \textcolor{red}{properties} and \textcolor{blue}{processes}:
+
+    \vspace{- 0.5cm}
+    
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{itemize}
+        \item \textcolor{red}{Temperature} \\
+        \item \textcolor{red}{Pressure} \\
+        \item \textcolor{red}{Composition} \\
+      \end{itemize}
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      \begin{itemize}
+      \item \textcolor{blue}{Fluid dynamics} \\
+      \item \textcolor{blue}{Heat transfer} \\
+      \item \textcolor{blue}{Phase equilibria} \\        
+      \end{itemize}
+      
+    \end{column}
+    
+  \end{columns}
+  
+\end{frame}
 
 
 \end{document}

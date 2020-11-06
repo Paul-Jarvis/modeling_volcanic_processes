@@ -83,52 +83,7 @@ Paul A. Jarvis\\ %You should put your name here
 
 \begin{enumerate}
   %Question 1%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item Table~\ref{tab:comp} lists bulk rock compositions as measured for erupted lavas from various volcanoes. 
-
-  \begin{table}[h!]
-    \centering
-    \caption{Dry, bulk rock compositions for various volcanoes (wt\%). Two different lavas were erupted at Unzen in the 1991-1995 eruption. \label{tab:comp}}
-    \begin{tabular}{|c|c|c c c c c c c c c c c|}
-      \hline
-      Volcano & Eruption & SiO$_{2}$ & Al$_{2}$O$_{3}$ & TiO$_{2}$ & FeO & Fe$_{2}$O$_{3}$ & MnO & MgO & CaO & K$_{2}$O & Na$_{2}$O & P$_{2}$O$_{5}$ \\
-      \hline
-      Unzen$^{1}$ & 1991-1995 & 64.27 & 16.13 & 0.71 & 0.00 & 5.10 & 0.10 & 2.47 & 4.69 & 2.54 & 3.81 & 0.17 \\
-      Unzen$^{2}$ & 1991-1995 & 51.84 & 18.19 & 1.28 & 0.00 & 10.27 & 0.18 & 4.62 & 9.43 & 1.22 & 2.79 & 0.17 \\
-      Kilauea & 1992 & 49.78 & 12.79 & 2.37 & 0.00 & 12.40 & 0.17 & 8.75 & 10.59 & 0.41 & 2.14 & 0.22 \\
-      Novarupta & 1912 & 77.19 & 12.28 & 0.18 & 1.3 & 0.0 & 0.05 & 0.19 & 0.87 & 3.17 & 4.32 & 0.05 \\
-      \hline
-    \end{tabular}
-  \end{table}
-
-  \begin{enumerate}
-  \item Use Figure~\ref{fig:TAS} to classify the composition of the rocks in Table~\ref{tab:comp}. 
-  \item Create a new table converting the Novarupta composition shown in Table~\ref{tab:comp} to mol\%. Make use of Fig.~\ref{fig:periodic} and
-    \begin{equation}
-      \label{equ:wt2mol}
-      X_{i}(\text{mol\%}) = \frac{100 X_{i}(\text{wt\%})}{M_{i}} \left(\sum_{i} \frac{X_{i}(\text{wt\%})}{M_{i}}\right)^{-1},
-    \end{equation}
-    
-
-    where $M_{i}$ is the molar mass of component $X_{i}$. 
-  \end{enumerate}
-
-  \begin{figure}
-    $$\includegraphics[width=\textwidth]{TAS.JPG}$$
-    \caption{Total Alkali-Silica (TAS) diagram for characterisation of volcanic rocks. \label{fig:TAS}}
-  \end{figure}
-
-  \begin{figure}
-    $$\includegraphics[width=\paperwidth, angle=90]{periodic.pdf}$$
-    \caption{Periodic table of elements. \label{fig:periodic}}
-  \end{figure}
-  
-  Table~\ref{tab:liq} shows the liquidus temperatures of the magmas in Table~\ref{tab:comp} for both dry composition and 4 wt\% water at 2000 MPa.
-
-  \begin{enumerate}\setcounter{enumii}{2}
-  \item For the Novarupta volcano, determine the wet melt composition, with 4 wt\% H$_{2}$O, (in mol\%) at the wet liquidus temperature at 2000 MPa. 
-\end{enumerate}
-
-  The volume $V_{\text{m}}$ of 1 mol of melt of composition $\mathbf{X}$ as a function of pressure $P$ and temperature $T$ is given by
+\item The 1991-1995 eruption of Mt. Unzen, Japan, produced a series of lava domes. A sample of this lava can be seen in Figure~\ref{fig:Unzen}. The white rock (Unzen$^{1}$ in Table~\ref{tab:cold_comp}) forms most of the lava, whilst the dark rock (Unzen$^{2}$) is present as many discrete enclaves existing within the white rock. These enclaves are interpreted to have formed prior to eruption, when a hotter magma was injected into a cooler magma storage region. Table~\ref{tab:cold_comp} lists the melt compositions of the two magmas at their mixing temperatures and 2000 MPa. The volume $V_{\text{m}}$ of 1 mol of melt of composition $\mathbf{X}$ as a function of pressure $P$ and temperature $T$ is given by
 
   \begin{align}
     \label{equ:mol_vol}
@@ -143,22 +98,28 @@ Paul A. Jarvis\\ %You should put your name here
     \rho_{\text{m}} = \frac{1}{V_{\text{m}}} \sum_{i} X_{i}(\text{mol\%}) M_{i}.
   \end{equation}
   
+  At 775 $^{\circ}$C, the equilibrium crystal assemblage of the Unzen$^{1}$ magma is orthopyroxene ($\phi_{\text{opx}} = 0.07, \rho_{\text{opx}} = 3.52$ g cm$^{-3}$), clinopyroxene ($\phi_{\text{cpx}} = 0.02, \rho_{\text{cpx}} = 3.35$ g cm$^{-3}$) and feldspar ($\phi_{\text{fld}} = 0.30, \rho_{\text{fld}} = 2.62$ g cm$^{-3}$) with minor amounts of spinel and oxides. On the other hand, at 1079$^{\circ}$C, the Unzen$^{2}$ magma is at the liquidus temperature and can be considered aphyric.
+  
+  \begin{figure}
+    $$\includegraphics[width=0.5\textwidth]{hand_spec.JPG}$$
+    \caption{Sample of dome lava erupted from Unzen in the 1991-1995 eruption. The bulk of the lava is the white rock (Unzen$^{1}$ in Table~\ref{tab:cold_comp}), whilst the dark rock (Unzen$^{2}$) exists as discrete enclaves. \label{fig:Unzen}}
+  \end{figure}
+
   \begin{table}
+    \small
     \centering
-    \caption{Liquidus tempertaures for rocks show in Table~\ref{tab:comp} at 2000 MPa for dry and wet (4 wt\% water) compositions. \label{tab:liq}}
-    \begin{tabular}{|c|c|c|c|}
+    \caption{The melt compositions (mol\%) of the Unzen magmas at their mixing temperatures and 2000 MPa. \label{tab:cold_comp}}
+    \begin{tabular}{|c c|c c c c c c c c c c c c|}
       \hline
-      Volcano & Eruption & Dry Liquidus $T$ /$^{\circ}$C & Wet Liquidus $T$ /$^{\circ}$C  \\
+      Magma  & Temperature /$^{\circ}$C & SiO$_{2}$ & Al$_{2}$O$_{3}$ & TiO$_{2}$ & FeO & Fe$_{2}$O$_{3}$ & MnO & MgO & CaO & K$_{2}$O & Na$_{2}$O & P$_{2}$O$_{5}$ & H$_{2}$O \\
       \hline
-      Unzen$^{1}$ & 1991-1995 & 1148 & 1043 \\
-      Unzen$^{2}$ & 1991-1995 & 1226 & 1079 \\
-      Kilauea & 1992 & 1237 & 1172 \\
-      MORB & N/A & 1215 & 1145 \\
-      Novarupta & 1912 & 1123 & 827 \\
+      Unzen$^{1}$ & 775 & 67.43 & 6.86 & 0.16 & 0.54 & 0.1 & 0.15 & 0.34 & 2.29 & 2.86 & 2.29 & 0.13 & 16.57 \\
+      Unzen$^{2}$ & 1079 & 51.23 & 10.49 & 1.23 & 0.0 & 3.70 & 0.15 & 6.79 & 9.88 & 0.62 & 2.47 & 0.07 & 13.59 \\
       \hline
     \end{tabular}
   \end{table}
 
+  
   \begin{table}
     \centering
     \caption{Partial molar volume, thermal expansions and compressibilities of oxide components \label{tab:mol_vol}}
@@ -183,11 +144,10 @@ Paul A. Jarvis\\ %You should put your name here
     \end{tabular}
   \end{table}
 
-  \begin{enumerate}\setcounter{enumii}{3}
-  \item For the Novarupta volcano, determine the density of the \textbf{dry} melt composition at the \textbf{dry} liquidus temperature, at 2000 MPa. Take care with units and show your method clearly (it may be helpful to draw a table). 
-  \item For the same volcano, determine the density of the \textbf{wet} melt composition at the \textbf{dry} liquidus temperature, at 2000 MPa.
-  \item Again for Novarupta, determine the density of the \textbf{wet} melt composition at the \textbf{wet} liquidus temperature, at 2000 MPa.
-  \item Describe the effect of both temperature and water content on the density of the magmatic melt at Novarupta. Be as quantitative as you can.
+  \begin{enumerate}
+  \item Determine the density of the Unzen$^{1}$ melt.
+  \item Determine the density of the Unzen$^{2}$ melt.
+  \item Determine the density of the Unzen$^{1}$ magma.
   \end{enumerate}
 
   %Question 2%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -218,11 +178,6 @@ Paul A. Jarvis\\ %You should put your name here
   %Question 3%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item The 1991-1995 eruption of Mt. Unzen, Japan, produced a series of lava domes. A sample of this lava can be seen in Figure~\ref{fig:Unzen}. The white rock (Unzen$^{1}$ in Table~\ref{tab:comp}) forms most of the lava, whilst the dark rock (Unzen$^{2}$) is present as a many discrete enclaves exisiting within the white rock. These enclaves are interpreted to have formed prior to eruption, when a hotter magma was injected into a cooler magma storage region. 
 
-  \begin{figure}
-    $$\includegraphics[width=0.5\textwidth]{hand_spec.JPG}$$
-    \caption{Sample of dome lava erupted from Unzen in the 1991-1995 eruption. The bulk of the lava is the white rock (Unzen$^{1}$ in Table~\ref{tab:comp}), whilst the dark rock (Unzen$^{2}$) exists as discrete enclaves. \label{fig:Unzen}}
-  \end{figure}
-  
   An empirical model for the viscosity of melt $\eta_{\text{m}}$ as a function of temperature $T$ and composition $\mathbf{X}$ is (Giordano et al., 2008)
   
   \begin{equation}
