@@ -95,16 +95,23 @@ Paul A. Jarvis\\ %You should put your name here
 
   \begin{equation}
     \label{equ:dens}
-    \rho_{\text{m}} = \frac{1}{V_{\text{m}}} \sum_{i} X_{i}(\text{mol\%}) M_{i}.
+    \rho_{\text{m}} = \frac{1}{V_{\text{m}}} \sum_{i} X_{i}(\text{mol\%}) M_{i},
   \end{equation}
-  
-  At 775 $^{\circ}$C, the equilibrium crystal assemblage of the Unzen$^{1}$ magma is orthopyroxene ($\phi_{\text{opx}} = 0.07, \rho_{\text{opx}} = 3.52$ g cm$^{-3}$), clinopyroxene ($\phi_{\text{cpx}} = 0.02, \rho_{\text{cpx}} = 3.35$ g cm$^{-3}$) and feldspar ($\phi_{\text{fld}} = 0.30, \rho_{\text{fld}} = 2.62$ g cm$^{-3}$) with minor amounts of spinel and oxides. On the other hand, at 1079$^{\circ}$C, the Unzen$^{2}$ magma is at the liquidus temperature and can be considered aphyric.
+
+  where $M_{i}$ is the molar mass of each component (see Figure~\ref{fig:periodic}).
   
   \begin{figure}
     $$\includegraphics[width=0.5\textwidth]{hand_spec.JPG}$$
     \caption{Sample of dome lava erupted from Unzen in the 1991-1995 eruption. The bulk of the lava is the white rock (Unzen$^{1}$ in Table~\ref{tab:cold_comp}), whilst the dark rock (Unzen$^{2}$) exists as discrete enclaves. \label{fig:Unzen}}
   \end{figure}
 
+  \begin{figure}
+    $$\includegraphics[width=1.3\textwidth, angle=90]{periodic.pdf}$$
+    \caption{Periodic table. \label{fig:periodic}}
+  \end{figure}
+
+  At 775 $^{\circ}$C, the equilibrium crystal assemblage of the Unzen$^{1}$ magma is orthopyroxene ($\phi_{\text{opx}} = 0.07, \rho_{\text{opx}} = 3.52$ g cm$^{-3}$), clinopyroxene ($\phi_{\text{cpx}} = 0.02, \rho_{\text{cpx}} = 3.35$ g cm$^{-3}$) and feldspar ($\phi_{\text{fld}} = 0.30, \rho_{\text{fld}} = 2.62$ g cm$^{-3}$) with minor amounts of spinel and oxides. On the other hand, at 1079$^{\circ}$C, the Unzen$^{2}$ magma is at the liquidus temperature and can be considered aphyric.
+  
   \begin{table}
     \small
     \centering
@@ -114,7 +121,7 @@ Paul A. Jarvis\\ %You should put your name here
       Magma  & Temperature /$^{\circ}$C & SiO$_{2}$ & Al$_{2}$O$_{3}$ & TiO$_{2}$ & FeO & Fe$_{2}$O$_{3}$ & MnO & MgO & CaO & K$_{2}$O & Na$_{2}$O & P$_{2}$O$_{5}$ & H$_{2}$O \\
       \hline
       Unzen$^{1}$ & 775 & 67.43 & 6.86 & 0.16 & 0.54 & 0.1 & 0.15 & 0.34 & 2.29 & 2.86 & 2.29 & 0.13 & 16.57 \\
-      Unzen$^{2}$ & 1079 & 51.23 & 10.49 & 1.23 & 0.0 & 3.70 & 0.15 & 6.79 & 9.88 & 0.62 & 2.47 & 0.07 & 13.59 \\
+      Unzen$^{2}$ & 1079 & 53.5 & 10.49 & 1.23 & 0.54 & 0.1 & 0.15 & 6.79 & 2.2 & 2.86 & 2.29 & 0.07 & 20 \\
       \hline
     \end{tabular}
   \end{table}
@@ -148,37 +155,12 @@ Paul A. Jarvis\\ %You should put your name here
   \item Determine the density of the Unzen$^{1}$ melt.
   \item Determine the density of the Unzen$^{2}$ melt.
   \item Determine the density of the Unzen$^{1}$ magma.
+  \item Given the densities of the two magmas, what mixing textures would you expect to see produced if the Unzen$^{2}$ magma was injected into the Unzen$^{1}$ magma? Given that the Unzen$^{2}$ magma is preserved an enclaves, what has been neglected in this desity model that would have been important?
   \end{enumerate}
 
   %Question 2%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\item At a temperature of 767 $^{\circ}$C and pressure of 2000 MPa, the equilibrium crystal assemblage of the wet Novarupta magma is feldspar ($\phi_{\text{fld}} = 0.5, \rho_{\text{fld}} = 2.5$ g cm$^{-3}$), quartz ($\phi_{\text{qz}} = 0.3, \rho_{\text{qz}} = 2.5$ g cm$^{-3}$), spinel ($\phi_{\text{sp}} = 0.007, \rho_{\text{sp}} = 4.9$ g cm$^{-3}$) and biotite ($\phi_{\text{bio}} = 0.5, \rho_{\text{bio}} = 2.75$ g cm$^{-3}$) whilst the melt density is 2.21 g cm$^{-3}$ and the melt viscosity is 147910.8 Pa s. Additionally, the gravitational settling velocity of a crystal of size $d$ and density $\rho_{\text{c}}$ in melt of density $\rho_{\text{m}}$ and viscosity $\eta_{\text{m}}$ is given by
-
-  \begin{equation}
-    \label{equ:Stokes}
-    v_{\text{s}} = \frac{(\rho_{\text{c}} - \rho_{\text{m}}) g d^{2}}{18 \eta_{\text{m}}},
-  \end{equation}
-
-  where $g = 9.81$ m s$^{-1}$ is the gravitational acceleration. 
-
-  \begin{enumerate}
-    \setcounter{enumii}{0}
-  \item Assuming the crystals are 500 $\mu$m in size, calculate the settling velocities of each crystal phase in the Novarupta magma.
-  \end{enumerate}
-
-  For the wet Kilauea composition, the equilibrium assemblage at the same pressure is olivine ($\phi_{\text{ol}} = 0.03, \rho_{\text{ol}} = 3.37$ g cm$^{-3}$), orthopyroxene ($\phi_{\text{opx}} = 0.006, \rho_{\text{fld}} = 3.28$ g cm$^{-3}$), clinopyroxene ($\phi_{\text{cpx}} = 8.21, \rho_{\text{cpx}} = 3.29$ g cm$^{-3}$) and spinel ($\phi_{\text{sp}} = 0.02, \rho_{\text{sp}} = 4.9$ g cm$^{-3}$), with a melt density of 2.31 g cm$^{-3}$ and a melt viscosity of 28.1 Pa s. 
-
-  \begin{enumerate}
-    \setcounter{enumii}{1}
-  \item Calculate the settling velocities of each crystal phase in the Kilauea magma.
-  \item It has been suggested that crystal cumulates can form at the base of magma chambers of sills by gravitational settling of crystals. Consider 10 m thick sills of both the Novarupta and Kilauea compositions. If the sills were maintained at constant temperatures, how long would it take for such a cumulate to form in each case? What crystals would they contain?
-  \item What are the most important parameters in determining whether such cumulates can form? Also consider processes which have been neglected here.
-  \end{enumerate}
-
-  %Question 3%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item The 1991-1995 eruption of Mt. Unzen, Japan, produced a series of lava domes. A sample of this lava can be seen in Figure~\ref{fig:Unzen}. The white rock (Unzen$^{1}$ in Table~\ref{tab:comp}) forms most of the lava, whilst the dark rock (Unzen$^{2}$) is present as a many discrete enclaves exisiting within the white rock. These enclaves are interpreted to have formed prior to eruption, when a hotter magma was injected into a cooler magma storage region. 
-
-  An empirical model for the viscosity of melt $\eta_{\text{m}}$ as a function of temperature $T$ and composition $\mathbf{X}$ is (Giordano et al., 2008)
+  \item An empirical model for the viscosity of melt $\eta_{\text{m}}$ as a function of temperature $T$ and composition $\mathbf{X}$ is (Giordano et al., 2008)
   
   \begin{equation}
     \label{equ:Giordano}
@@ -202,16 +184,16 @@ Paul A. Jarvis\\ %You should put your name here
   Values for the coefficients $b_{i}, b_{1j}, c_{i}$ and $c_{11}$, and the expressions for $M_{i}, M_{1j}, N_{i} and N_{11}$ are given in Table~\ref{tab:viscos}.
 
   \begin{table}
-    \caption{The coefficients $b_{i}, b_{1j}, c_{i}$ and $c_{11}$ and expressions for $M_{i}, M_{1j}, N_{i}$ and $N_{11}$ as used in the melt viscosity model of Giordano et al. (2008). All $X_{i}$ are in mol\%.\label{tab:viscos}}
+    \caption{The coefficients $b_{i}, b_{1j}, c_{i}$ and $c_{11}$ and expressions for $M_{i}, M_{1j}, N_{i}$ and $N_{11}$ as used in the melt viscosity model of Giordano et al. (2008). All $X_{i}$ are in mol\%. Note $X_{\text{Fe}} = X_{\text{FeO}} + X_{\text{Fe}_{2}\text{O}_{3}}$.\label{tab:viscos}}
     \begin{tabular}{|c|c||c|c|}
       \hline
       $b_{1} = 159.6$ & $M_{1} = X_{\text{SiO}_{2}} + X_{\text{TiO}_{2}}$ & $c_{1} = 2.75$ & $N_{1} = X_{\text{SiO}_{2}}$ \\
       $b_{2} = -173.3$ & $M_{2} = X_{\text{Al}_{2}\text{O}_{3}}$ & $c_{2} = 15.7$ & $N_{2} = X_{\text{TiO}_{2}} + X_{\text{Al}_{2}\text{O}_{3}}$ \\
-      $b_{3} = -72.1$ & $M_{3} = X_{\text{Fe}} + X_{\text{MnO}} + X_{\text{P}_{2}\text{O}_{5}}$ & $c_{3} = 8.3$ & $N_{3} = X_{\text{Fe}} + X_{\text{MnO}} + X_{\text{MgO}}$ \\
-      $b_{4} = -75.7$ & $M_{4} = X_{\text{MgO}}$ & $c_{4} = 10.2$ & $N_{4} = X_{\text{CaO}}$ \\
-      $b_{5} = -39.9$ & $M_{5} = X_{\text{CaO}}$ & $c_{5} = -12.3$ & $N_{5} = X_{\text{Na}_{2}\text{O}} + X_{\text{K}_{2}\text{O}}$ \\
+      $b_{3} = 72.1$ & $M_{3} = X_{\text{Fe}} + X_{\text{MnO}} + X_{\text{P}_{2}\text{O}_{5}}$ & $c_{3} = 8.3$ & $N_{3} = X_{\text{Fe}} + X_{\text{MnO}} + X_{\text{MgO}}$ \\
+      $b_{4} = 75.7$ & $M_{4} = X_{\text{MgO}}$ & $c_{4} = 10.2$ & $N_{4} = X_{\text{CaO}}$ \\
+      $b_{5} = 39.9$ & $M_{5} = X_{\text{CaO}}$ & $c_{5} = -12.3$ & $N_{5} = X_{\text{Na}_{2}\text{O}} + X_{\text{K}_{2}\text{O}}$ \\
       $b_{6} = -84.1$ & $M_{6} = X_{\text{Na}_{2}\text{O}} + X_{\text{H}_{2}\text{O}} + X_{\text{F}_{2}\text{O}}$ & $c_{6} = -99.1$ & $N_{6} = \ln(1 + X_{\text{H}_{2}\text{O}} + X_{\text{F}_{2}\text{O}})$ \\
-      $b_{7} = -141.5$ & $M_{7} = X_{\text{H}_{2}\text{O}} + X_{\text{F}_{2}\text{O}} + \ln(1 + X_{\text{H}_{2}\text{O}})$& &  \\
+      $b_{7} = 141.5$ & $M_{7} = X_{\text{H}_{2}\text{O}} + X_{\text{F}_{2}\text{O}} + \ln(1 + X_{\text{H}_{2}\text{O}})$& &  \\
       \hline
       $b_{11} = -2.43$ & $M_{11} = M_{1} N_{3}$ & $c_{11} = 0.3$& $N_{11} = (M_{2} + N_{3} + N_{4} - $\\
       $b_{12} = -0.91$ & $M_{12} = (N_{1} + N_{2} + X_{\text{P}_{2}\text{O}_{5}}) (N_{5} + X_{\text{H}_{2}\text{O}})$ & & $X_{\text{P}_{2}\text{O}_{5}}) (N_{5} + X_{\text{H}_{2}\text{O}} + X_{\text{F}_{2}\text{O}_{-1}})$ \\
@@ -222,37 +204,57 @@ Paul A. Jarvis\\ %You should put your name here
 
   \begin{enumerate}
     \setcounter{enumii}{0}
-  \item Assume that the enclave magma has 4 wt\% water and at the time of enclave formation was at the wet liquidus temperature. Calculate the viscosity of this magma. You may find it helpful to draw a table.
-  \item Assume that the host magma also has 4 wt\% water, but is at 775$ ^{\circ}$C. At this temperature, the equilibrium crystal assemblage is orthopyroxene ($\phi_{\text{opx}} = 0.07, \rho_{\text{opx}} = 3.52$ g cm$^{-3}$), clinopyroxene ($\phi_{\text{cpx}} = 0.02, \rho_{\text{cpx}} = 3.35$ g cm$^{-3}$) and feldspar ($\phi_{\text{fld}} = 0.30, \rho_{\text{fld}} = 2.62$ g cm$^{-3}$) with minor amounts of spinel and oxides. The composition of the melt is given in Table~\ref{tab:cold_comp}. Also present is an exsolved gas phase with a volume fraction of $\phi_{\text{b}} = 0.07$ and density of 0.44 g cm$^{-3}$. Calculate the melt viscosity of this magma. 
-  \end{enumerate}
-
-  \begin{table}
-    \small
-    \centering
-    \caption{The melt compositions (mol\%) of the Unzen magmas at their mixing temperatures and 2000 MPa. \label{tab:cold_comp}}
-    \begin{tabular}{|c c|c c c c c c c c c c c c|}
-      \hline
-      Magma  & Temperature /$^{\circ}$C & SiO$_{2}$ & Al$_{2}$O$_{3}$ & TiO$_{2}$ & FeO & Fe$_{2}$O$_{3}$ & MnO & MgO & CaO & K$_{2}$O & Na$_{2}$O & P$_{2}$O$_{5}$ & H$_{2}$O \\
-      \hline
-      Unzen$^{1}$ & 775 & 67.43 & 6.86 & 0.16 & 0.54 & 0.1 & 0.15 & 0.34 & 2.29 & 2.86 & 2.29 & 0.13 & 16.57 \\
-      Unzen$^{2}$ & 1079 & 51.23 & 10.49 & 1.23 & 0.0 & 3.70 & 0.15 & 6.79 & 9.88 & 0.62 & 2.47 & 0.07 & 13.59 \\
-      \hline
-    \end{tabular}
-  \end{table}
-
-  \begin{enumerate}
-    \setcounter{enumii}{2}
-  \item Neglecting the gas phase and using the Krieger \& Dougherty (1959) relation, estimate the total viscosity of the host magma, taking 0.4 as the maximum crystal volume fraction. \\
-  \item Does the host magma have a yield stress? If so, calculate an estimate for it? \\
+  \item Calculate the viscosity of the Unzen$^{2}$ magma at the liquidus temperature.
+  \item Calculate the melt viscosity of the Unzen$^{1}$ magma. 
+  \item Neglecting the gas phase and using the Krieger \& Dougherty (1959) relation, estimate the total viscosity of the Unzen$^{1}$ magma, taking 0.4 as the maximum crystal volume fraction. \\
+  \item Does the Unzen$^{1}$ magma have a yield stress? If so, calculate an estimate for it? \\
   \item Given the temperature difference between the magmas, discuss what you expect to happen once they come into contact in terms of processes such as heat transport, crystallisation and melting. How do you expect the rheological properties of the two magmas to change?
   \end{enumerate}
+  
+  %Question 3%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  %Question4 
-\item Consider two magmas, a basalt ($\eta = 1$ Pa s, $\rho = 2800$ kg m$^{-3}$) and rhyolite ($\eta = 10^{6}$ Pa s, $\rho = 2600$ kg m$^{-3}$), rising in a conduit. Assume a conduit radius of 10 m and 1 m for the rhyolite and basalt, respectively. Assume a pressure gradient driving magma ascent of 500 Pa m$^{-1}$. For both cases:
+\item During fieldwork, a geologist found a sill of thickness 135 m. The lowest 10 m of the sill was a cumulate, almost exclusively of olivine crystals with a mean diameter of 3 mm, and a volume fraction $\phi_{\text{sed}}$ of approximately 0.6. The geologist collected samples and performed geochemical analysis, along with thermometry to estimate that, at the time of intrusion, the magma had a melt viscosity of 8.5 Pa s. Also, the only crystals present in the magma were olivine, with a suspended volume fraction $\phi_{\text{ol}} = 0.03$. The melt density $\rho_{\text{m}} = 2670$ kg m$^{-3}$ whilst the olivine density is $\rho_{\text{ol}} = 3370$ kg m$^{-3}$. The gravitational settling velocity of an olivine crystal is given by
+
+  \begin{equation}
+    \label{equ:Stokes}
+    v_{\text{s}} = \frac{(\rho_{\text{ol}} - \rho_{\text{m}}) g d^{2}}{18 \eta_{\text{m}}},
+  \end{equation}
+
+  where $g = 9.81$ m s$^{-1}$ is the gravitational acceleration. 
 
   \begin{enumerate}
-  \item Calculate velocity as a function of radial position in the conduit \\
-  \item Evaluate the strain rate at the conduit waills. Are the strain rates large enough that the melt might be shear-thinning or undergo structural failure?
+    \setcounter{enumii}{0}
+  \item Calculate the settling velocity of an olivine crystal in the sill.
+  \end{enumerate}
+
+  A model for cumulate growth predics that the thickness $H$ of the cumulate grows at a rate given by
+
+  \begin{equation}
+    \label{equ:cumulateGrowth}
+    \frac{\mathrm{d} H}{\mathrm{d} t} = \frac{\phi_{\text{ol}} g (\rho_{\text{ol}} - \rho_{\text{m}}) d^{2}}{18 \phi_{\text{sed}} \eta_{\text{m}}},
+  \end{equation}
+
+  where $\phi_{\text{sed}}$ is the packing fraction of olivine grains in the deposit.
+
+  \begin{enumerate}
+    \setcounter{enumii}{1}
+  \item Find an expression for the thickness of the cumulate as a function of time.
+  \item Determine how long it takes for a cumulate to reach a thickness of 10 m.
+  \item Discuss the assumptions of this model. What processes have been neglected that would occur in reality and how might they affect the model results? 
+  \end{enumerate}
+
+  
+  %Question4 
+\item Consider two magmas, a basalt ($\eta = 1$ Pa s, $\rho = 2800$ kg m$^{-3}$) and rhyolite ($\eta = 10^{6}$ Pa s, $\rho = 2600$ kg m$^{-3}$), rising in a conduit. Assume a conduit radius of $a = $ 10 m and 1 m for the rhyolite and basalt, respectively. Assume a pressure gradient driving magma ascent of $ \mathrm{d} P / \mathrm{d} z = $500 Pa m$^{-1}$. For such a flow
+
+  $$ \frac{\mathrm{d} V}{\mathrm{d} r} = -\frac{r}{2 \eta} \frac{\mathrm{d} P}{\mathrm{d} z},$$
+
+  where $r$ is the radial coordinate and $V(r)$ is the vertical velocity in the conduit.
+
+  \begin{enumerate}
+  \item Assuming $V(r = a) = 0$, find an expression for $V(r)$ \\
+  \item For both the rhyolite and the basalt, calculate the centre-line velocity. \\
+  \item Evaluate the strain rate at the conduit walls in both cases. Are the strain rates large enough that the melt might be shear-thinning or undergo structural failure?
   \item Calculate the capillary number for a 1 cm radius bubble. Assume the surface tension of melt is $10^{-3}$ N m$^{-1}$. Will the bubbles become deformed by the ascending magma?
   \item What effect do you think the bubbles will have on magma rheology?
   \item Calculate the rise speed of a 1 cm bubble relative to the surrounding melt. Given this speed, what flow regime is likely to characterise the magma? \\
