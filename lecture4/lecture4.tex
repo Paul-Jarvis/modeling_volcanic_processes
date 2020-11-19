@@ -705,6 +705,123 @@
 \end{frame}
 %-----------------------------------------------
 \begin{frame}
+  \frametitle{Gravity currents - Benjamin's model}
+
+  $$\includegraphics[width=\textwidth]{densityIn.png}$$
+
+  \vspace{-0.75cm}
+
+  \begin{center}
+  \tiny Modified from Shin et al. (2004)
+  \end{center}
+
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ \frac{\mathrm{d} P_{\text{out}}}{\mathrm{d} z} = -g \rho_{\text{out}} $$
+
+      $$ \rho_{\text{out}} = \begin{cases}
+        \rho_{\text{c}} & z < h \\
+        \rho_{\text{e}} & z > h
+      \end{cases}
+      $$
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ \frac{\mathrm{d} P_{\text{in}}}{\mathrm{d} z} = -g \rho_{\text{in}} $$
+
+      $$ \rho_{\text{in}} = \rho_{\text{e}} $$
+    \end{column}
+
+  \end{columns}
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Benjamin's model}
+
+  $$\includegraphics[width=\textwidth]{densityIn.png}$$
+
+  \vspace{-0.75cm}
+
+  \begin{center}
+  \tiny Modified from Shin et al. (2004)
+  \end{center}
+
+  \vspace{-0.75cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ P_{\text{out}}(z) - P_{\text{B}} = - g \int_{0}^{z} \rho_{\text{out}} \mathrm{d} z $$
+
+      \vspace{-0.75cm}
+  
+      $$ P_{\text{out}}(z) = P_{\text{B}} - g \begin{cases}
+        \rho_{\text{c}} \int_{0}^{z} \mathrm{d} z & z < h \\
+        \rho_{\text{c}} \int_{0}^{h} \mathrm{d} z + \rho_{\text{e}} \int_{h}^{z} \mathrm{d} z & z > h
+        \end{cases} $$
+
+      \vspace{-0.75cm}
+  
+      $$ P_{\text{out}}(z) = P_{\text{B}} - g \begin{cases}
+        \rho_{\text{c}} z & z < h \\
+        \rho_{\text{c}} h + \rho_{\text{e}} (z - h) & z > h
+        \end{cases} $$
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ P_{\text{in}}(z) - P_{\text{C}} = - g \int_{0}^{z} \rho_{\text{in}} \mathrm{d} z $$
+
+      $$ P_{\text{in}}(z) = P_{\text{C}} - g \rho_{\text{e}} z$$
+    \end{column}
+
+  \end{columns}
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Benjamin's model}
+
+  \vspace{-0.75cm}
+  
+  $$\includegraphics[width=\textwidth]{densityIn.png}$$
+
+  \vspace{-0.75cm}
+
+  \begin{center}
+  \tiny Modified from Shin et al. (2004)
+  \end{center}
+
+  \vspace{-0.75cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ F_{\text{out}} = \int P_{\text{out}} \mathrm{d} A $$
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+      $$ F_{\text{in}} = \int P_{\text{in}} \mathrm{d} A $$
+      
+    \end{column}
+
+  \end{columns}
+
+  $$ \mathrm{d}A = W \mathrm{d}z $$
+
+  $$ F = F_{\text{in}} - F_{\text{out}} = W \int_{0}^{H} (P_{\text{in}} - P_{\text{out}}) \mathrm{d}z $$
+
+  $$ F = W \left( \int_{0}^{h} (P_{\text{in}} - P_{\text{out}}) \mathrm{d}z + \int_{h}^{H} (P_{\text{in}} - P_{\text{out}}) \mathrm{d}z \right)$$
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
   \frametitle{Gravity currents - Reduced gravity}
 
   \begin{columns}[t]

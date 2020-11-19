@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  17 NOV 2020 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  19 NOV 2020 12:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1091,121 +1091,162 @@ Package pdftex.def Info: momentumIn.png  used on input line 705.
  [12
 
 ]
-File: box_model.png Graphic file (type png)
-<use box_model.png>
-Package pdftex.def Info: box_model.png  used on input line 739.
-(pdftex.def)             Requested size: 101.97269pt x 161.74077pt.
+<densityIn.png, id=409, 1204.5pt x 327.47343pt>
+File: densityIn.png Graphic file (type png)
+<use densityIn.png>
+Package pdftex.def Info: densityIn.png  used on input line 740.
+(pdftex.def)             Requested size: 342.2953pt x 93.06107pt.
  [13
 
-] [14
+ <./densityIn.png>]
+File: densityIn.png Graphic file (type png)
+<use densityIn.png>
+Package pdftex.def Info: densityIn.png  used on input line 784.
+(pdftex.def)             Requested size: 342.2953pt x 93.06107pt.
 
-] [15
+Overfull \hbox (31.92874pt too wide) detected at line 784
+\OT1/cmss/m/it/10.95 P[]\OT1/cmss/m/n/10.95 (\OT1/cmss/m/it/10.95 z\OT1/cmss/m/
+n/10.95 ) = \OT1/cmss/m/it/10.95 P[] \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmss/m/it/10.
+95 g []
+ []
+
+
+Overfull \hbox (15.83376pt too wide) detected at line 784
+\OT1/cmss/m/it/10.95 P[]\OT1/cmss/m/n/10.95 (\OT1/cmss/m/it/10.95 z\OT1/cmss/m/
+n/10.95 ) = \OT1/cmss/m/it/10.95 P[] \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmss/m/it/10.
+95 g []
+ []
+
+
+Overfull \vbox (2.02608pt too high) detected at line 784
+ []
+
+[14
 
 ]
-<laminar.png, id=491, 371.9496pt x 768.9528pt>
-File: laminar.png Graphic file (type png)
-<use laminar.png>
-Package pdftex.def Info: laminar.png  used on input line 842.
-(pdftex.def)             Requested size: 81.94339pt x 169.4048pt.
-<turbulent.png, id=492, 343.7643pt x 858.3267pt>
-File: turbulent.png Graphic file (type png)
-<use turbulent.png>
-Package pdftex.def Info: turbulent.png  used on input line 842.
-(pdftex.def)             Requested size: 72.83795pt x 181.86485pt.
+File: densityIn.png Graphic file (type png)
+<use densityIn.png>
+Package pdftex.def Info: densityIn.png  used on input line 822.
+(pdftex.def)             Requested size: 342.2953pt x 93.06107pt.
+ [15
+
+]
+File: box_model.png Graphic file (type png)
+<use box_model.png>
+Package pdftex.def Info: box_model.png  used on input line 856.
+(pdftex.def)             Requested size: 101.97269pt x 161.74077pt.
  [16
 
- <./laminar.png> <./turbulent.png>]
-<settling_sphere.png, id=521, 371.4678pt x 514.3215pt>
-File: settling_sphere.png Graphic file (type png)
-<use settling_sphere.png>
-Package pdftex.def Info: settling_sphere.png  used on input line 870.
-(pdftex.def)             Requested size: 108.16588pt x 149.76155pt.
-<visible.png, id=522, 724.7075pt x 738.76pt>
-File: visible.png Graphic file (type png)
-<use visible.png>
-Package pdftex.def Info: visible.png  used on input line 870.
-(pdftex.def)             Requested size: 108.16588pt x 110.25685pt.
-<lava.jpg, id=523, 308.352pt x 209.1012pt>
-File: lava.jpg Graphic file (type jpg)
-<use lava.jpg>
-Package pdftex.def Info: lava.jpg  used on input line 870.
-(pdftex.def)             Requested size: 108.16588pt x 73.34923pt.
- [17
+] [17
 
- <./settling_sphere.png> <./visible.png (PNG copy)> <./lava.jpg>]
-<lava_morph.jpg, id=551, 697.6464pt x 350.2686pt>
-File: lava_morph.jpg Graphic file (type jpg)
-<use lava_morph.jpg>
-Package pdftex.def Info: lava_morph.jpg  used on input line 914.
-(pdftex.def)             Requested size: 216.33177pt x 108.61421pt.
-<viscous_grav_curr.png, id=552, 862.6629pt x 330.9966pt>
-File: viscous_grav_curr.png Graphic file (type png)
-<use viscous_grav_curr.png>
-Package pdftex.def Info: viscous_grav_curr.png  used on input line 914.
-(pdftex.def)             Requested size: 216.33177pt x 83.00146pt.
- [18
+] [18
 
- <./lava_morph.jpg> <./viscous_grav_curr.png>]
-<GC3.png, id=580, 1860.9525pt x 317.185pt>
-File: GC3.png Graphic file (type png)
-<use GC3.png>
-Package pdftex.def Info: GC3.png  used on input line 929.
-(pdftex.def)             Requested size: 342.2953pt x 58.33951pt.
-<GC9.png, id=582, 1842.885pt x 311.1625pt>
-File: GC9.png Graphic file (type png)
-<use GC9.png>
-Package pdftex.def Info: GC9.png  used on input line 929.
-(pdftex.def)             Requested size: 342.2953pt x 57.79205pt.
+]
+<laminar.png, id=571, 371.9496pt x 768.9528pt>
+File: laminar.png Graphic file (type png)
+<use laminar.png>
+Package pdftex.def Info: laminar.png  used on input line 959.
+(pdftex.def)             Requested size: 81.94339pt x 169.4048pt.
+<turbulent.png, id=572, 343.7643pt x 858.3267pt>
+File: turbulent.png Graphic file (type png)
+<use turbulent.png>
+Package pdftex.def Info: turbulent.png  used on input line 959.
+(pdftex.def)             Requested size: 72.83795pt x 181.86485pt.
  [19
 
+ <./laminar.png> <./turbulent.png>]
+<settling_sphere.png, id=603, 371.4678pt x 514.3215pt>
+File: settling_sphere.png Graphic file (type png)
+<use settling_sphere.png>
+Package pdftex.def Info: settling_sphere.png  used on input line 987.
+(pdftex.def)             Requested size: 108.16588pt x 149.76155pt.
+<visible.png, id=604, 724.7075pt x 738.76pt>
+File: visible.png Graphic file (type png)
+<use visible.png>
+Package pdftex.def Info: visible.png  used on input line 987.
+(pdftex.def)             Requested size: 108.16588pt x 110.25685pt.
+<lava.jpg, id=605, 308.352pt x 209.1012pt>
+File: lava.jpg Graphic file (type jpg)
+<use lava.jpg>
+Package pdftex.def Info: lava.jpg  used on input line 987.
+(pdftex.def)             Requested size: 108.16588pt x 73.34923pt.
+ [20
+
+ <./settling_sphere.png> <./visible.png (PNG copy)> <./lava.jpg>]
+<lava_morph.jpg, id=633, 697.6464pt x 350.2686pt>
+File: lava_morph.jpg Graphic file (type jpg)
+<use lava_morph.jpg>
+Package pdftex.def Info: lava_morph.jpg  used on input line 1031.
+(pdftex.def)             Requested size: 216.33177pt x 108.61421pt.
+<viscous_grav_curr.png, id=634, 862.6629pt x 330.9966pt>
+File: viscous_grav_curr.png Graphic file (type png)
+<use viscous_grav_curr.png>
+Package pdftex.def Info: viscous_grav_curr.png  used on input line 1031.
+(pdftex.def)             Requested size: 216.33177pt x 83.00146pt.
+ [21
+
+ <./lava_morph.jpg> <./viscous_grav_curr.png>]
+<GC3.png, id=662, 1860.9525pt x 317.185pt>
+File: GC3.png Graphic file (type png)
+<use GC3.png>
+Package pdftex.def Info: GC3.png  used on input line 1046.
+(pdftex.def)             Requested size: 342.2953pt x 58.33951pt.
+<GC9.png, id=664, 1842.885pt x 311.1625pt>
+File: GC9.png Graphic file (type png)
+<use GC9.png>
+Package pdftex.def Info: GC9.png  used on input line 1046.
+(pdftex.def)             Requested size: 342.2953pt x 57.79205pt.
+ [22
+
  <./GC3.png (PNG copy)> <./GC9.png (PNG copy)>]
-<mixing.png, id=612, 732.7375pt x 898.35625pt>
+<mixing.png, id=692, 732.7375pt x 898.35625pt>
 File: mixing.png Graphic file (type png)
 <use mixing.png>
-Package pdftex.def Info: mixing.png  used on input line 958.
+Package pdftex.def Info: mixing.png  used on input line 1075.
 (pdftex.def)             Requested size: 144.22362pt x 176.81683pt.
- [20
+
+[23
 
  <./mixing.png>]
 File: GC3.png Graphic file (type png)
 <use GC3.png>
-Package pdftex.def Info: GC3.png  used on input line 981.
+Package pdftex.def Info: GC3.png  used on input line 1098.
 (pdftex.def)             Requested size: 342.2953pt x 58.33951pt.
-<front_pos.pdf, id=641, 361.35pt x 252.945pt>
+<front_pos.pdf, id=722, 361.35pt x 252.945pt>
 File: front_pos.pdf Graphic file (type pdf)
 <use front_pos.pdf>
-Package pdftex.def Info: front_pos.pdf  used on input line 981.
+Package pdftex.def Info: front_pos.pdf  used on input line 1098.
 (pdftex.def)             Requested size: 163.88678pt x 114.71962pt.
-<Froude.pdf, id=642, 361.35pt x 252.945pt>
+<Froude.pdf, id=723, 361.35pt x 252.945pt>
 File: Froude.pdf Graphic file (type pdf)
 <use Froude.pdf>
-Package pdftex.def Info: Froude.pdf  used on input line 981.
+Package pdftex.def Info: Froude.pdf  used on input line 1098.
 (pdftex.def)             Requested size: 163.88678pt x 114.71962pt.
- [21
+ [24
 
  <./front_pos.pdf> <./Froude.pdf>]
-<self_similar_bore.png, id=748, 1243.64626pt x 546.04pt>
+<self_similar_bore.png, id=828, 1243.64626pt x 546.04pt>
 File: self_similar_bore.png Graphic file (type png)
 <use self_similar_bore.png>
-Package pdftex.def Info: self_similar_bore.png  used on input line 1020.
+Package pdftex.def Info: self_similar_bore.png  used on input line 1137.
 (pdftex.def)             Requested size: 308.06367pt x 135.25987pt.
- [22
+ [25
 
  <./self_similar_bore.png>]
-<radial_curr.png, id=776, 2795.1627pt x 1700.9949pt>
+<radial_curr.png, id=858, 2795.1627pt x 1700.9949pt>
 File: radial_curr.png Graphic file (type png)
 <use radial_curr.png>
-Package pdftex.def Info: radial_curr.png  used on input line 1029.
+Package pdftex.def Info: radial_curr.png  used on input line 1146.
 (pdftex.def)             Requested size: 239.60567pt x 145.78957pt.
- [23
+ [26
 
  <./radial_curr.png>]
-<radial_flux.png, id=803, 1283.2743pt x 503.481pt>
+<radial_flux.png, id=885, 1283.2743pt x 503.481pt>
 File: radial_flux.png Graphic file (type png)
 <use radial_flux.png>
-Package pdftex.def Info: radial_flux.png  used on input line 1039.
+Package pdftex.def Info: radial_flux.png  used on input line 1156.
 (pdftex.def)             Requested size: 239.60567pt x 94.00296pt.
- [24
+ [27
 
  <./radial_flux.png>]
 \tf@nav=\write6
@@ -1217,20 +1258,20 @@ Package pdftex.def Info: radial_flux.png  used on input line 1039.
 \tf@snm=\write8
 \openout8 = `lecture4.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1044.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1044.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1161.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1161.
  (./lecture4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1044.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1044.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1161.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1161.
 
 Package rerunfilecheck Info: File `lecture4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18608 strings out of 494923
- 354028 string characters out of 6180741
- 418713 words of memory out of 5000000
- 21413 multiletter control sequences out of 15000+600000
+ 18625 strings out of 494923
+ 354217 string characters out of 6180741
+ 419713 words of memory out of 5000000
+ 21423 multiletter control sequences out of 15000+600000
  11646 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,15n,57p,775b,705s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1254,10 +1295,10 @@ onts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb>
-Output written on lecture4.pdf (24 pages, 7728424 bytes).
+Output written on lecture4.pdf (27 pages, 7773676 bytes).
 PDF statistics:
- 890 PDF objects out of 1000 (max. 8388607)
- 772 compressed objects within 8 object streams
- 49 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 973 PDF objects out of 1000 (max. 8388607)
+ 849 compressed objects within 9 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 
