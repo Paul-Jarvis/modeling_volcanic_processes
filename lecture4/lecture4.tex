@@ -602,6 +602,28 @@
 \end{frame}
 %-----------------------------------------------
 \begin{frame}
+  \frametitle{Fundamental fluid dynamics: Streamlines}
+
+  \textbf{Streamlines} - Curves which are instantaneously tangent to the velocity field
+
+  \vspace{-1cm}
+  
+  \begin{columns}[t]
+
+    \begin{column}{0.5\paperwidth}
+
+      $$\includegraphics[width=0.5\textwidth, angle=180]{laminar.png}$$
+      
+    \end{column}
+
+    \begin{column}{0.5\paperwidth}
+
+    \end{column}
+    
+  \end{columns}
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
   \frametitle{Gravity currents - Benjamin's model}
 
   $$\includegraphics[width=0.7\textwidth]{Shin04Modified.png}$$
@@ -819,6 +841,52 @@
   $$ F = F_{\text{in}} - F_{\text{out}} = W \int_{0}^{H} (P_{\text{in}} - P_{\text{out}}) \mathrm{d}z $$
 
   $$ F = W \left( \int_{0}^{h} (P_{\text{in}} - P_{\text{out}}) \mathrm{d}z + \int_{h}^{H} (P_{\text{in}} - P_{\text{out}}) \mathrm{d}z \right)$$
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Benjamin's model}
+
+  \vspace{-0.75cm}
+  
+  $$\includegraphics[width=\textwidth]{densityIn.png}$$
+
+  \vspace{-0.75cm}
+
+  \begin{center}
+  \tiny Modified from Shin et al. (2004)
+  \end{center}
+
+  \vspace{-0.75cm}
+
+  \begin{align*}
+    F = W \bigg( & \int_{0}^{h} (P_{\text{C}} - g \rho_{\text{e}} z - P_{\text{B}} + g \rho_{\text{c}} z) \mathrm{d} z  \\
+    & + \int_{h}^{H} [P_{\text{C}} - g \rho_{\text{e}} z - P_{\text{B}} + g \rho_{\text{c}} h + g \rho_{\text{e}} (z - h)] \mathrm{d} z \bigg)
+    \end{align*}
+
+  \begin{align*}
+    F = W \bigg( & (P_{\text{C}} - P_{\text{B}}) h + \frac{g (\rho_{\text{c}} - \rho_{\text{e}}) h^{2}}{2}  \\
+    & + [P_{\text{C}} - P_{\text{B}} + g (\rho_{\text{c}} -\rho_{\text{e}}) h] (H - h) \bigg)
+    \end{align*}
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+  \frametitle{Gravity currents - Benjamin's model}
+
+  \vspace{-0.75cm}
+  
+  $$\includegraphics[width=\textwidth]{densityIn.png}$$
+
+  \vspace{-0.75cm}
+
+  \begin{center}
+  \tiny Modified from Shin et al. (2004)
+  \end{center}
+
+  \vspace{-0.75cm}
+
+  $$ F = W \left[ (P_{\text{C}} - P_{\text{B}}) H + g (\rho_{\text{c}} - \rho_{\text{e}}) h \left( H - \frac{h}{2}\right)\right]$$
+
+  $$ W \left[ (P_{\text{C}} - P_{\text{B}}) H + g (\rho_{\text{c}} - \rho_{\text{e}}) h \left( H - \frac{h}{2}\right)\right] = [U^{2} H - u_{1}^{2} (H - h)] \rho_{\text{e}} W $$
 \end{frame}
 %-----------------------------------------------
 \begin{frame}
